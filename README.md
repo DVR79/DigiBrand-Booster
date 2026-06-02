@@ -3,7 +3,7 @@
 AI-Native Performance Marketing Agency website. Built with Next.js 16, React 19, Tailwind CSS v4, Framer Motion, and TypeScript.
 
 **Live:** https://digibrandbooster.tech (when deployed)
-**Repo:** https://github.com/Layruss98266/Digi-Brand-Booster
+**Repo:** https://github.com/DVR-79/DigiBrand-Booster
 
 ## What's inside
 
