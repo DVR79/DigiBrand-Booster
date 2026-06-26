@@ -7,6 +7,10 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import GlassCard from '@/components/ui/GlassCard';
 import { siteConfig } from '@/lib/data';
 
+const EMAILJS_SERVICE_ID = 'service_5eim0hb';
+const EMAILJS_TEMPLATE_ID = 'template_uqhv0en';
+const EMAILJS_PUBLIC_KEY = 'jtjhN7XHpbOIrNbar';
+
 interface FormState {
   name: string;
   email: string;
@@ -91,17 +95,24 @@ export default function Contact() {
       `Message: ${form.message || 'Not provided'}`,
     ].join('\n');
 
-    // Email via Web3Forms
+    // Send email via EmailJS
     try {
-      await fetch('https://api.web3forms.com/submit', {
+      await fetch('https://api.emailjs.com/api/v1.0/email/send', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? 'REPLACE_WITH_YOUR_KEY',
-          subject: `New Audit Request from ${form.name} — digibrandbooster.tech`,
-          from_name: form.name,
-          email: form.email,
-          message: messageText,
+          service_id: EMAILJS_SERVICE_ID,
+          template_id: EMAILJS_TEMPLATE_ID,
+          user_id: EMAILJS_PUBLIC_KEY,
+          template_params: {
+            from_name: form.name,
+            from_email: form.email,
+            phone: form.phone || 'Not provided',
+            website: form.website || 'Not provided',
+            monthly_spend: form.spend || 'Not provided',
+            message: form.message,
+            to_email: siteConfig.email,
+          },
         }),
       });
     } catch {
