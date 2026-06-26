@@ -31,10 +31,22 @@ export default function Contact() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
-    // Simulate submission — replace with real endpoint
-    await new Promise((r) => setTimeout(r, 1000));
+
+    const message = [
+      `New Audit Request from digibrandbooster.tech`,
+      ``,
+      `Name: ${form.name}`,
+      `Email: ${form.email}`,
+      `Website: ${form.website || 'Not provided'}`,
+      `Monthly Ad Spend: ${form.spend || 'Not provided'}`,
+      `Challenge: ${form.message || 'Not provided'}`,
+    ].join('\n');
+
+    const waUrl = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(message)}`;
+
     setLoading(false);
     setSubmitted(true);
+    window.open(waUrl, '_blank');
   }
 
   const inputStyle: React.CSSProperties = {
