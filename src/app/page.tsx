@@ -14,6 +14,7 @@ import ROICalculator from '@/components/sections/ROICalculator';
 import Testimonials from '@/components/sections/Testimonials';
 import Awards from '@/components/sections/Awards';
 import Team from '@/components/sections/Team';
+import Founder from '@/components/sections/Founder';
 import Insights from '@/components/sections/Insights';
 import FAQ from '@/components/sections/FAQ';
 import Contact from '@/components/sections/Contact';
@@ -63,6 +64,7 @@ export default function HomePage() {
         <Testimonials />
         <Awards />
         <Team />
+        <Founder />
         <Insights />
         <FAQ />
         <Contact />
