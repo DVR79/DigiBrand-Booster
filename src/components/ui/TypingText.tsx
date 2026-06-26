@@ -31,9 +31,9 @@ export default function TypingText({ words, speed = 80, pause = 1800 }: TypingTe
   }, [subIndex, deleting, index, words, speed, pause]);
 
   return (
-    <span className="gradient-text">
+    <>
       {words[index].substring(0, subIndex)}
-      <span className="animate-pulse">|</span>
-    </span>
+      <span className="animate-pulse" aria-hidden="true">|</span>
+    </>
   );
 }

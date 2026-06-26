@@ -86,6 +86,7 @@ export default function Header() {
               className="md:hidden p-2 rounded-lg"
               style={{ color: 'var(--text-primary)', background: 'var(--bg-card)', border: '1px solid var(--border)' }}
               onClick={() => setMenuOpen(v => !v)}
+              aria-label={menuOpen ? 'Close menu' : 'Open navigation menu'}
               title={menuOpen ? 'Close menu' : 'Open navigation menu'}
             >
               {menuOpen ? <X size={18} /> : <Menu size={18} />}

@@ -134,7 +134,7 @@ export default function Hero() {
               style={{ color: 'var(--text-secondary)' }}
             >
               India&apos;s leading performance marketing agency for D2C and SaaS brands. We run Meta Ads,
-              Google Ads, SEO, AEO and GEO — with written KPIs and a 90-day results guarantee built into every contract.
+              Google Ads, SEO, AEO and GEO, with written KPIs and a 90-day results guarantee built into every contract.
             </motion.p>
 
             <motion.div

@@ -99,17 +99,32 @@ export default function ROICalculator() {
                 </p>
               </div>
 
-              <div
-                className="rounded-xl p-4"
-                style={{ background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.3)' }}
-              >
-                <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: 'var(--accent-success)' }}>
-                  Potential uplift
-                </p>
-                <p className="font-heading text-2xl font-bold" style={{ color: 'var(--accent-success)' }}>
-                  +{formatCurrency(uplift)}
-                </p>
-              </div>
+              {uplift > 0 && (
+                <div
+                  className="rounded-xl p-4"
+                  style={{ background: 'rgba(52,211,153,0.1)', border: '1px solid rgba(52,211,153,0.3)' }}
+                >
+                  <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: 'var(--accent-success)' }}>
+                    Potential uplift
+                  </p>
+                  <p className="font-heading text-2xl font-bold" style={{ color: 'var(--accent-success)' }}>
+                    +{formatCurrency(uplift)}
+                  </p>
+                </div>
+              )}
+              {uplift <= 0 && (
+                <div
+                  className="rounded-xl p-4"
+                  style={{ background: 'rgba(37,99,235,0.08)', border: '1px solid rgba(37,99,235,0.2)' }}
+                >
+                  <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: 'var(--accent-primary)' }}>
+                    Already at target ROAS
+                  </p>
+                  <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+                    Your current ROAS is already at or above 3.5x. We can help you scale spend profitably.
+                  </p>
+                </div>
+              )}
 
               <ShimmerButton variant="cta" href="#contact" className="w-full" title="Get a free audit and see how we can hit these numbers for your brand">
                 Get My Free Audit

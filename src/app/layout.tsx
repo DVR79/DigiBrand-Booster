@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: 'Performance Marketing Agency India | Meta Ads, Google Ads, SEO, AEO & GEO',
     description: 'India\'s AI-native performance marketing agency in Bangalore. Meta Ads, Google Ads, SEO, AEO, GEO for D2C and SaaS. 90-day guarantee.',
-    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Digi Brand Booster — Performance Marketing Agency India' }],
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Digi Brand Booster: Performance Marketing Agency India' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
-  verification: { google: '' },
+  // verification: { google: 'ADD_YOUR_CODE_HERE' },
 };
 
 const organizationSchema = {
@@ -89,7 +89,7 @@ const organizationSchema = {
   },
   sameAs: [
     'https://www.linkedin.com/company/digibrandbooster',
-    'https://github.com/DVR79/DigiBrand-Booster',
+    'https://www.linkedin.com/in/d-venkataramana',
   ],
 };
 

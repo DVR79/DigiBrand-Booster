@@ -27,7 +27,7 @@ import CursorFollower from '@/components/effects/CursorFollower';
 import { faqs } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'AI-Native Performance Marketing Agency | 90-Day Results Guarantee',
+  title: 'Performance Marketing Agency India | Digi Brand Booster',
   description:
     'Digi Brand Booster helps ambitious D2C and SaaS brands grow with Meta Ads, Google Ads, SEO, and conversion optimisation. 90-day results guarantee, 48-hour onboarding.',
 };

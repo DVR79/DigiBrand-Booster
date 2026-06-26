@@ -8,8 +8,8 @@ interface GlassCardProps {
 
 export default function GlassCard({ children, className, hover = true }: GlassCardProps) {
   return (
-    <div className={cn(hover ? 'card' : 'card [&]:hover:transform-none [&]:hover:shadow-[var(--shadow-sm)]', className)}>
-      <div className="p-6">{children}</div>
+    <div className={cn('card p-6', hover ? '' : '[&]:hover:transform-none [&]:hover:shadow-[var(--shadow-sm)]', className)}>
+      {children}
     </div>
   );
 }

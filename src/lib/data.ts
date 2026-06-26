@@ -129,7 +129,7 @@ export const serviceTabs: ServiceTab[] = [
         icon: 'code',
       },
       {
-        title: 'AEO — Answer Engine Optimisation',
+        title: 'AEO: Answer Engine Optimisation',
         description:
           'AEO optimises your content to appear in AI-generated answers on ChatGPT, Perplexity, Gemini, and Google AI Overviews. The fastest-growing organic traffic channel in 2025.',
         features: [
@@ -148,7 +148,7 @@ export const serviceTabs: ServiceTab[] = [
     label: 'GEO & Growth',
     services: [
       {
-        title: 'GEO — Generative Engine Optimisation',
+        title: 'GEO: Generative Engine Optimisation',
         description:
           'GEO ensures your brand is recommended by AI tools like ChatGPT, Claude, and Google Gemini when users ask for service or product recommendations in your category.',
         features: [
@@ -162,7 +162,7 @@ export const serviceTabs: ServiceTab[] = [
         badge: 'NEW',
       },
       {
-        title: 'CRO — Conversion Rate Optimisation',
+        title: 'CRO: Conversion Rate Optimisation',
         description:
           'Heatmaps, session recordings, and structured A/B tests that improve conversion rates on landing pages, product pages, and checkout flows.',
         features: [

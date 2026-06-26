@@ -15,8 +15,8 @@ const footerLinks = {
     { label: 'Contact', href: '#contact' },
   ],
   Legal: [
-    { label: 'Privacy Policy', href: '/privacy' },
-    { label: 'Terms of Service', href: '/terms' },
+    { label: 'Privacy Policy', href: '#contact' },
+    { label: 'Terms of Service', href: '#contact' },
   ],
 };
 
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs" style={{ borderTop: '1px solid var(--border)', color: 'var(--text-muted)' }}>
-          <p>{new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
           <p>BTM 1st Stage, Bangalore, Karnataka, India</p>
         </div>
       </div>
