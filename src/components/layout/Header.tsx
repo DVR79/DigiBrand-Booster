@@ -7,11 +7,11 @@ import ShimmerButton from '@/components/ui/ShimmerButton';
 import { siteConfig } from '@/lib/data';
 
 const navLinks = [
-  { label: 'Services', href: '#services', title: 'Our services — Meta Ads, Google Ads, SEO, AEO, GEO' },
+  { label: 'Services', href: '#services', title: 'Our services - Meta Ads, Google Ads, SEO, AEO, GEO' },
   { label: 'Results', href: '#results', title: 'Client results and performance metrics' },
   { label: 'Case Studies', href: '#case-studies', title: 'Real brand growth case studies' },
   { label: 'About', href: '#team', title: 'Meet the Digi Brand Booster team' },
-  { label: 'Founder', href: '#founder', title: 'About D Venkataramana — founder and SEO strategist' },
+  { label: 'Founder', href: '#founder', title: 'About D Venkataramana - founder and SEO strategist' },
   { label: 'Insights', href: '#insights', title: 'Performance marketing blog and insights' },
 ];
 
@@ -41,7 +41,7 @@ export default function Header() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <a href="/" className="font-heading text-xl font-extrabold" style={{ color: 'var(--accent-primary)' }} title="Digi Brand Booster — Home">
+          <a href="/" className="font-heading text-xl font-extrabold" style={{ color: 'var(--accent-primary)' }} title="Digi Brand Booster - Home">
             {siteConfig.name}
           </a>
 
@@ -79,7 +79,7 @@ export default function Header() {
               <kbd className="rounded px-1 text-[10px]" style={{ background: 'var(--bg-card-hover)' }}>⌘K</kbd>
             </button>
             <ThemeToggle />
-            <ShimmerButton variant="primary" href="#contact" className="hidden md:inline-flex" title="Get a free 48-hour performance audit — no commitment">
+            <ShimmerButton variant="primary" href="#contact" className="hidden md:inline-flex" title="Get a free 48-hour performance audit - no commitment">
               Free Audit
             </ShimmerButton>
             <button
@@ -103,7 +103,7 @@ export default function Header() {
                 {l.label}
               </a>
             ))}
-            <ShimmerButton variant="primary" href="#contact" className="mt-3 w-full" onClick={() => setMenuOpen(false)} title="Get a free 48-hour performance audit — no commitment">
+            <ShimmerButton variant="primary" href="#contact" className="mt-3 w-full" onClick={() => setMenuOpen(false)} title="Get a free 48-hour performance audit - no commitment">
               Get Free Audit
             </ShimmerButton>
           </nav>

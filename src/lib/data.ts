@@ -1,4 +1,4 @@
-// Single source of truth — all site content lives here
+// Single source of truth - all site content lives here
 
 export const siteConfig = {
   name: 'Digi Brand Booster',

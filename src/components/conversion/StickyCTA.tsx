@@ -21,7 +21,7 @@ export default function StickyCTA() {
       className="fixed bottom-6 left-1/2 z-40 -translate-x-1/2 shadow-2xl"
       style={{ animation: 'fadeInUp 0.3s ease forwards' }}
     >
-      <ShimmerButton variant="cta" href="#contact" title="Claim your free 48-hour performance audit — no credit card required">
+      <ShimmerButton variant="cta" href="#contact" title="Claim your free 48-hour performance audit - no credit card required">
         Claim Your Free Audit
       </ShimmerButton>
     </div>

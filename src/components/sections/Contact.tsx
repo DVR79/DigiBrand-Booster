@@ -124,7 +124,7 @@ Message: ${form.message || 'Not provided'}`;
       });
       emailSent = res.ok;
     } catch {
-      // network failure — still open WhatsApp below
+      // network failure - still open WhatsApp below
     }
 
     setLoading(false);
@@ -134,7 +134,7 @@ Message: ${form.message || 'Not provided'}`;
       // Open WhatsApp in same user gesture thread
       window.open(waUrl, '_blank', 'noopener,noreferrer');
     } else {
-      // Email failed — redirect to WhatsApp directly so no lead is lost
+      // Email failed - redirect to WhatsApp directly so no lead is lost
       setError('Email could not be sent. Redirecting you to WhatsApp instead...');
       setTimeout(() => {
         window.location.href = waUrl;
@@ -165,7 +165,7 @@ Message: ${form.message || 'Not provided'}`;
 
         <div className="grid lg:grid-cols-[1fr_1.2fr] gap-10 items-start">
 
-          {/* Left — contact info */}
+          {/* Left - contact info */}
           <motion.div
             initial={{ opacity: 0, x: -24 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -213,7 +213,7 @@ Message: ${form.message || 'Not provided'}`;
               ))}
             </div>
 
-            {/* Social links — only real URLs */}
+            {/* Social links - only real URLs */}
             <div className="flex flex-wrap gap-2">
               {[
                 { label: 'LinkedIn', href: 'https://www.linkedin.com/in/d-venkataramana', title: 'Connect on LinkedIn' },
@@ -243,7 +243,7 @@ Message: ${form.message || 'Not provided'}`;
             </div>
           </motion.div>
 
-          {/* Right — form */}
+          {/* Right - form */}
           <motion.div
             initial={{ opacity: 0, x: 24 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -400,7 +400,7 @@ Message: ${form.message || 'Not provided'}`;
                   <button
                     type="submit"
                     disabled={loading}
-                    title="Submit your audit request — we will respond within 48 hours"
+                    title="Submit your audit request - we will respond within 48 hours"
                     className="mt-2 inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold transition-all disabled:opacity-60 disabled:cursor-not-allowed"
                     style={{
                       background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-purple))',

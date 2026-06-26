@@ -63,7 +63,7 @@ export default function Guarantee() {
             ))}
           </motion.div>
 
-          <ShimmerButton variant="primary" href="#contact" className="px-8 py-3" title="Start with our 90-day guarantee — full management fee refund if we miss your KPIs">
+          <ShimmerButton variant="primary" href="#contact" className="px-8 py-3" title="Start with our 90-day guarantee - full management fee refund if we miss your KPIs">
             Start with Zero Risk
           </ShimmerButton>
         </div>

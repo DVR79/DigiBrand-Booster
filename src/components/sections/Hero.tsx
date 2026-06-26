@@ -17,7 +17,7 @@ function HeroBanner() {
       role="img"
       className="w-full max-w-lg mx-auto"
     >
-      <title>AI-native performance marketing dashboard — Digi Brand Booster</title>
+      <title>AI-native performance marketing dashboard - Digi Brand Booster</title>
       {/* Background card */}
       <rect x="20" y="20" width="520" height="360" rx="20" fill="#f8fafc" stroke="#e2e8f0" strokeWidth="1.5"/>
 
@@ -84,7 +84,7 @@ export default function Hero() {
     <section
       className="relative pt-24 pb-16 px-4 overflow-hidden"
       style={{ background: 'var(--bg-dark)' }}
-      aria-label="Hero section — AI-native performance marketing agency India"
+      aria-label="Hero section - AI-native performance marketing agency India"
     >
       {/* Subtle background grid */}
       <div
@@ -104,7 +104,7 @@ export default function Hero() {
       <div className="relative mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
-          {/* Left — copy */}
+          {/* Left - copy */}
           <div>
             <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="mb-5">
               <span className="pill">
@@ -143,10 +143,10 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-3 mb-6"
             >
-              <ShimmerButton variant="primary" href="#contact" className="px-7 py-3 text-base" title="Get a free 48-hour audit of your Meta Ads, Google Ads, and SEO — no credit card required">
+              <ShimmerButton variant="primary" href="#contact" className="px-7 py-3 text-base" title="Get a free 48-hour audit of your Meta Ads, Google Ads, and SEO - no credit card required">
                 Get Free 48-Hour Audit <ArrowRight size={16} aria-hidden="true" />
               </ShimmerButton>
-              <ShimmerButton variant="outline" href="#case-studies" className="px-7 py-3 text-base" title="See real brand growth case studies — ROAS, CPL reduction, and organic traffic results">
+              <ShimmerButton variant="outline" href="#case-studies" className="px-7 py-3 text-base" title="See real brand growth case studies - ROAS, CPL reduction, and organic traffic results">
                 View Case Studies
               </ShimmerButton>
             </motion.div>
@@ -166,7 +166,7 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right — dashboard illustration */}
+          {/* Right - dashboard illustration */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}

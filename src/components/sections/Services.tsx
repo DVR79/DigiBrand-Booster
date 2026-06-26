@@ -84,7 +84,7 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <a href="#contact" title={`Learn more about ${service.title} — contact us for a free consultation`} className="inline-flex items-center gap-1.5 mt-5 text-sm font-semibold" style={{ color: 'var(--accent-primary)' }}>
+              <a href="#contact" title={`Learn more about ${service.title} - contact us for a free consultation`} className="inline-flex items-center gap-1.5 mt-5 text-sm font-semibold" style={{ color: 'var(--accent-primary)' }}>
                 Learn more <ArrowRight size={14} aria-hidden="true" />
               </a>
             </div>

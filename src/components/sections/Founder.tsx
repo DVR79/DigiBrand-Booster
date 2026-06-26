@@ -41,7 +41,7 @@ export default function Founder() {
       id="founder"
       className="py-24 px-4"
       style={{ background: 'var(--bg-dark)' }}
-      aria-label="About the founder — D Venkataramana"
+      aria-label="About the founder - D Venkataramana"
     >
       <div className="mx-auto max-w-7xl">
         <SectionHeader
@@ -52,7 +52,7 @@ export default function Founder() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
 
-          {/* Left — bio and stats */}
+          {/* Left - bio and stats */}
           <motion.div
             initial={{ opacity: 0, x: -24 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -66,7 +66,7 @@ export default function Founder() {
                   className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl font-heading text-2xl font-extrabold"
                   style={{ background: 'rgba(37,99,235,0.1)', color: 'var(--accent-primary)' }}
                   aria-label="D Venkataramana initials"
-                  title="D Venkataramana — Founder, Digi Brand Booster"
+                  title="D Venkataramana - Founder, Digi Brand Booster"
                 >
                   DV
                 </div>
@@ -129,7 +129,7 @@ export default function Founder() {
             </div>
           </motion.div>
 
-          {/* Right — skills, tools, certs */}
+          {/* Right - skills, tools, certs */}
           <motion.div
             initial={{ opacity: 0, x: 24 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -182,7 +182,7 @@ export default function Founder() {
                       color: 'var(--accent-primary)',
                       border: '1px solid rgba(37,99,235,0.15)',
                     }}
-                    title={`${t} — used for SEO and performance marketing`}
+                    title={`${t} - used for SEO and performance marketing`}
                   >
                     {t}
                   </span>
@@ -226,7 +226,7 @@ export default function Founder() {
                 variant="primary"
                 href="#contact"
                 className="flex-1"
-                title="Work with Venkataramana — get a free 48-hour audit"
+                title="Work with Venkataramana - get a free 48-hour audit"
               >
                 Work with me
               </ShimmerButton>
