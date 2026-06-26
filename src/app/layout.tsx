@@ -81,11 +81,6 @@ export default function RootLayout({
       <head>
         {/* No-flash theme script — must run before paint */}
         <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.classList.add('dark')}}catch(e){}})()`,
-          }}
-        />
-        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />

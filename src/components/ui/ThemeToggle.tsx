@@ -1,40 +1,4 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-import { Sun, Moon } from 'lucide-react';
-
+// Dark mode removed — site is light theme only
 export default function ThemeToggle() {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    setIsDark(document.documentElement.classList.contains('dark'));
-  }, []);
-
-  function toggle() {
-    const html = document.documentElement;
-    if (html.classList.contains('dark')) {
-      html.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-      setIsDark(false);
-    } else {
-      html.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-      setIsDark(true);
-    }
-  }
-
-  return (
-    <button
-      onClick={toggle}
-      aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-      className="flex h-9 w-9 items-center justify-center rounded-lg transition-colors"
-      style={{
-        background: 'var(--bg-card)',
-        border: '1px solid var(--border)',
-        color: 'var(--text-secondary)',
-      }}
-    >
-      {isDark ? <Sun size={16} /> : <Moon size={16} />}
-    </button>
-  );
+  return null;
 }
