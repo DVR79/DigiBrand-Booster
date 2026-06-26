@@ -111,7 +111,7 @@ export default function ROICalculator() {
                 </p>
               </div>
 
-              <ShimmerButton variant="cta" href="#contact" className="w-full">
+              <ShimmerButton variant="cta" href="#contact" className="w-full" title="Get a free audit and see how we can hit these numbers for your brand">
                 Get My Free Audit
               </ShimmerButton>
             </div>

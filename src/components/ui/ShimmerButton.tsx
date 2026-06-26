@@ -8,6 +8,7 @@ interface ShimmerButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   variant?: Variant;
   children: React.ReactNode;
   href?: string;
+  title?: string;
 }
 
 const base =
@@ -24,16 +25,17 @@ export default function ShimmerButton({
   children,
   className,
   href,
+  title,
   ...props
 }: ShimmerButtonProps) {
   const classes = cn(base, variants[variant], className);
 
   if (href) {
-    return <a href={href} className={classes}>{children}</a>;
+    return <a href={href} className={classes} title={title}>{children}</a>;
   }
 
   return (
-    <button className={classes} {...props}>
+    <button className={classes} title={title} {...props}>
       {children}
     </button>
   );

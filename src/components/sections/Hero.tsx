@@ -143,10 +143,10 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-3 mb-6"
             >
-              <ShimmerButton variant="primary" href="#contact" className="px-7 py-3 text-base">
+              <ShimmerButton variant="primary" href="#contact" className="px-7 py-3 text-base" title="Get a free 48-hour audit of your Meta Ads, Google Ads, and SEO — no credit card required">
                 Get Free 48-Hour Audit <ArrowRight size={16} aria-hidden="true" />
               </ShimmerButton>
-              <ShimmerButton variant="outline" href="#case-studies" className="px-7 py-3 text-base">
+              <ShimmerButton variant="outline" href="#case-studies" className="px-7 py-3 text-base" title="See real brand growth case studies — ROAS, CPL reduction, and organic traffic results">
                 View Case Studies
               </ShimmerButton>
             </motion.div>

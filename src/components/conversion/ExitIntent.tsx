@@ -60,13 +60,14 @@ export default function ExitIntent() {
           We will review your ad accounts, SEO, and conversion funnel, and send you a prioritised fix
           list. No obligation, no hard sell.
         </p>
-        <ShimmerButton variant="cta" href="#contact" className="w-full" onClick={dismiss}>
+        <ShimmerButton variant="cta" href="#contact" className="w-full" onClick={dismiss} title="Claim your free 48-hour performance audit — no credit card required">
           Claim My Free Audit
         </ShimmerButton>
         <button
           className="mt-4 text-xs"
           style={{ color: 'var(--text-secondary)' }}
           onClick={dismiss}
+          title="Dismiss this offer"
         >
           No thanks, I will pass
         </button>

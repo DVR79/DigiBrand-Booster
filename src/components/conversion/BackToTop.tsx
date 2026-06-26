@@ -24,6 +24,7 @@ export default function BackToTop() {
     <button
       onClick={scrollTop}
       aria-label="Back to top"
+      title="Back to top"
       className="fixed bottom-24 right-6 z-40 flex h-10 w-10 items-center justify-center rounded-full transition-transform hover:scale-110"
       style={{
         background: 'var(--bg-card)',

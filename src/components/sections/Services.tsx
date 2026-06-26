@@ -34,6 +34,7 @@ export default function Services() {
             <button
               key={tab.label}
               onClick={() => setActiveTab(i)}
+              title={`View ${tab.label} services`}
               className="rounded-lg px-5 py-2.5 text-sm font-semibold transition-all duration-200"
               style={{
                 background: activeTab === i ? 'var(--accent-primary)' : 'var(--bg-dark)',
@@ -83,7 +84,7 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
-              <a href="#contact" className="inline-flex items-center gap-1.5 mt-5 text-sm font-semibold" style={{ color: 'var(--accent-primary)' }}>
+              <a href="#contact" title={`Learn more about ${service.title} — contact us for a free consultation`} className="inline-flex items-center gap-1.5 mt-5 text-sm font-semibold" style={{ color: 'var(--accent-primary)' }}>
                 Learn more <ArrowRight size={14} aria-hidden="true" />
               </a>
             </div>
