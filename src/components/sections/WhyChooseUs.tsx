@@ -5,10 +5,10 @@ import { Clock, FileCheck, BarChart3, Users } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 const reasons = [
-  { icon: <Clock size={22} />, title: '48-hour onboarding', description: 'Full access, audit, kickoff call, and growth plan within 48 hours of signing.' },
-  { icon: <FileCheck size={22} />, title: 'Written KPIs in the contract', description: 'Targets are agreed and signed before we touch your budget.' },
-  { icon: <BarChart3 size={22} />, title: 'Live dashboard, always', description: 'You see the same numbers we see, in real time. No waiting for reports.' },
-  { icon: <Users size={22} />, title: 'Dedicated team per account', description: 'A strategist, specialist, and growth manager. Not a rotating helpdesk.' },
+  { icon: <Clock size={22} aria-hidden="true" />, title: '48-hour onboarding', description: 'Full access, audit, kickoff call, and growth plan within 48 hours of signing.' },
+  { icon: <FileCheck size={22} aria-hidden="true" />, title: 'Written KPIs in the contract', description: 'Targets are agreed and signed before we touch your budget.' },
+  { icon: <BarChart3 size={22} aria-hidden="true" />, title: 'Live dashboard, always', description: 'You see the same numbers we see, in real time. No waiting for reports.' },
+  { icon: <Users size={22} aria-hidden="true" />, title: 'Dedicated team per account', description: 'A strategist, specialist, and growth manager. Not a rotating helpdesk.' },
 ];
 
 export default function WhyChooseUs() {

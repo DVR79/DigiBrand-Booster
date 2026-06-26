@@ -31,25 +31,25 @@ const initialForm: FormState = {
 
 const contactInfo = [
   {
-    icon: <Phone size={16} />,
+    icon: <Phone size={16} aria-hidden="true" />,
     label: 'Phone',
     value: '+91 79816 32581',
     href: 'tel:+917981632581',
   },
   {
-    icon: <Mail size={16} />,
+    icon: <Mail size={16} aria-hidden="true" />,
     label: 'Email',
     value: 'venkat.digitalseo@gmail.com',
     href: 'mailto:venkat.digitalseo@gmail.com',
   },
   {
-    icon: <MapPin size={16} />,
+    icon: <MapPin size={16} aria-hidden="true" />,
     label: 'Location',
     value: 'BTM 1st Stage, Bangalore, Karnataka, India',
     href: '#',
   },
   {
-    icon: <Globe size={16} />,
+    icon: <Globe size={16} aria-hidden="true" />,
     label: 'Website',
     value: 'digibrandbooster.tech',
     href: 'https://www.digibrandbooster.tech',
@@ -247,7 +247,7 @@ export default function Contact() {
                   animate={{ opacity: 1, scale: 1 }}
                   className="flex flex-col items-center text-center py-10 gap-4"
                 >
-                  <CheckCircle size={52} style={{ color: 'var(--accent-success)' }} />
+                  <CheckCircle size={52} style={{ color: 'var(--accent-success)' }} aria-hidden="true" />
                   <h3
                     className="font-heading text-2xl font-bold"
                     style={{ color: 'var(--text-primary)' }}
@@ -402,7 +402,7 @@ export default function Contact() {
                   >
                     {loading ? 'Sending...' : (
                       <>
-                        Send Message <ArrowRight size={16} />
+                        Send Message <ArrowRight size={16} aria-hidden="true" />
                       </>
                     )}
                   </button>

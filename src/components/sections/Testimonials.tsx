@@ -20,9 +20,9 @@ export default function Testimonials() {
               transition={{ delay: i * 0.1, duration: 0.5 }}
               className="card p-8"
             >
-              <div className="flex gap-0.5 mb-4">
+              <div className="flex gap-0.5 mb-4" aria-label="5 out of 5 stars">
                 {[...Array(5)].map((_, j) => (
-                  <Star key={j} size={14} fill="var(--accent-cta)" style={{ color: 'var(--accent-cta)' }} />
+                  <Star key={j} size={14} fill="var(--accent-cta)" style={{ color: 'var(--accent-cta)' }} aria-hidden="true" />
                 ))}
               </div>
               <p className="text-base leading-relaxed mb-6" style={{ color: 'var(--text-primary)' }}>

@@ -56,7 +56,7 @@ export default function Insights() {
                     className="flex items-center gap-1 text-xs font-semibold transition-colors"
                     style={{ color: 'var(--accent-primary)' }}
                   >
-                    Read <ArrowRight size={12} />
+                    Read <ArrowRight size={12} aria-hidden="true" />
                   </a>
                 </div>
               </GlassCard>

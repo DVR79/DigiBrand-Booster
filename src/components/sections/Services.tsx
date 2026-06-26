@@ -2,13 +2,19 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Target, Search, Code, FileText, TrendingUp, Mail, CheckCircle, ArrowRight } from 'lucide-react';
+import { Target, Search, Code, FileText, TrendingUp, Mail, CheckCircle, ArrowRight, Brain, Sparkles } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { serviceTabs } from '@/lib/data';
 
 const iconMap: Record<string, React.ReactNode> = {
-  target: <Target size={22} />, search: <Search size={22} />, code: <Code size={22} />,
-  fileText: <FileText size={22} />, trendingUp: <TrendingUp size={22} />, mail: <Mail size={22} />,
+  target: <Target size={22} aria-hidden="true" />,
+  search: <Search size={22} aria-hidden="true" />,
+  code: <Code size={22} aria-hidden="true" />,
+  fileText: <FileText size={22} aria-hidden="true" />,
+  trendingUp: <TrendingUp size={22} aria-hidden="true" />,
+  mail: <Mail size={22} aria-hidden="true" />,
+  brain: <Brain size={22} aria-hidden="true" />,
+  sparkles: <Sparkles size={22} aria-hidden="true" />,
 };
 
 export default function Services() {
@@ -56,22 +62,29 @@ export default function Services() {
               >
                 {iconMap[service.icon] ?? <Target size={22} />}
               </div>
-              <h3 className="font-heading text-xl font-bold mb-2" style={{ color: 'var(--text-primary)' }}>
-                {service.title}
-              </h3>
+              <div className="flex items-center gap-2 mb-2">
+                <h3 className="font-heading text-xl font-bold" style={{ color: 'var(--text-primary)' }}>
+                  {service.title}
+                </h3>
+                {service.badge && (
+                  <span className="text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ background: 'rgba(124,58,237,0.1)', color: 'var(--accent-purple)' }}>
+                    {service.badge}
+                  </span>
+                )}
+              </div>
               <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--text-secondary)' }}>
                 {service.description}
               </p>
               <ul className="space-y-2.5">
                 {service.features.map((f) => (
                   <li key={f} className="flex items-start gap-2.5 text-sm" style={{ color: 'var(--text-secondary)' }}>
-                    <CheckCircle size={15} className="mt-0.5 shrink-0" style={{ color: 'var(--accent-success)' }} />
+                    <CheckCircle size={15} className="mt-0.5 shrink-0" style={{ color: 'var(--accent-success)' }} aria-hidden="true" />
                     {f}
                   </li>
                 ))}
               </ul>
               <a href="#contact" className="inline-flex items-center gap-1.5 mt-5 text-sm font-semibold" style={{ color: 'var(--accent-primary)' }}>
-                Learn more <ArrowRight size={14} />
+                Learn more <ArrowRight size={14} aria-hidden="true" />
               </a>
             </div>
           ))}

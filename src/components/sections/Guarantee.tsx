@@ -22,7 +22,7 @@ export default function Guarantee() {
             className="inline-flex h-16 w-16 items-center justify-center rounded-2xl mb-6"
             style={{ background: 'rgba(5,150,105,0.1)', color: 'var(--accent-success)' }}
           >
-            <ShieldCheck size={32} />
+            <ShieldCheck size={32} aria-hidden="true" />
           </motion.div>
 
           <motion.h2
