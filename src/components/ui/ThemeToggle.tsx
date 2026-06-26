@@ -4,29 +4,29 @@ import { useEffect, useState } from 'react';
 import { Sun, Moon } from 'lucide-react';
 
 export default function ThemeToggle() {
-  const [isLight, setIsLight] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
-    setIsLight(document.documentElement.classList.contains('light'));
+    setIsDark(document.documentElement.classList.contains('dark'));
   }, []);
 
   function toggle() {
     const html = document.documentElement;
-    if (html.classList.contains('light')) {
-      html.classList.remove('light');
-      localStorage.setItem('theme', 'dark');
-      setIsLight(false);
-    } else {
-      html.classList.add('light');
+    if (html.classList.contains('dark')) {
+      html.classList.remove('dark');
       localStorage.setItem('theme', 'light');
-      setIsLight(true);
+      setIsDark(false);
+    } else {
+      html.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+      setIsDark(true);
     }
   }
 
   return (
     <button
       onClick={toggle}
-      aria-label={isLight ? 'Switch to dark mode' : 'Switch to light mode'}
+      aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
       className="flex h-9 w-9 items-center justify-center rounded-lg transition-colors"
       style={{
         background: 'var(--bg-card)',
@@ -34,7 +34,7 @@ export default function ThemeToggle() {
         color: 'var(--text-secondary)',
       }}
     >
-      {isLight ? <Moon size={16} /> : <Sun size={16} />}
+      {isDark ? <Sun size={16} /> : <Moon size={16} />}
     </button>
   );
 }

@@ -12,7 +12,6 @@ const footerLinks = {
     { label: 'About Us', href: '#team' },
     { label: 'Case Studies', href: '#case-studies' },
     { label: 'Insights', href: '#insights' },
-    { label: 'Careers', href: '#' },
     { label: 'Contact', href: '#contact' },
   ],
   Legal: [
@@ -23,51 +22,27 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer style={{ background: 'var(--bg-card)', borderTop: '1px solid var(--border)' }}>
+    <footer style={{ background: 'var(--bg-section-alt)', borderTop: '1px solid var(--border)' }}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {/* Brand */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           <div className="col-span-2 md:col-span-1">
-            <p className="font-heading text-lg font-bold gradient-text">{siteConfig.name}</p>
-            <p className="mt-3 text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-              AI-native performance marketing for ambitious brands. 90-day results guarantee.
+            <p className="font-heading text-lg font-extrabold mb-3" style={{ color: 'var(--accent-primary)' }}>{siteConfig.name}</p>
+            <p className="text-sm leading-relaxed mb-4" style={{ color: 'var(--text-secondary)' }}>
+              AI-native performance marketing. 90-day results guarantee.
             </p>
-            <div className="mt-4 space-y-1">
-              <a
-                href={`tel:${siteConfig.phone}`}
-                className="block text-sm"
-                style={{ color: 'var(--text-secondary)' }}
-              >
-                {siteConfig.phone}
-              </a>
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="block text-sm"
-                style={{ color: 'var(--text-secondary)' }}
-              >
-                {siteConfig.email}
-              </a>
+            <div className="space-y-1">
+              <a href={`tel:${siteConfig.phone}`} className="footer-link block text-sm">{siteConfig.phone}</a>
+              <a href={`mailto:${siteConfig.email}`} className="footer-link block text-sm">{siteConfig.email}</a>
             </div>
           </div>
 
-          {/* Links */}
           {Object.entries(footerLinks).map(([group, links]) => (
             <div key={group}>
-              <h3
-                className="text-xs font-semibold uppercase tracking-widest mb-4"
-                style={{ color: 'var(--text-primary)' }}
-              >
-                {group}
-              </h3>
-              <ul className="space-y-2">
+              <h3 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: 'var(--text-primary)' }}>{group}</h3>
+              <ul className="space-y-2.5">
                 {links.map((l) => (
                   <li key={l.label}>
-                    <a
-                      href={l.href}
-                      className="footer-link text-sm transition-colors"
-                    >
-                      {l.label}
-                    </a>
+                    <a href={l.href} className="footer-link text-sm transition-colors">{l.label}</a>
                   </li>
                 ))}
               </ul>
@@ -75,13 +50,8 @@ export default function Footer() {
           ))}
         </div>
 
-        <div
-          className="mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs"
-          style={{ borderTop: '1px solid var(--border)', color: 'var(--text-secondary)' }}
-        >
-          <p>
-            {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
-          </p>
+        <div className="mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs" style={{ borderTop: '1px solid var(--border)', color: 'var(--text-muted)' }}>
+          <p>{new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
           <p>BTM 1st Stage, Bangalore, Karnataka, India</p>
         </div>
       </div>

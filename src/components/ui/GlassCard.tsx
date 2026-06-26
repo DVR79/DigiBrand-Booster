@@ -1,5 +1,3 @@
-'use client';
-
 import { cn } from '@/lib/utils';
 
 interface GlassCardProps {
@@ -10,14 +8,8 @@ interface GlassCardProps {
 
 export default function GlassCard({ children, className, hover = true }: GlassCardProps) {
   return (
-    <div
-      className={cn(
-        'glass rounded-2xl p-6',
-        hover && 'glass-hover cursor-default',
-        className,
-      )}
-    >
-      {children}
+    <div className={cn(hover ? 'card' : 'card [&]:hover:transform-none [&]:hover:shadow-[var(--shadow-sm)]', className)}>
+      <div className="p-6">{children}</div>
     </div>
   );
 }
