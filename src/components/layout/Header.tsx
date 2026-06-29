@@ -7,10 +7,10 @@ import ShimmerButton from '@/components/ui/ShimmerButton';
 import { siteConfig } from '@/lib/data';
 
 const navLinks = [
-  { label: 'Services', href: '#services', title: 'Our services - Meta Ads, Google Ads, SEO, AEO, GEO' },
-  { label: 'Results', href: '#results', title: 'Client results and performance metrics' },
-  { label: 'Case Studies', href: '#case-studies', title: 'Real brand growth case studies' },
-  { label: 'About', href: '#why-us', title: 'About Digi Brand Booster - founder-led boutique agency' },
+  { label: 'Services', href: '/#services', title: 'Our services - Meta Ads, Google Ads, SEO, AEO, GEO' },
+  { label: 'Results', href: '/#results', title: 'Client results and performance metrics' },
+  { label: 'Case Studies', href: '/#case-studies', title: 'Real brand growth case studies' },
+  { label: 'About', href: '/#why-us', title: 'About Digi Brand Booster - founder-led boutique agency' },
   { label: 'Blog', href: '/blog', title: 'Performance marketing blog - AEO, GEO, paid media guides' },
 ];
 
@@ -78,7 +78,7 @@ export default function Header() {
               <kbd className="rounded px-1 text-[10px]" style={{ background: 'var(--bg-card-hover)' }}>⌘K</kbd>
             </button>
             <ThemeToggle />
-            <ShimmerButton variant="primary" href="#contact" className="hidden md:inline-flex" title="Get a free 48-hour performance audit - no commitment">
+            <ShimmerButton variant="primary" href="/#contact" className="hidden md:inline-flex" title="Get a free 48-hour performance audit - no commitment">
               Free Audit
             </ShimmerButton>
             <button
@@ -102,7 +102,7 @@ export default function Header() {
                 {l.label}
               </a>
             ))}
-            <ShimmerButton variant="primary" href="#contact" className="mt-3 w-full" onClick={() => setMenuOpen(false)} title="Get a free 48-hour performance audit - no commitment">
+            <ShimmerButton variant="primary" href="/#contact" className="mt-3 w-full" onClick={() => setMenuOpen(false)} title="Get a free 48-hour performance audit - no commitment">
               Get Free Audit
             </ShimmerButton>
           </nav>
