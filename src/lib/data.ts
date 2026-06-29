@@ -358,9 +358,9 @@ export interface PricingTier {
 export const pricingTiers: PricingTier[] = [
   {
     name: 'Starter',
-    price: '₹20,000',
+    price: '₹18,000',
     priceNote: '/month onwards',
-    tagline: 'Single channel. Real results.',
+    tagline: 'One channel. Documented results.',
     ideal: 'Brands starting with SEO or paid media for the first time.',
     features: [
       'One channel: SEO or Paid Media (Meta or Google)',
@@ -376,18 +376,18 @@ export const pricingTiers: PricingTier[] = [
   },
   {
     name: 'Growth',
-    price: '₹45,000',
+    price: '₹35,000',
     priceNote: '/month onwards',
-    tagline: 'Multi-channel growth, founder-led.',
-    ideal: 'Brands ready to combine SEO with paid media or AEO.',
+    tagline: 'SEO plus paid media, working together.',
+    ideal: 'Brands ready to combine organic and paid for faster, compounding growth.',
     features: [
-      'Two channels: SEO plus Paid Media or AEO',
+      'Two channels: SEO plus Paid Media (Meta or Google)',
       '48-hour onboarding and full audit',
       'Written KPIs and signed 90-day plan',
       'Weekly Monday performance report',
       'Live dashboard access',
       'Bi-weekly strategy call',
-      'Creative testing framework',
+      'Creative testing framework included',
       '90-day results guarantee',
     ],
     cta: 'Book free audit',
@@ -395,10 +395,10 @@ export const pricingTiers: PricingTier[] = [
   },
   {
     name: 'Scale',
-    price: '₹80,000',
+    price: '₹60,000',
     priceNote: '/month onwards',
-    tagline: 'Full-stack performance. All channels.',
-    ideal: 'Scaling brands that need SEO, paid media, AEO, GEO, and CRO working together.',
+    tagline: 'Full-stack. Every channel. One team.',
+    ideal: 'Growing brands that need SEO, paid media, AEO, GEO, and CRO working as one system.',
     features: [
       'All channels: SEO, Paid Media, AEO and GEO',
       'Landing page and conversion rate optimisation',
@@ -433,7 +433,7 @@ export const faqs: FAQItem[] = [
   {
     question: 'What are your fees? How does pricing work?',
     answer:
-      'We charge a monthly retainer based on scope, not a percentage of ad spend. Starter engagements begin at Rs 20,000 per month for a single channel. Multi-channel Growth plans start at Rs 45,000 per month. Full-stack Scale engagements start at Rs 80,000 per month. All plans include the 90-day guarantee, written KPIs, and the 48-hour onboarding. Ad spend is separate and paid directly to the platform.',
+      'We charge a flat monthly retainer, not a percentage of ad spend. Single-channel Starter plans begin at Rs 18,000 per month. Growth plans combining SEO and paid media start at Rs 35,000 per month. Full-stack Scale engagements covering all channels start at Rs 60,000 per month. All plans include the 90-day guarantee, written KPIs, and 48-hour onboarding. Ad spend is separate and paid directly to the platform.',
   },
   {
     question: 'Can we cancel at any time?',
