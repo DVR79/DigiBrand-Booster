@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 import ShimmerButton from '@/components/ui/ShimmerButton';
 import TypingText from '@/components/ui/TypingText';
 
-const trust = ['No credit card required', '48-hour audit delivered', '90-day guarantee in every contract'];
+const trust = ['Founder works on your account personally', '48-hour audit, no credit card needed', '90-day guarantee written into the contract'];
 
 function HeroBanner() {
   return (
@@ -32,23 +32,23 @@ function HeroBanner() {
 
       {/* KPI Cards row */}
       <rect x="36" y="90" width="140" height="76" rx="12" fill="white" stroke="#e2e8f0" strokeWidth="1"/>
-      <text x="52" y="115" fontSize="11" fill="#64748b" fontFamily="Inter, sans-serif">ROAS</text>
-      <text x="52" y="142" fontSize="26" fontWeight="700" fill="#2563eb" fontFamily="Inter, sans-serif">4.1x</text>
-      <text x="130" y="142" fontSize="11" fill="#059669" fontFamily="Inter, sans-serif">+240%</text>
+      <text x="52" y="115" fontSize="11" fill="#64748b" fontFamily="Inter, sans-serif">Google ROAS</text>
+      <text x="52" y="142" fontSize="26" fontWeight="700" fill="#2563eb" fontFamily="Inter, sans-serif">3.8x</text>
+      <text x="130" y="142" fontSize="11" fill="#059669" fontFamily="Inter, sans-serif">avg.</text>
 
       <rect x="192" y="90" width="140" height="76" rx="12" fill="white" stroke="#e2e8f0" strokeWidth="1"/>
       <text x="208" y="115" fontSize="11" fill="#64748b" fontFamily="Inter, sans-serif">Organic Traffic</text>
-      <text x="208" y="142" fontSize="26" fontWeight="700" fill="#7c3aed" fontFamily="Inter, sans-serif">312%</text>
+      <text x="208" y="142" fontSize="26" fontWeight="700" fill="#7c3aed" fontFamily="Inter, sans-serif">260%</text>
       <text x="284" y="142" fontSize="11" fill="#059669" fontFamily="Inter, sans-serif">growth</text>
 
       <rect x="348" y="90" width="148" height="76" rx="12" fill="white" stroke="#e2e8f0" strokeWidth="1"/>
       <text x="364" y="115" fontSize="11" fill="#64748b" fontFamily="Inter, sans-serif">AI Citations</text>
-      <text x="364" y="142" fontSize="26" fontWeight="700" fill="#0ea5e9" fontFamily="Inter, sans-serif">48</text>
+      <text x="364" y="142" fontSize="26" fontWeight="700" fill="#0ea5e9" fontFamily="Inter, sans-serif">15+</text>
       <text x="408" y="142" fontSize="11" fill="#059669" fontFamily="Inter, sans-serif">AEO wins</text>
 
       {/* Chart area */}
       <rect x="36" y="184" width="320" height="140" rx="12" fill="white" stroke="#e2e8f0" strokeWidth="1"/>
-      <text x="52" y="208" fontSize="11" fontWeight="600" fill="#0f172a" fontFamily="Inter, sans-serif">Revenue Growth</text>
+      <text x="52" y="208" fontSize="11" fontWeight="600" fill="#0f172a" fontFamily="Inter, sans-serif">Organic Traffic Growth</text>
       <text x="260" y="208" fontSize="10" fill="#94a3b8" fontFamily="Inter, sans-serif">Last 90 days</text>
       {/* Chart line */}
       <polyline points="52,295 100,280 148,268 196,250 244,235 292,210 340,195" stroke="#2563eb" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
@@ -65,16 +65,16 @@ function HeroBanner() {
       {/* Right panel */}
       <rect x="372" y="184" width="124" height="66" rx="12" fill="#2563eb"/>
       <text x="388" y="208" fontSize="10" fill="rgba(255,255,255,0.8)" fontFamily="Inter, sans-serif">CPL Reduced</text>
-      <text x="388" y="234" fontSize="24" fontWeight="700" fill="white" fontFamily="Inter, sans-serif">58%</text>
+      <text x="388" y="234" fontSize="24" fontWeight="700" fill="white" fontFamily="Inter, sans-serif">41%</text>
 
       <rect x="372" y="258" width="124" height="66" rx="12" fill="white" stroke="#e2e8f0" strokeWidth="1"/>
-      <text x="388" y="282" fontSize="10" fill="#64748b" fontFamily="Inter, sans-serif">Brands Grown</text>
-      <text x="388" y="308" fontSize="24" fontWeight="700" fill="#0f172a" fontFamily="Inter, sans-serif">350+</text>
+      <text x="388" y="282" fontSize="10" fill="#64748b" fontFamily="Inter, sans-serif">Client Retention</text>
+      <text x="388" y="308" fontSize="24" fontWeight="700" fill="#0f172a" fontFamily="Inter, sans-serif">94%</text>
 
       {/* Badge */}
-      <rect x="36" y="352" width="160" height="20" rx="10" fill="rgba(5,150,105,0.1)"/>
+      <rect x="36" y="352" width="168" height="20" rx="10" fill="rgba(5,150,105,0.1)"/>
       <circle cx="52" cy="362" r="4" fill="#059669"/>
-      <text x="62" y="366" fontSize="10" fill="#059669" fontFamily="Inter, sans-serif" fontWeight="600">90-Day Results Guarantee</text>
+      <text x="62" y="366" fontSize="10" fill="#059669" fontFamily="Inter, sans-serif" fontWeight="600">Founder-Led on Every Account</text>
     </svg>
   );
 }
@@ -109,7 +109,7 @@ export default function Hero() {
             <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="mb-5">
               <span className="pill">
                 <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent-success)] animate-pulse" aria-hidden="true" />
-                AI-Native Performance Marketing Agency India
+                Boutique Performance Marketing Agency, Bangalore
               </span>
             </motion.div>
 
@@ -120,9 +120,9 @@ export default function Hero() {
               className="font-heading text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl mb-5"
               style={{ color: 'var(--text-primary)' }}
             >
-              Grow your brand{' '}
+              Be found wherever{' '}
               <span className="gradient-text">
-                <TypingText words={['3.8x faster.', 'with Meta Ads.', 'with SEO and AEO.', 'more profitably.']} />
+                <TypingText words={['your customers search.', 'Google ranks results.', 'ChatGPT recommends.', 'Perplexity answers.']} />
               </span>
             </motion.h1>
 
@@ -133,9 +133,10 @@ export default function Hero() {
               className="text-lg leading-relaxed mb-8"
               style={{ color: 'var(--text-secondary)' }}
             >
-              Boutique performance marketing agency in Bangalore, founder-led on every account.
-              We run Meta Ads, Google Ads, SEO, AEO, and GEO for D2C, EdTech, and SaaS brands,
-              with written KPIs and a 90-day guarantee signed into every contract.
+              Your customers are not just searching Google anymore. They are asking ChatGPT,
+              Perplexity, and Gemini. We make your brand visible across all of them, through
+              SEO, AEO, GEO, and paid media, with the founder personally running every account
+              and a 90-day results guarantee in every contract.
             </motion.p>
 
             <motion.div
@@ -144,11 +145,11 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-3 mb-6"
             >
-              <ShimmerButton variant="primary" href="#contact" className="px-7 py-3 text-base" title="Get a free 48-hour audit of your Meta Ads, Google Ads, and SEO - no credit card required">
-                Get Free 48-Hour Audit <ArrowRight size={16} aria-hidden="true" />
+              <ShimmerButton variant="primary" href="#contact" className="px-7 py-3 text-base" title="Get a free 48-hour SEO and paid media audit - no credit card required">
+                Get Your Free Audit <ArrowRight size={16} aria-hidden="true" />
               </ShimmerButton>
-              <ShimmerButton variant="outline" href="#case-studies" className="px-7 py-3 text-base" title="See real brand growth case studies - ROAS, CPL reduction, and organic traffic results">
-                View Case Studies
+              <ShimmerButton variant="outline" href="#case-studies" className="px-7 py-3 text-base" title="See real client results: ROAS growth, organic traffic, and CPL reduction">
+                See Real Results
               </ShimmerButton>
             </motion.div>
 
@@ -188,10 +189,10 @@ export default function Hero() {
           aria-label="Agency performance statistics"
         >
           {[
-            { value: '50+', label: 'Brands Scaled', title: 'Over 50 D2C, EdTech, and SaaS brands scaled' },
-            { value: '3.8x', label: 'Average ROAS', title: 'Average return on ad spend across all active client accounts' },
-            { value: '94%', label: 'Client Retention', title: '94% of clients renew after the first 90 days' },
-            { value: '48h', label: 'Audit Delivered', title: 'Full account audit and written strategy delivered in 48 hours' },
+            { value: '50+', label: 'Brands Scaled', title: 'Over 50 D2C, EdTech, SaaS, and Real Estate brands scaled' },
+            { value: '3.8x', label: 'Average ROAS', title: 'Average return on ad spend across all paid media accounts' },
+            { value: '94%', label: 'Client Retention', title: '94% of clients renew after the first 90-day engagement' },
+            { value: '90', label: 'Day Guarantee', title: 'KPIs signed before we start, full refund if we miss them' },
           ].map((s) => (
             <div key={s.label} className="card py-5 px-4 text-center" role="listitem" title={s.title}>
               <p className="font-heading text-3xl font-extrabold" style={{ color: 'var(--accent-primary)' }} aria-label={s.title}>{s.value}</p>
