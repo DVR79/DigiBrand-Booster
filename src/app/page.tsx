@@ -10,7 +10,7 @@ import CaseStudies from '@/components/sections/CaseStudies';
 import WhyChooseUs from '@/components/sections/WhyChooseUs';
 import Industries from '@/components/sections/Industries';
 import BoosterFramework from '@/components/sections/BoosterFramework';
-import ROICalculator from '@/components/sections/ROICalculator';
+import MarketInsights from '@/components/sections/MarketInsights';
 import Testimonials from '@/components/sections/Testimonials';
 import Awards from '@/components/sections/Awards';
 import Team from '@/components/sections/Team';
@@ -61,7 +61,7 @@ export default function HomePage() {
         <WhyChooseUs />
         <Industries />
         <BoosterFramework />
-        <ROICalculator />
+        <MarketInsights />
         <Testimonials />
         <Awards />
         <Team />
