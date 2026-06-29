@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Target, Search, Code, FileText, TrendingUp, Brain, Sparkles, MapPin } from 'lucide-react';
+import { Target, Search, Code, FileText, TrendingUp, Brain, Sparkles, MapPin, Share2 } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 import ShimmerButton from '@/components/ui/ShimmerButton';
 import { services } from '@/lib/data';
@@ -15,6 +15,7 @@ const iconMap: Record<string, React.ReactNode> = {
   brain: <Brain size={20} />,
   sparkles: <Sparkles size={20} />,
   mapPin: <MapPin size={20} />,
+  share: <Share2 size={20} />,
 };
 
 const colorMap: Record<string, { card: string; iconBg: string; iconColor: string; planBg: string; planColor: string }> = {
