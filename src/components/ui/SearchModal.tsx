@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { Search, X } from 'lucide-react';
-import { serviceTabs, faqs } from '@/lib/data';
+import { services, faqs } from '@/lib/data';
 
 interface Result {
   type: string;
@@ -12,10 +12,8 @@ interface Result {
 
 function buildIndex(): Result[] {
   const results: Result[] = [];
-  serviceTabs.forEach((tab) =>
-    tab.services.forEach((s) =>
-      results.push({ type: 'Service', title: s.title, description: s.description }),
-    ),
+  services.forEach((s) =>
+    results.push({ type: 'Service', title: s.title, description: s.outcome }),
   );
   faqs.forEach((f) =>
     results.push({ type: 'FAQ', title: f.question, description: f.answer.slice(0, 80) + '...' }),

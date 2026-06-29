@@ -67,145 +67,114 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
-export interface ServiceFeature {
+export interface Service {
   title: string;
-  description: string;
-  features: string[];
   icon: string;
+  outcome: string;
+  points: string[];
+  plan: 'Starter' | 'Growth' | 'Scale';
   badge?: string;
+  color: string;
 }
 
-export interface ServiceTab {
-  label: string;
-  services: ServiceFeature[];
-}
-
-export const serviceTabs: ServiceTab[] = [
+export const services: Service[] = [
   {
-    label: 'SEO',
-    services: [
-      {
-        title: 'Technical SEO',
-        description:
-          'Your website cannot rank if search engines cannot properly crawl, index, and understand it. We audit every technical layer, fix what is broken, and build a site architecture that compounds in organic rankings over 6 to 12 months.',
-        features: [
-          'Complete site audit: crawlability, indexation, redirect chains, duplicate content, and page speed',
-          'Core Web Vitals optimisation: LCP under 2.5s, INP under 200ms, CLS under 0.1',
-          'Schema markup for Product, FAQ, HowTo, Article, LocalBusiness, and Organization',
-          'Internal link architecture rebuild to flow authority to your highest-value pages',
-          'XML sitemap, robots.txt, canonical tags, and hreflang setup and ongoing management',
-        ],
-        icon: 'code',
-      },
-      {
-        title: 'On-Page and Content SEO',
-        description:
-          'On-page SEO tells Google exactly what each page is about and why it deserves to rank. Paired with a topical authority content strategy, it builds compounding organic traffic that grows month after month.',
-        features: [
-          'Keyword research and mapping: primary, secondary, and semantic keywords per page',
-          'Title tags, meta descriptions, heading structure, and URL slug optimisation',
-          'Content gap analysis: identifying what competitors rank for that you are missing',
-          'E-E-A-T improvements: author credentials, trust signals, and content depth enrichment',
-          'Topical authority clusters: 6-month content roadmap mapped to buyer intent stages',
-        ],
-        icon: 'fileText',
-      },
+    title: 'Technical SEO',
+    icon: 'code',
+    outcome: 'Fix the hidden issues stopping Google from ranking your site.',
+    points: [
+      'Full crawl and indexation audit with priority fix list',
+      'Core Web Vitals optimisation for speed and user experience',
+      'Schema markup so Google understands every page clearly',
     ],
+    plan: 'Starter',
+    color: 'blue',
   },
   {
-    label: 'Off-Page and Local',
-    services: [
-      {
-        title: 'Link Building and Off-Page SEO',
-        description:
-          'Backlinks remain one of the top three Google ranking factors. We build genuine, relevant links from authoritative domains in your industry through manual outreach and digital PR, not link farms or shortcuts.',
-        features: [
-          'Backlink profile audit: toxic link identification, disavow file creation, and competitor gap analysis',
-          'Manual outreach link building from industry-relevant, high-authority domains',
-          'Digital PR: earning editorial mentions and links from news sites and niche publications',
-          'Guest posting on vetted, topically relevant websites with real organic traffic',
-          'Monthly backlink report with DA, organic traffic, and topical relevance metrics per link',
-        ],
-        icon: 'target',
-      },
-      {
-        title: 'Local SEO',
-        description:
-          'When your customers search for services near them, Local SEO puts your business at the top of Google Maps and local search results. We optimise your entire local presence, from your Google Business Profile to directory citations.',
-        features: [
-          'Google Business Profile setup, full optimisation, and ongoing posting and management',
-          'Local keyword research: "near me", city-specific, and neighbourhood-level intent targeting',
-          'NAP consistency audit and citation building across 50+ directories and platforms',
-          'LocalBusiness schema markup with address, opening hours, reviews, and service areas',
-          'Review generation strategy: earning genuine 5-star reviews that improve local pack rankings',
-        ],
-        icon: 'search',
-      },
+    title: 'On-Page and Content SEO',
+    icon: 'fileText',
+    outcome: 'Rank for the exact keywords your buyers search before they buy.',
+    points: [
+      'Keyword research mapped to buyer intent stages',
+      'Title tags, headings, and page structure optimised per page',
+      'Content gap analysis: rank for what your competitors already do',
     ],
+    plan: 'Starter',
+    color: 'cyan',
   },
   {
-    label: 'AI Search',
-    services: [
-      {
-        title: 'AEO: Answer Engine Optimisation',
-        description:
-          'When users search on Perplexity, use ChatGPT Search, or see a Google AI Overview, AEO ensures your content is the source that gets cited. It is the highest-intent organic channel available today for brands that want to be found before their competitors.',
-        features: [
-          'Question-intent content restructured specifically to earn AI platform citations',
-          'Featured snippet and Google AI Overview targeting by keyword cluster and intent',
-          'Entity optimisation and knowledge graph building for strong brand authority signals',
-          'FAQ, speakable, and structured data schema for AI platform readability',
-          'Monthly AI citation tracking across ChatGPT, Perplexity, Gemini, and Google AI Overviews',
-        ],
-        icon: 'brain',
-        badge: 'NEW',
-      },
-      {
-        title: 'GEO: Generative Engine Optimisation',
-        description:
-          'GEO ensures your brand gets recommended when someone asks ChatGPT, Claude, or Google Gemini to suggest the best product or service in your category. It is organic brand discovery built for the AI-search era.',
-        features: [
-          'Brand visibility audit across ChatGPT, Claude, Gemini, and Perplexity',
-          'Authority content written to align with generative AI model training and citation patterns',
-          'Topical authority cluster strategy for consistent AI recommendation visibility',
-          'Backlink acquisition from domains and publications already cited by major AI platforms',
-          'Quarterly GEO visibility score with brand mention tracking per platform',
-        ],
-        icon: 'sparkles',
-        badge: 'NEW',
-      },
+    title: 'Meta Ads',
+    icon: 'trendingUp',
+    outcome: 'Turn ad spend into measurable revenue with full-funnel Meta campaigns.',
+    points: [
+      'Campaign builds across prospecting, warm, and retargeting audiences',
+      'Weekly creative testing so your ads do not go stale',
+      'Server-side Conversions API for accurate post-iOS tracking',
     ],
+    plan: 'Starter',
+    color: 'purple',
   },
   {
-    label: 'Paid Media',
-    services: [
-      {
-        title: 'Meta Ads Management',
-        description:
-          'Full-funnel Meta advertising for D2C and SaaS brands. We build campaign architecture, run weekly creative testing sprints, and fix attribution tracking so every rupee you spend is measured and every decision is documented.',
-        features: [
-          'Prospecting, warm audience, and retargeting campaign builds from the ground up',
-          'Weekly creative testing sprint with clear hypotheses and documented Monday learnings',
-          'Server-side Conversions API setup for accurate post-iOS attribution',
-          'First-party data audience architecture: lead tiers, buyer segments, and LTV cohorts',
-          'Weekly ROAS, CPL, and CPA performance reports with specific next-action notes',
-        ],
-        icon: 'trendingUp',
-      },
-      {
-        title: 'Google Ads Management',
-        description:
-          'Search, Shopping, and Performance Max campaigns built around genuine commercial intent. Tight structure, rigorous negatives, and bidding calibrated to your actual margins, not platform defaults.',
-        features: [
-          'Full campaign builds from scratch or complete account restructure based on audit findings',
-          'Performance Max with segmented asset groups and ongoing creative A/B testing',
-          'Negative keyword sculpting and search term audit every two weeks',
-          'Smart bidding calibration: target CPA or target ROAS aligned to your margin inputs',
-          'Weekly budget pacing reports and monthly strategy review call with recording',
-        ],
-        icon: 'search',
-      },
+    title: 'Google Ads',
+    icon: 'search',
+    outcome: 'Capture buyers who are actively searching for what you sell.',
+    points: [
+      'Search, Shopping, and Performance Max campaign builds',
+      'Tight negative keyword lists to stop budget going to wrong searches',
+      'Smart bidding calibrated to your actual margins, not platform defaults',
     ],
+    plan: 'Growth',
+    color: 'amber',
+  },
+  {
+    title: 'Link Building',
+    icon: 'target',
+    outcome: 'Build the authority signals that push your rankings past competitors.',
+    points: [
+      'Manual outreach to real, high-authority sites in your industry',
+      'Digital PR to earn editorial mentions and news links',
+      'Monthly report with every link earned, its authority, and its relevance',
+    ],
+    plan: 'Growth',
+    color: 'green',
+  },
+  {
+    title: 'Local SEO',
+    icon: 'mapPin',
+    outcome: 'Show up at the top of Google Maps when nearby customers search.',
+    points: [
+      'Google Business Profile setup and full optimisation',
+      'Citation building across 50+ directories for consistent NAP data',
+      'Review generation strategy to improve local pack rankings',
+    ],
+    plan: 'Starter',
+    color: 'cyan',
+  },
+  {
+    title: 'AEO: Answer Engine Optimisation',
+    icon: 'brain',
+    outcome: 'Get your content cited by ChatGPT, Perplexity, and Google AI Overviews.',
+    points: [
+      'Content restructured specifically to earn AI platform citations',
+      'Featured snippet and AI Overview targeting by keyword cluster',
+      'Monthly citation tracking across all major AI search platforms',
+    ],
+    plan: 'Scale',
+    badge: 'NEW',
+    color: 'purple',
+  },
+  {
+    title: 'GEO: Generative Engine Optimisation',
+    icon: 'sparkles',
+    outcome: 'Get recommended by AI when buyers ask for the best in your category.',
+    points: [
+      'Brand visibility audit across ChatGPT, Gemini, and Perplexity',
+      'Authority content built to align with how AI models cite sources',
+      'Quarterly GEO visibility score with brand mention tracking',
+    ],
+    plan: 'Scale',
+    badge: 'NEW',
+    color: 'blue',
   },
 ];
 
