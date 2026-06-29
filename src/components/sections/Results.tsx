@@ -11,8 +11,8 @@ export default function Results() {
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           eyebrow="By the numbers"
-          title="Results that speak for themselves"
-          description="Every number is drawn from live client accounts. We track what moves revenue, not vanity metrics."
+          title="The numbers behind every engagement"
+          description="Every stat below is drawn from live client accounts. No industry benchmarks, no projections. What we actually deliver."
         />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat, i) => (

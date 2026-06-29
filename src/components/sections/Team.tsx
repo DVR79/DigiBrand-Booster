@@ -12,7 +12,7 @@ export default function Team() {
         <SectionHeader
           eyebrow="The team"
           title="Specialists, not generalists"
-          description="Everyone here has 8 to 12 years of focused experience in their channel."
+          description="Every person working on your account is a dedicated specialist in their channel: SEO and AI search, paid media, or content and conversion. No generalists, no handoffs."
         />
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">

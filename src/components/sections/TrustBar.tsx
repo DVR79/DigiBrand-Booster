@@ -6,7 +6,7 @@ export default function TrustBar() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5">
         <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-2">
           <span className="text-xs font-semibold uppercase tracking-widest mr-4" style={{ color: 'var(--text-muted)' }}>
-            Trusted by
+            Certified and verified
           </span>
           {awards.map((award) => (
             <span key={award} className="text-sm font-medium" style={{ color: 'var(--text-secondary)' }}>

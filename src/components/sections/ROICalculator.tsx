@@ -10,7 +10,7 @@ import { formatCurrency } from '@/lib/utils';
 export default function ROICalculator() {
   const [spend, setSpend] = useState(200000);
   const [currentRoas, setCurrentRoas] = useState(1.5);
-  const [targetRoas] = useState(3.5);
+  const [targetRoas] = useState(3.8);
 
   const currentRevenue = spend * currentRoas;
   const projectedRevenue = spend * targetRoas;
@@ -21,8 +21,8 @@ export default function ROICalculator() {
       <div className="mx-auto max-w-4xl">
         <SectionHeader
           eyebrow="ROI Calculator"
-          title="What could your numbers look like?"
-          description="Adjust the sliders to see a conservative projection based on our average client ROAS of 3.5x."
+          title="See what 3.8x ROAS means for your business"
+          description="Move the sliders to your current numbers. The projection uses our average client ROAS of 3.8x, achieved within 90 days."
         />
 
         <GlassCard hover={false}>
@@ -92,7 +92,7 @@ export default function ROICalculator() {
                 style={{ background: 'rgba(91,141,255,0.1)', border: '1px solid rgba(91,141,255,0.3)' }}
               >
                 <p className="text-xs font-semibold uppercase tracking-widest mb-1" style={{ color: 'var(--accent-primary)' }}>
-                  Projected at 3.5x ROAS
+                  Projected at 3.8x ROAS
                 </p>
                 <p className="font-heading text-2xl font-bold" style={{ color: 'var(--accent-primary)' }}>
                   {formatCurrency(projectedRevenue)}
@@ -121,7 +121,7 @@ export default function ROICalculator() {
                     Already at target ROAS
                   </p>
                   <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                    Your current ROAS is already at or above 3.5x. We can help you scale spend profitably.
+                    Your current ROAS is already strong. We can help you scale spend profitably without losing efficiency.
                   </p>
                 </div>
               )}

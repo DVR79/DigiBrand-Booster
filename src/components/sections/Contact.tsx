@@ -159,8 +159,8 @@ Message: ${form.message || 'Not provided'}`;
       <div className="mx-auto max-w-6xl">
         <SectionHeader
           eyebrow="Get in touch"
-          title="Let us work together"
-          description="Ready to grow faster? Fill in the form and we will send a free 48-hour audit of your ad accounts, SEO, and conversion funnel."
+          title="Book your free 48-hour audit"
+          description="Share your details and we will deliver a written audit of your ad accounts, SEO, and conversion funnel within 48 hours. No credit card. No sales call first."
         />
 
         <div className="grid lg:grid-cols-[1fr_1.2fr] gap-10 items-start">
@@ -173,8 +173,8 @@ Message: ${form.message || 'Not provided'}`;
             transition={{ duration: 0.5 }}
           >
             <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
-              We are based in Bangalore and work with brands across India and internationally.
-              Reach us on any of these channels and we will respond within 4 hours.
+              Based in Bangalore, working with brands across India and internationally.
+              Submit the form and get a written audit within 48 hours. Or reach us directly on any channel below.
             </p>
 
             <div className="space-y-3 mb-7">
@@ -213,12 +213,11 @@ Message: ${form.message || 'Not provided'}`;
               ))}
             </div>
 
-            {/* Social links - only real URLs */}
+            {/* LinkedIn only - relevant for agency */}
             <div className="flex flex-wrap gap-2">
               {[
-                { label: 'LinkedIn', href: 'https://www.linkedin.com/in/d-venkataramana', title: 'Connect on LinkedIn' },
-                { label: 'GitHub', href: 'https://github.com/DVR79', title: 'View GitHub profile' },
-                { label: 'Portfolio', href: 'https://venkat-portfolio-omega.vercel.app/', title: 'View full portfolio' },
+                { label: 'LinkedIn', href: 'https://www.linkedin.com/in/d-venkataramana', title: 'Connect with D Venkataramana on LinkedIn' },
+                { label: 'WhatsApp Us', href: `https://wa.me/917981632581`, title: 'Chat directly on WhatsApp' },
               ].map((s) => (
                 <a
                   key={s.label}
@@ -268,7 +267,7 @@ Message: ${form.message || 'Not provided'}`;
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4" noValidate>
                   <h3 className="font-heading text-xl font-bold mb-1" style={{ color: 'var(--text-primary)' }}>
-                    Request Free Audit
+                    Get your free audit in 48 hours
                   </h3>
 
                   {error && (
@@ -407,13 +406,13 @@ Message: ${form.message || 'Not provided'}`;
                       color: '#fff',
                     }}
                   >
-                    {loading ? 'Sending...' : (
-                      <>Send Message <ArrowRight size={16} aria-hidden="true" /></>
+                    {loading ? 'Sending your request...' : (
+                      <>Send Audit Request <ArrowRight size={16} aria-hidden="true" /></>
                     )}
                   </button>
 
                   <p className="text-xs text-center" style={{ color: 'var(--text-secondary)' }}>
-                    No spam. Free audit delivered within 48 hours.
+                    Written audit delivered within 48 hours. No spam, no sales call before the audit.
                   </p>
                 </form>
               )}

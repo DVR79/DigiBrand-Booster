@@ -8,7 +8,7 @@ export default function Awards() {
           className="text-center text-xs font-semibold uppercase tracking-widest mb-8"
           style={{ color: 'var(--text-secondary)' }}
         >
-          Recognition and partnerships
+          Certified and verified partners
         </p>
         <div className="flex flex-wrap justify-center gap-6">
           {awards.map((award) => (
