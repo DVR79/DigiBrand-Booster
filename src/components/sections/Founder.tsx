@@ -46,8 +46,8 @@ export default function Founder() {
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           eyebrow="The founder"
-          title="The person behind every campaign"
-          description="Digi Brand Booster was built on one principle: every recommendation must be tied to a business outcome, measured against real KPIs, and accountable to the client."
+          title="Every account gets the founder"
+          description="Digi Brand Booster was built specifically because growing brands deserve senior attention, not to be managed by a rotating team of juniors at a large agency."
         />
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -86,20 +86,24 @@ export default function Founder() {
                 </div>
               </div>
 
+              <p className="text-base leading-relaxed mb-3" style={{ color: 'var(--text-secondary)' }}>
+                I founded Digi Brand Booster after seeing too many growing brands get underserved by
+                agencies that signed them, handed them to juniors, and sent PDF reports once a month.
+                Those brands deserved better.
+              </p>
               <p className="text-base leading-relaxed mb-5" style={{ color: 'var(--text-secondary)' }}>
-                Founder of Digi Brand Booster and a Technical SEO and AI search specialist with 3+ years
-                of hands-on experience helping D2C, EdTech, and B2B brands grow organic visibility,
-                reduce paid media waste, and build sustainable growth channels. Started the agency
-                to give growing brands access to specialist-level execution without the overhead of
-                a large agency retainer.
+                I am a Technical SEO and AI search specialist with 3+ years of hands-on experience
+                in organic growth, paid media strategy, and AI-era search visibility. I personally
+                lead strategy and oversee every campaign for every client we take on. That is not
+                a promise we make in a pitch and break at onboarding. It is how we are structured.
               </p>
 
               <blockquote
                 className="border-l-2 pl-4 italic text-sm leading-relaxed"
                 style={{ borderColor: 'var(--accent-primary)', color: 'var(--text-secondary)' }}
               >
-                "Most agencies give you activity. We give you accountability. Every campaign we run
-                has signed KPIs, weekly progress reviews, and a 90-day guarantee behind it."
+                "I started this agency to be the partner I wished existed when I was on the brand side.
+                Accountable, transparent, and genuinely invested in the outcome."
               </blockquote>
             </div>
 

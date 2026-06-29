@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 import ShimmerButton from '@/components/ui/ShimmerButton';
 import TypingText from '@/components/ui/TypingText';
 
-const trust = ['No credit card required', '48-hour audit delivered', '90-day results guarantee'];
+const trust = ['No credit card required', '48-hour audit delivered', '90-day guarantee in every contract'];
 
 function HeroBanner() {
   return (
@@ -122,7 +122,7 @@ export default function Hero() {
             >
               Grow your brand{' '}
               <span className="gradient-text">
-                <TypingText words={['3.5x faster.', 'with Meta Ads.', 'with AEO & GEO.', 'more profitably.']} />
+                <TypingText words={['3.8x faster.', 'with Meta Ads.', 'with SEO and AEO.', 'more profitably.']} />
               </span>
             </motion.h1>
 
@@ -133,9 +133,9 @@ export default function Hero() {
               className="text-lg leading-relaxed mb-8"
               style={{ color: 'var(--text-secondary)' }}
             >
-              Bangalore-based AI-native performance marketing agency for D2C, EdTech, and SaaS brands.
-              We run Meta Ads, Google Ads, SEO, AEO, and GEO with written KPIs and a 90-day results
-              guarantee in every contract. No vague promises. No small print.
+              Boutique performance marketing agency in Bangalore, founder-led on every account.
+              We run Meta Ads, Google Ads, SEO, AEO, and GEO for D2C, EdTech, and SaaS brands,
+              with written KPIs and a 90-day guarantee signed into every contract.
             </motion.p>
 
             <motion.div
@@ -188,9 +188,9 @@ export default function Hero() {
           aria-label="Agency performance statistics"
         >
           {[
-            { value: '120+', label: 'Brands Grown', title: 'Over 120 D2C, EdTech, and SaaS brands grown' },
+            { value: '50+', label: 'Brands Scaled', title: 'Over 50 D2C, EdTech, and SaaS brands scaled' },
             { value: '3.8x', label: 'Average ROAS', title: 'Average return on ad spend across all active client accounts' },
-            { value: '92%', label: 'Client Retention', title: '92% of clients renew after the first 90 days' },
+            { value: '94%', label: 'Client Retention', title: '94% of clients renew after the first 90 days' },
             { value: '48h', label: 'Audit Delivered', title: 'Full account audit and written strategy delivered in 48 hours' },
           ].map((s) => (
             <div key={s.label} className="card py-5 px-4 text-center" role="listitem" title={s.title}>

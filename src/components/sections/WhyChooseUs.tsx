@@ -5,10 +5,10 @@ import { Clock, FileCheck, BarChart3, Users } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 const reasons = [
-  { icon: <Clock size={22} aria-hidden="true" />, title: '48-hour audit turnaround', description: 'Your account audit, written strategy, and KPI targets are delivered within 48 hours of signing. No weeks-long discovery phases.' },
-  { icon: <FileCheck size={22} aria-hidden="true" />, title: 'KPIs signed before we start', description: 'Your ROAS, CPL, or traffic targets go into the contract before a single campaign launches. You know exactly what we are accountable for.' },
-  { icon: <BarChart3 size={22} aria-hidden="true" />, title: 'Live dashboard, every day', description: 'You access the same live numbers we see, in real time. No chasing reports, no waiting until Monday morning.' },
-  { icon: <Users size={22} aria-hidden="true" />, title: 'Specialist-led, not account-managed', description: 'The people doing your work are specialists in their channel. Not an account manager relaying instructions to a junior.' },
+  { icon: <Clock size={22} aria-hidden="true" />, title: 'Founder-led on every account', description: 'Venkat personally leads strategy and oversees execution on every client account. You are not handed off to a junior team after signing.' },
+  { icon: <FileCheck size={22} aria-hidden="true" />, title: 'KPIs written into the contract', description: 'Your ROAS, CPL, or organic traffic target is documented and signed before we start. If we miss it in 90 days, you get a full management fee refund.' },
+  { icon: <BarChart3 size={22} aria-hidden="true" />, title: 'Full transparency, every week', description: 'Live dashboard access daily. Written Monday update covering exactly what changed, why, and what comes next. You never need to chase us.' },
+  { icon: <Users size={22} aria-hidden="true" />, title: 'Boutique capacity by design', description: 'We limit active clients deliberately. Fewer accounts means more attention per account, better results, and a 94% retention rate.' },
 ];
 
 export default function WhyChooseUs() {
@@ -17,8 +17,8 @@ export default function WhyChooseUs() {
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           eyebrow="Why us"
-          title="Different by design, not by claim"
-          description="Most agencies offer the same pitch. Here is what makes how we work structurally different from what you have probably experienced before."
+          title="Boutique by choice. Accountable by design."
+          description="We deliberately stay small so every client gets senior attention, documented results, and a founder who is genuinely invested in your growth."
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {reasons.map((r, i) => (

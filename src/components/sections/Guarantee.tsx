@@ -44,9 +44,10 @@ export default function Guarantee() {
             className="text-lg leading-relaxed max-w-2xl mx-auto mb-10"
             style={{ color: 'var(--text-secondary)' }}
           >
-            Your KPIs are written into the contract before we start. ROAS, CPL, organic traffic,
-            or conversion rate improvement, whichever matters most to you. If we do not hit the
-            agreed targets by day 90, you get a full refund of management fees. No ambiguity, no small print, no excuses.
+            Before we start, we agree your KPIs in writing and sign them into the contract.
+            ROAS, cost per lead, organic traffic growth, or conversion rate, whichever is the
+            most meaningful measure for your business. If we do not hit those targets by day 90,
+            you receive a full refund of management fees. No exceptions, no excuses, no small print.
           </motion.p>
 
           <motion.div
