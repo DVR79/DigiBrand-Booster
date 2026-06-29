@@ -15,7 +15,7 @@ const footerLinks = {
     { label: 'FAQ', href: '#faq' },
     { label: 'Contact', href: '#contact' },
   ],
-  Work with us: [
+  'Work with us': [
     { label: 'Free 48-Hour Audit', href: '#contact' },
     { label: 'The 90-Day Guarantee', href: '#guarantee' },
     { label: 'Our Process', href: '#framework' },
