@@ -82,128 +82,128 @@ export interface ServiceTab {
 
 export const serviceTabs: ServiceTab[] = [
   {
-    label: 'Paid Media',
+    label: 'SEO',
     services: [
       {
-        title: 'Meta Ads Management',
+        title: 'Technical SEO',
         description:
-          'Full-funnel Meta advertising for D2C and SaaS brands. We build campaign architecture, run weekly creative testing sprints, and fix tracking, so every rupee you spend is measured and every decision is documented.',
+          'Your website cannot rank if search engines cannot properly crawl, index, and understand it. We audit every technical layer, fix what is broken, and build a site architecture that compounds in organic rankings over 6 to 12 months.',
         features: [
-          'Cold, warm, and retargeting campaign builds from the ground up',
-          'Weekly creative testing sprint with documented wins and losses shared every Monday',
-          'Server-side Conversions API setup for accurate post-iOS attribution',
-          'First-party data audience architecture across lead tiers, buyers, and LTV segments',
-          'Weekly ROAS, CPL, and CPA reports with specific action notes',
+          'Complete site audit: crawlability, indexation, redirect chains, duplicate content, and page speed',
+          'Core Web Vitals optimisation: LCP under 2.5s, INP under 200ms, CLS under 0.1',
+          'Schema markup for Product, FAQ, HowTo, Article, LocalBusiness, and Organization',
+          'Internal link architecture rebuild to flow authority to your highest-value pages',
+          'XML sitemap, robots.txt, canonical tags, and hreflang setup and ongoing management',
+        ],
+        icon: 'code',
+      },
+      {
+        title: 'On-Page and Content SEO',
+        description:
+          'On-page SEO tells Google exactly what each page is about and why it deserves to rank. Paired with a topical authority content strategy, it builds compounding organic traffic that grows month after month.',
+        features: [
+          'Keyword research and mapping: primary, secondary, and semantic keywords per page',
+          'Title tags, meta descriptions, heading structure, and URL slug optimisation',
+          'Content gap analysis: identifying what competitors rank for that you are missing',
+          'E-E-A-T improvements: author credentials, trust signals, and content depth enrichment',
+          'Topical authority clusters: 6-month content roadmap mapped to buyer intent stages',
+        ],
+        icon: 'fileText',
+      },
+    ],
+  },
+  {
+    label: 'Off-Page and Local',
+    services: [
+      {
+        title: 'Link Building and Off-Page SEO',
+        description:
+          'Backlinks remain one of the top three Google ranking factors. We build genuine, relevant links from authoritative domains in your industry through manual outreach and digital PR, not link farms or shortcuts.',
+        features: [
+          'Backlink profile audit: toxic link identification, disavow file creation, and competitor gap analysis',
+          'Manual outreach link building from industry-relevant, high-authority domains',
+          'Digital PR: earning editorial mentions and links from news sites and niche publications',
+          'Guest posting on vetted, topically relevant websites with real organic traffic',
+          'Monthly backlink report with DA, organic traffic, and topical relevance metrics per link',
         ],
         icon: 'target',
       },
       {
-        title: 'Google Ads Management',
+        title: 'Local SEO',
         description:
-          'Search, Shopping, and Performance Max campaigns built around genuine commercial intent. Tight structure, rigorous negatives, and bidding calibrated to your actual margins, not platform defaults.',
+          'When your customers search for services near them, Local SEO puts your business at the top of Google Maps and local search results. We optimise your entire local presence, from your Google Business Profile to directory citations.',
         features: [
-          'Full campaign builds or complete account restructure based on audit findings',
-          'Performance Max with segmented asset groups and ongoing A/B testing',
-          'Negative keyword sculpting and search term review every two weeks',
-          'Smart bidding calibration aligned to target CPA or ROAS with margin inputs',
-          'Weekly budget pacing reports and monthly strategy review with recorded call',
+          'Google Business Profile setup, full optimisation, and ongoing posting and management',
+          'Local keyword research: "near me", city-specific, and neighbourhood-level intent targeting',
+          'NAP consistency audit and citation building across 50+ directories and platforms',
+          'LocalBusiness schema markup with address, opening hours, reviews, and service areas',
+          'Review generation strategy: earning genuine 5-star reviews that improve local pack rankings',
         ],
         icon: 'search',
       },
     ],
   },
   {
-    label: 'SEO & AEO',
+    label: 'AI Search',
     services: [
-      {
-        title: 'Technical SEO',
-        description:
-          'A complete audit of your site architecture, Core Web Vitals, crawlability, and structured data, followed by a prioritised fix roadmap. Built to compound over 6 to 12 months and hold through algorithm updates.',
-        features: [
-          'Full technical audit with issues ranked by traffic and revenue impact',
-          'Core Web Vitals improvements: LCP under 2.5s, INP under 200ms, CLS under 0.1',
-          'Schema markup for Product, FAQ, HowTo, Article, and Organization',
-          'Internal link architecture review and strategic rebuild for authority flow',
-          'Crawl budget optimisation and log file analysis for large or complex sites',
-        ],
-        icon: 'code',
-      },
       {
         title: 'AEO: Answer Engine Optimisation',
         description:
-          'Structure your content to be cited in AI-generated answers on ChatGPT, Perplexity, Gemini, and Google AI Overviews. AEO is the highest-intent discovery channel for buyers who already know what they need.',
+          'When users search on Perplexity, use ChatGPT Search, or see a Google AI Overview, AEO ensures your content is the source that gets cited. It is the highest-intent organic channel available today for brands that want to be found before their competitors.',
         features: [
-          'Question-intent content written specifically to earn AI citation',
-          'Featured snippet and AI Overview targeting mapped to your keyword clusters',
-          'Entity optimisation and knowledge graph signal building for brand authority',
-          'FAQ, speakable, and HowTo schema implementation for AI readability',
-          'Monthly AI citation tracking with platform-by-platform visibility report',
+          'Question-intent content restructured specifically to earn AI platform citations',
+          'Featured snippet and Google AI Overview targeting by keyword cluster and intent',
+          'Entity optimisation and knowledge graph building for strong brand authority signals',
+          'FAQ, speakable, and structured data schema for AI platform readability',
+          'Monthly AI citation tracking across ChatGPT, Perplexity, Gemini, and Google AI Overviews',
         ],
         icon: 'brain',
         badge: 'NEW',
       },
-    ],
-  },
-  {
-    label: 'GEO & Growth',
-    services: [
       {
         title: 'GEO: Generative Engine Optimisation',
         description:
-          'When someone asks ChatGPT or Google Gemini to recommend a product or service in your category, GEO puts your brand in the answer. It is organic brand discovery built for the AI-search era.',
+          'GEO ensures your brand gets recommended when someone asks ChatGPT, Claude, or Google Gemini to suggest the best product or service in your category. It is organic brand discovery built for the AI-search era.',
         features: [
-          'Brand mention audit across ChatGPT, Claude, Gemini, and Perplexity',
-          'Authority content written to match generative AI model training patterns',
+          'Brand visibility audit across ChatGPT, Claude, Gemini, and Perplexity',
+          'Authority content written to align with generative AI model training and citation patterns',
           'Topical authority cluster strategy for consistent AI recommendation visibility',
-          'Backlink acquisition from domains already cited by major AI platforms',
-          'Quarterly GEO visibility score with platform-by-platform breakdown',
+          'Backlink acquisition from domains and publications already cited by major AI platforms',
+          'Quarterly GEO visibility score with brand mention tracking per platform',
         ],
         icon: 'sparkles',
         badge: 'NEW',
       },
-      {
-        title: 'CRO: Conversion Rate Optimisation',
-        description:
-          'Heatmaps, session recordings, and structured A/B tests that remove friction from landing pages, product pages, and lead forms. More conversions from the traffic you are already paying for.',
-        features: [
-          'Above-the-fold wireframe audit and redesign with documented reasoning',
-          'A/B tests run to 95% statistical significance before any result is called',
-          'Checkout and lead form friction analysis with drop-off point identification',
-          'Trust signal, social proof, and urgency element placement testing',
-          'Monthly CRO experiment roadmap with prioritised test backlog',
-        ],
-        icon: 'trendingUp',
-      },
     ],
   },
   {
-    label: 'Content & Email',
+    label: 'Paid Media',
     services: [
       {
-        title: 'Content SEO & Topical Authority',
+        title: 'Meta Ads Management',
         description:
-          'A cluster-based content strategy that builds genuine topical authority over 6 months. Every piece maps to a search intent, a keyword cluster, and a business goal. Not content for content\'s sake.',
+          'Full-funnel Meta advertising for D2C and SaaS brands. We build campaign architecture, run weekly creative testing sprints, and fix attribution tracking so every rupee you spend is measured and every decision is documented.',
         features: [
-          'Keyword cluster mapping, content gap analysis, and competitor teardown',
-          'SEO content briefs built with full E-E-A-T and author expertise guidelines',
-          'Programmatic SEO for scalable category, location, or comparison pages',
-          'Content refresh strategy for pages losing ranking traction or traffic share',
-          'Monthly organic traffic, ranking movement, and topical coverage report',
+          'Prospecting, warm audience, and retargeting campaign builds from the ground up',
+          'Weekly creative testing sprint with clear hypotheses and documented Monday learnings',
+          'Server-side Conversions API setup for accurate post-iOS attribution',
+          'First-party data audience architecture: lead tiers, buyer segments, and LTV cohorts',
+          'Weekly ROAS, CPL, and CPA performance reports with specific next-action notes',
         ],
-        icon: 'fileText',
+        icon: 'trendingUp',
       },
       {
-        title: 'Email & Retention Marketing',
+        title: 'Google Ads Management',
         description:
-          'Automated lifecycle flows that recover carts, reactivate lapsed customers, and grow repeat purchase revenue without increasing your ad spend. Built on first-party data, not guesswork.',
+          'Search, Shopping, and Performance Max campaigns built around genuine commercial intent. Tight structure, rigorous negatives, and bidding calibrated to your actual margins, not platform defaults.',
         features: [
-          'Welcome series, abandon cart, post-purchase, and win-back flow builds',
-          'RFM-based audience segmentation for personalised timing and messaging',
-          'SMS and email channel coordination across the full customer lifecycle',
-          'Deliverability audit, domain warmup, and full list hygiene before launch',
-          'Monthly retention revenue attribution and flow-by-flow performance report',
+          'Full campaign builds from scratch or complete account restructure based on audit findings',
+          'Performance Max with segmented asset groups and ongoing creative A/B testing',
+          'Negative keyword sculpting and search term audit every two weeks',
+          'Smart bidding calibration: target CPA or target ROAS aligned to your margin inputs',
+          'Weekly budget pacing reports and monthly strategy review call with recording',
         ],
-        icon: 'mail',
+        icon: 'search',
       },
     ],
   },
