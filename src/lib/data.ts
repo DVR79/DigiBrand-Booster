@@ -259,19 +259,50 @@ export const caseStudies: CaseStudy[] = [
   },
 ];
 
-export const industries: string[] = [
-  'D2C and E-commerce',
-  'B2B SaaS',
-  'EdTech',
-  'Health and Wellness',
-  'Real Estate',
-  'Financial Services',
-  'Fashion and Apparel',
-  'Food and Beverage',
-  'Travel and Hospitality',
-  'Consumer Electronics',
-  'Quick Commerce',
-  'Professional Services',
+export interface Industry {
+  name: string;
+  icon: string;
+  pain: string;
+  channels: string[];
+}
+
+export const industries: Industry[] = [
+  {
+    name: 'D2C and E-commerce',
+    icon: 'shopping',
+    pain: 'High Meta CPL, post-iOS attribution gaps, and creative fatigue eating into ROAS.',
+    channels: ['Meta Ads', 'Google Shopping', 'SEO', 'GEO'],
+  },
+  {
+    name: 'EdTech and Upskilling',
+    icon: 'graduation',
+    pain: 'Organic traffic flat despite content investment. AI search driving discovery you are not capturing.',
+    channels: ['AEO', 'Technical SEO', 'Google Ads', 'Meta Ads'],
+  },
+  {
+    name: 'Real Estate',
+    icon: 'building',
+    pain: 'High ad spend, poor lead quality, and no feedback loop between sales and marketing.',
+    channels: ['Google Ads', 'Meta Ads', 'Local SEO', 'Landing Page CRO'],
+  },
+  {
+    name: 'B2B SaaS',
+    icon: 'cpu',
+    pain: 'Long sales cycles, low organic visibility for high-intent keywords, and no AI search presence.',
+    channels: ['Technical SEO', 'AEO', 'GEO', 'LinkedIn Ads'],
+  },
+  {
+    name: 'Health and Wellness',
+    icon: 'heart',
+    pain: 'Meta ad policy restrictions, trust-building challenges, and competitive paid media landscape.',
+    channels: ['SEO', 'AEO', 'Meta Ads', 'Google Ads'],
+  },
+  {
+    name: 'Financial Services',
+    icon: 'chart',
+    pain: 'Strict compliance requirements, low quality scores, and difficulty standing out in paid search.',
+    channels: ['Technical SEO', 'Google Ads', 'AEO', 'Content SEO'],
+  },
 ];
 
 export interface FrameworkStep {
@@ -313,6 +344,76 @@ export const frameworkSteps: FrameworkStep[] = [
   },
 ];
 
+export interface PricingTier {
+  name: string;
+  price: string;
+  priceNote: string;
+  tagline: string;
+  ideal: string;
+  features: string[];
+  cta: string;
+  highlight: boolean;
+}
+
+export const pricingTiers: PricingTier[] = [
+  {
+    name: 'Starter',
+    price: '₹20,000',
+    priceNote: '/month onwards',
+    tagline: 'Single channel. Real results.',
+    ideal: 'Brands starting with SEO or paid media for the first time.',
+    features: [
+      'One channel: SEO or Paid Media (Meta or Google)',
+      '48-hour onboarding and audit',
+      'Written KPIs in the contract',
+      'Weekly Monday performance update',
+      'Live dashboard access',
+      'Monthly strategy call',
+      '90-day results guarantee',
+    ],
+    cta: 'Book free audit',
+    highlight: false,
+  },
+  {
+    name: 'Growth',
+    price: '₹45,000',
+    priceNote: '/month onwards',
+    tagline: 'Multi-channel growth, founder-led.',
+    ideal: 'Brands ready to combine SEO with paid media or AEO.',
+    features: [
+      'Two channels: SEO plus Paid Media or AEO',
+      '48-hour onboarding and full audit',
+      'Written KPIs and signed 90-day plan',
+      'Weekly Monday performance report',
+      'Live dashboard access',
+      'Bi-weekly strategy call',
+      'Creative testing framework',
+      '90-day results guarantee',
+    ],
+    cta: 'Book free audit',
+    highlight: true,
+  },
+  {
+    name: 'Scale',
+    price: '₹80,000',
+    priceNote: '/month onwards',
+    tagline: 'Full-stack performance. All channels.',
+    ideal: 'Scaling brands that need SEO, paid media, AEO, GEO, and CRO working together.',
+    features: [
+      'All channels: SEO, Paid Media, AEO and GEO',
+      'Landing page and conversion rate optimisation',
+      '48-hour onboarding and deep-dive audit',
+      'Written KPIs across every channel in the contract',
+      'Weekly Monday report plus live Slack updates',
+      'Weekly strategy call',
+      'AI citation tracking and GEO visibility score',
+      '90-day results guarantee',
+    ],
+    cta: 'Book free audit',
+    highlight: false,
+  },
+];
+
 export interface FAQItem {
   question: string;
   answer: string;
@@ -320,19 +421,24 @@ export interface FAQItem {
 
 export const faqs: FAQItem[] = [
   {
-    question: 'What is AEO and how is it different from traditional SEO?',
-    answer:
-      'Answer Engine Optimisation (AEO) structures your content so AI tools like ChatGPT, Perplexity, Google AI Overviews, and Gemini cite your website when answering user questions. Traditional SEO targets blue-link rankings in search results pages. AEO targets AI-generated answer citations, which is now the primary discovery channel for high-intent buyers who are researching before they purchase.',
-  },
-  {
-    question: 'What is GEO and why does my brand need it now?',
-    answer:
-      'Generative Engine Optimisation (GEO) ensures your brand is recommended when AI tools like ChatGPT, Claude, or Google Gemini respond to "what is the best [product or service]" queries. A growing share of your potential customers are discovering brands through AI recommendations, not search results. GEO builds that visibility systematically before your competitors do.',
-  },
-  {
     question: 'What exactly does the 90-day results guarantee cover?',
     answer:
-      'Your KPIs are agreed and written into the contract before we start. Depending on the engagement, these are typically ROAS, cost per lead, organic traffic growth, or conversion rate improvement. If we do not hit the agreed targets by day 90, you receive a full refund of management fees. The guarantee covers our fees. Ad spend invested with Meta, Google, or other platforms is not refundable as it is paid directly to those platforms.',
+      'Your KPIs are agreed and written into the contract before we start. Depending on the engagement, these are typically ROAS, cost per lead, organic traffic growth, or conversion rate improvement. If we do not hit the agreed targets by day 90, you receive a full refund of management fees. The guarantee covers our fees only. Ad spend paid directly to Meta or Google is not refundable as it is between you and the platform.',
+  },
+  {
+    question: 'How is this different from hiring a large agency?',
+    answer:
+      'At a large agency, your account is won by a senior person and then handed to a junior team you never meet. At Digi Brand Booster, Venkat personally leads strategy and reviews every campaign. You always speak with the person doing the work. We also limit client intake deliberately, so you are never in a queue waiting for attention. Most of our clients have left larger agencies for exactly this reason.',
+  },
+  {
+    question: 'What are your fees? How does pricing work?',
+    answer:
+      'We charge a monthly retainer based on scope, not a percentage of ad spend. Starter engagements begin at Rs 20,000 per month for a single channel. Multi-channel Growth plans start at Rs 45,000 per month. Full-stack Scale engagements start at Rs 80,000 per month. All plans include the 90-day guarantee, written KPIs, and the 48-hour onboarding. Ad spend is separate and paid directly to the platform.',
+  },
+  {
+    question: 'Can we cancel at any time?',
+    answer:
+      'Yes. We work on monthly rolling contracts with 30 days notice to exit. There is no lock-in beyond the initial 90-day guarantee period, which exists so we have enough time to hit the targets we sign. Most clients renew because the results keep improving, not because they are contractually obligated to.',
   },
   {
     question: 'How quickly do you start after we sign?',
@@ -340,24 +446,29 @@ export const faqs: FAQItem[] = [
       'Full onboarding takes 48 hours from contract signing. Within that window you receive complete account access, a written audit of your current performance, your kickoff call, and a signed strategy document with your 90-day KPI targets. Most agencies take 2 to 3 weeks for this. We start in 48 hours.',
   },
   {
-    question: 'What is your minimum engagement size?',
+    question: 'What is AEO and how is it different from traditional SEO?',
     answer:
-      'For paid media engagements, we work best with brands spending Rs 1.5 lakh or more per month on ads. Below that level, the management fee relative to ad spend rarely makes commercial sense for you. For SEO, AEO, or GEO-only retainers, there is no minimum ad spend requirement. We are happy to discuss what makes sense for your specific situation.',
+      'Answer Engine Optimisation (AEO) structures your content so AI tools like ChatGPT, Perplexity, Google AI Overviews, and Gemini cite your website when answering user questions. Traditional SEO targets blue-link rankings. AEO targets the AI-generated answers that are increasingly the first thing a buyer sees. If your content is not structured for citation, you are invisible in that channel regardless of your ranking.',
   },
   {
-    question: 'Do you work with brands that already have an in-house team?',
+    question: 'What is GEO and why does my brand need it now?',
     answer:
-      'Yes, regularly. We operate as a specialist execution layer that plugs into your existing team. You retain full strategic oversight and brand decisions. We handle channel execution, technical implementation, weekly testing, and reporting. Your team stays in control of the bigger picture while we run the channels we specialise in.',
+      'Generative Engine Optimisation (GEO) ensures your brand is recommended when AI tools respond to "what is the best [product or service]" queries. A growing share of high-intent buyers discover brands through AI recommendations rather than search results. GEO builds that visibility systematically. Brands that invest in it now will have a significant head start over competitors who wait.',
   },
   {
-    question: 'Which platforms do you actively manage?',
+    question: 'What is your minimum ad spend requirement?',
     answer:
-      'Paid media: Meta (Facebook and Instagram), Google (Search, Shopping, Performance Max), LinkedIn Ads for B2B brands, and Amazon Ads for e-commerce. Organic: Technical SEO, AEO for AI citation visibility, GEO for generative search brand recommendations, and Content SEO for topical authority. We focus on the channels that drive your specific growth goals, not every platform simultaneously.',
+      'For paid media engagements, we work best with brands spending Rs 1.5 lakh or more per month on ads. Below that level, the management fee relative to ad spend rarely makes commercial sense. For SEO, AEO, or GEO-only retainers, there is no minimum ad spend. We are happy to discuss what makes sense for your specific situation on a free audit call.',
+  },
+  {
+    question: 'Do you work with brands that have an in-house team?',
+    answer:
+      'Yes, regularly. We operate as a specialist execution layer alongside your team. You keep strategic oversight and brand decisions. We handle channel execution, technical implementation, weekly testing, and reporting. Your team stays in control of the bigger picture while we run the channels we specialise in.',
   },
   {
     question: 'How do you keep us informed on performance?',
     answer:
-      'You have live dashboard access every day with the same numbers we see. Every Monday you receive a written performance summary covering what changed, why it changed, and what we are doing about it. Once a month we hold a strategy review call to look at the bigger picture, review the 90-day KPI progress, and align on the next sprint. You will never need to chase us for an update.',
+      'You have live dashboard access every day with the same numbers we see. Every Monday you receive a written performance summary covering what changed, why it changed, and what comes next. Once a month we hold a strategy review call. You will never need to chase us for an update.',
   },
 ];
 

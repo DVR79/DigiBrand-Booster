@@ -15,6 +15,7 @@ import Testimonials from '@/components/sections/Testimonials';
 import Awards from '@/components/sections/Awards';
 import Team from '@/components/sections/Team';
 import AgencyComparison from '@/components/sections/AgencyComparison';
+import Pricing from '@/components/sections/Pricing';
 import Insights from '@/components/sections/Insights';
 import FAQ from '@/components/sections/FAQ';
 import Contact from '@/components/sections/Contact';
@@ -27,9 +28,9 @@ import CursorFollower from '@/components/effects/CursorFollower';
 import { faqs } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Performance Marketing Agency India | Digi Brand Booster',
+  title: 'Performance Marketing Agency Bangalore | 90-Day Guarantee | Digi Brand Booster',
   description:
-    'Digi Brand Booster helps ambitious D2C and SaaS brands grow with Meta Ads, Google Ads, SEO, and conversion optimisation. 90-day results guarantee, 48-hour onboarding.',
+    'Boutique performance marketing agency in Bangalore. Meta Ads, Google Ads, SEO, AEO, and GEO for D2C, EdTech, and SaaS brands. Founder-led. 48-hour audit. 90-day guarantee written into the contract.',
 };
 
 const faqSchema = {
@@ -65,6 +66,7 @@ export default function HomePage() {
         <Awards />
         <Team />
         <AgencyComparison />
+        <Pricing />
         <Insights />
         <FAQ />
         <Contact />
