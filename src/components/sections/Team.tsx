@@ -16,7 +16,15 @@ export default function Team() {
         />
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {team.map((member, i) => (
+          {team.map((member, i) => {
+            const cardColors = ['card-blue', 'card-purple', 'card-cyan'] as const;
+            const avatarColors = [
+              { bg: 'rgba(37,99,235,0.1)', color: '#2563eb' },
+              { bg: 'rgba(124,58,237,0.1)', color: '#7c3aed' },
+              { bg: 'rgba(14,165,233,0.1)', color: '#0ea5e9' },
+            ];
+            const colorIdx = i % 3;
+            return (
             <motion.div
               key={member.name}
               initial={{ opacity: 0, y: 24 }}
@@ -24,11 +32,10 @@ export default function Team() {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
             >
-              <GlassCard>
-                {/* Avatar placeholder */}
+              <GlassCard className={cardColors[colorIdx]}>
                 <div
                   className="h-16 w-16 rounded-2xl flex items-center justify-center font-heading text-2xl font-bold mb-4"
-                  style={{ background: 'var(--bg-card-hover)', color: 'var(--accent-primary)' }}
+                  style={{ background: avatarColors[colorIdx].bg, color: avatarColors[colorIdx].color }}
                 >
                   {member.name.charAt(0)}
                 </div>
@@ -46,7 +53,8 @@ export default function Team() {
                 </p>
               </GlassCard>
             </motion.div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
