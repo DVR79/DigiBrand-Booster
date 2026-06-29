@@ -146,7 +146,7 @@ export default function MarketResults() {
                 {/* Two columns: challenge | result */}
                 <div className="grid grid-cols-2 divide-x" style={{ borderColor: c.border }}>
 
-                  {/* Left — market challenge */}
+                  {/* Left: market challenge */}
                   <div className="px-5 py-5" style={{ background: 'var(--bg-card)' }}>
                     <p className="text-[10px] font-semibold uppercase tracking-widest mb-3" style={{ color: 'var(--text-muted)' }}>
                       Market reality
@@ -165,7 +165,7 @@ export default function MarketResults() {
                     </span>
                   </div>
 
-                  {/* Right — our result */}
+                  {/* Right: our result */}
                   <div className="px-5 py-5 relative" style={{ background: c.resultBg }}>
                     <div className="flex items-center gap-1.5 mb-3">
                       <ArrowRight size={12} style={{ color: c.accent }} />

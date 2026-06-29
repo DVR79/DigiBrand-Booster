@@ -7,7 +7,7 @@ import { insightPosts } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Blog: SEO, Paid Ads & AEO Insights | Digi Brand Booster',
-  description: 'Practical guides on AEO, GEO, Meta Ads, Google Ads and SEO. No fluff — only what actually moves rankings and reduces cost per lead.',
+  description: 'Practical guides on AEO, GEO, Meta Ads, Google Ads and SEO. No fluff. Only what actually moves rankings and reduces cost per lead.',
 };
 
 const categoryColors: Record<string, { bg: string; color: string }> = {
@@ -30,7 +30,7 @@ export default function BlogPage() {
               Practical guides. No filler.
             </h1>
             <p className="text-lg" style={{ color: 'var(--text-secondary)' }}>
-              What we have learned running SEO, paid media, AEO, and GEO for D2C, EdTech, and SaaS brands — written in plain language.
+              What we have learned running SEO, paid media, AEO, and GEO for D2C, EdTech, and SaaS brands. Written in plain language.
             </p>
           </div>
         </section>

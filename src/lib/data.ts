@@ -449,7 +449,7 @@ export const faqs: FAQItem[] = [
   {
     question: 'How do you keep us informed on performance?',
     answer:
-      'Three ways. First, a live dashboard you can check any time with the same data we see. Second, a written Monday update every week covering what we tested, what the numbers showed, and what we are doing next. Third, a strategy call on the cadence agreed in your plan — monthly for Starter, bi-weekly for Growth, weekly for Scale. You will never need to ask us what is happening.',
+      'Three ways. First, a live dashboard you can check any time with the same data we see. Second, a written Monday update every week covering what we tested, what the numbers showed, and what we are doing next. Third, a strategy call on the cadence agreed in your plan: monthly for Starter, bi-weekly for Growth, weekly for Scale. You will never need to ask us what is happening.',
   },
 ];
 
@@ -600,7 +600,7 @@ export const insightPosts: InsightPost[] = [
     readTime: '9 min read',
     date: 'June 2025',
     metaTitle: 'Technical SEO Audit 2025: 8 Fixes for More Traffic',
-    metaDescription: '8 technical SEO fixes that drove 260% organic traffic growth for our clients. Core Web Vitals, crawl budget, schema markup, and more — with real results.',
+    metaDescription: '8 technical SEO fixes that drove 260% organic traffic growth for our clients. Core Web Vitals, crawl budget, schema markup and more, with real results.',
     excerpt:
       'Most brands publish content, build links, and still wonder why their organic traffic is flat. The answer is almost always a technical SEO problem. Here are the eight issues we fix in every client audit, and what they did to rankings.',
     sections: [
@@ -609,7 +609,7 @@ export const insightPosts: InsightPost[] = [
         body: 'A common mistake we see from brands who invest in content marketing is assuming that more content equals more traffic. It does not. If your site has technical SEO problems, new content compounds the issue rather than solving it. Googlebot may not be crawling your pages efficiently, your Core Web Vitals may be signalling a poor user experience, or your internal structure may be diluting authority across hundreds of thin pages. In every one of our 260 percent organic traffic growth engagements, the breakthrough came from fixing the technical foundation first, before adding a single new article.',
       },
       {
-        heading: 'Fix 1: Core Web Vitals — the ranking factor most brands fail',
+        heading: 'Fix 1: Core Web Vitals, the ranking factor most brands fail',
         body: 'Google confirmed Core Web Vitals as a ranking signal in 2021 and has steadily increased their weight since. Largest Contentful Paint (LCP) measures how fast your main content loads. Interaction to Next Paint (INP) measures how quickly your page responds to user input. Cumulative Layout Shift (CLS) measures visual stability. The benchmark for each is LCP under 2.5 seconds, INP under 200 milliseconds, and CLS under 0.1. Across the audits we have run on Indian D2C and SaaS sites, over 70 percent failed at least one of these benchmarks, most commonly LCP due to uncompressed hero images and render-blocking scripts.',
       },
       {

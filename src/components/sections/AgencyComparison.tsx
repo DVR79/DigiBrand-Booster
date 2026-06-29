@@ -21,7 +21,7 @@ const reasons = [
   {
     icon: <BarChart3 size={20} />,
     title: 'Full transparency every week',
-    description: 'Live dashboard access daily. Written Monday update — what changed, why, and what comes next. You never need to chase us for an update.',
+    description: 'Live dashboard access daily. Written Monday update covering what changed, why, and what comes next. You never need to chase us for an update.',
     iconBg: 'rgba(37,99,235,0.1)', iconColor: '#2563eb', card: 'card-blue',
   },
   {

@@ -32,7 +32,7 @@ export default function Services() {
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           eyebrow="What we do"
-          title="Eight services. One goal — measurable growth."
+          title="Eight services. One goal: measurable growth."
           description="Every service is tied to a specific outcome. Pick the plan that fits your stage and we handle execution, reporting, and results."
         />
 
@@ -52,7 +52,7 @@ export default function Services() {
             );
           })}
           <span className="text-xs" style={{ color: 'var(--text-muted)', alignSelf: 'center' }}>
-            — shown on each card below
+            shown on each card below
           </span>
         </div>
 
@@ -97,7 +97,7 @@ export default function Services() {
                   {service.title}
                 </h3>
 
-                {/* Outcome — the one-liner they care about */}
+                {/* Outcome: the one-liner they care about */}
                 <p className="text-sm font-medium mb-3 leading-snug" style={{ color: c.iconColor }}>
                   {service.outcome}
                 </p>
@@ -119,7 +119,7 @@ export default function Services() {
         {/* Bottom CTA */}
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
           <ShimmerButton variant="cta" href="#contact" title="Book a free audit to discuss which services fit your goals">
-            Get a free audit — we will recommend the right plan
+            Get a free audit. We will recommend the right plan.
           </ShimmerButton>
           <a href="#pricing" className="text-sm font-semibold" style={{ color: 'var(--accent-primary)' }}>
             View pricing →
