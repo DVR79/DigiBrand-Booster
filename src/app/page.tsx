@@ -7,14 +7,12 @@ import Results from '@/components/sections/Results';
 import Guarantee from '@/components/sections/Guarantee';
 import Services from '@/components/sections/Services';
 import CaseStudies from '@/components/sections/CaseStudies';
-import WhyChooseUs from '@/components/sections/WhyChooseUs';
+import AgencyComparison from '@/components/sections/AgencyComparison';
 import Industries from '@/components/sections/Industries';
 import BoosterFramework from '@/components/sections/BoosterFramework';
 import MarketInsights from '@/components/sections/MarketInsights';
 import Testimonials from '@/components/sections/Testimonials';
-import Awards from '@/components/sections/Awards';
 import Team from '@/components/sections/Team';
-import AgencyComparison from '@/components/sections/AgencyComparison';
 import Pricing from '@/components/sections/Pricing';
 import Insights from '@/components/sections/Insights';
 import FAQ from '@/components/sections/FAQ';
@@ -58,14 +56,12 @@ export default function HomePage() {
         <Guarantee />
         <Services />
         <CaseStudies />
-        <WhyChooseUs />
+        <AgencyComparison />
         <Industries />
         <BoosterFramework />
         <MarketInsights />
         <Testimonials />
-        <Awards />
         <Team />
-        <AgencyComparison />
         <Pricing />
         <Insights />
         <FAQ />

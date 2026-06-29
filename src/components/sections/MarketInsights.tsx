@@ -48,11 +48,11 @@ const insights = [
   },
   {
     icon: <BarChart3 size={22} />,
-    stat: '94%',
-    label: 'of B2B buyers research online before contacting a vendor',
-    detail: 'Your brand needs to show up across organic search, AI answers, and paid channels before a buyer ever fills a form. That is exactly what we build.',
+    stat: '75%',
+    label: 'of users never scroll past page one of Google',
+    detail: "If you are not on page one for your buyer's search terms, you effectively do not exist. Technical SEO, content strategy, and link building fix this systematically.",
     color: 'purple',
-    source: 'Demand Gen Report, 2024',
+    source: 'Backlinko, 2024',
   },
 ];
 

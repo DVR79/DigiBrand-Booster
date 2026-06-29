@@ -10,9 +10,9 @@ export default function Results() {
     <section id="results" className="py-24 px-4" style={{ background: 'var(--bg-dark)' }}>
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          eyebrow="By the numbers"
-          title="The numbers behind every engagement"
-          description="Every stat below is drawn from live client accounts. No industry benchmarks, no projections. What we actually deliver."
+          eyebrow="Client outcomes"
+          title="What we actually deliver across every channel"
+          description="Drawn from live client accounts. Organic growth for SEO clients, ROAS for paid media, CPL reduction for lead gen, AI citations for AEO."
         />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((stat, i) => (

@@ -18,10 +18,10 @@ export interface Stat {
 }
 
 export const stats: Stat[] = [
-  { value: 50, suffix: '+', label: 'Brands Scaled' },
-  { value: 3.8, suffix: 'x', label: 'Average ROAS' },
-  { value: 94, suffix: '%', label: 'Client Retention' },
-  { value: 48, suffix: 'h', label: 'Audit Delivered' },
+  { value: 260, suffix: '%', label: 'Avg organic traffic growth (SEO clients)' },
+  { value: 4.0, suffix: 'x', label: 'Best paid ROAS achieved' },
+  { value: 41, suffix: '%', label: 'Avg CPL reduction (paid media clients)' },
+  { value: 15, suffix: '+', label: 'AI citations earned (AEO clients)' },
 ];
 
 export interface Testimonial {
@@ -449,7 +449,7 @@ export const faqs: FAQItem[] = [
   {
     question: 'How do you keep us informed on performance?',
     answer:
-      'You have live dashboard access every day with the same numbers we see. Every Monday you receive a written performance summary covering what changed, why it changed, and what comes next. Once a month we hold a strategy review call. You will never need to chase us for an update.',
+      'Three ways. First, a live dashboard you can check any time with the same data we see. Second, a written Monday update every week covering what we tested, what the numbers showed, and what we are doing next. Third, a strategy call on the cadence agreed in your plan — monthly for Starter, bi-weekly for Growth, weekly for Scale. You will never need to ask us what is happening.',
   },
 ];
 
