@@ -10,9 +10,8 @@ const navLinks = [
   { label: 'Services', href: '#services', title: 'Our services - Meta Ads, Google Ads, SEO, AEO, GEO' },
   { label: 'Results', href: '#results', title: 'Client results and performance metrics' },
   { label: 'Case Studies', href: '#case-studies', title: 'Real brand growth case studies' },
-  { label: 'About', href: '#team', title: 'Meet the Digi Brand Booster team' },
-  { label: 'Founder', href: '#founder', title: 'About D Venkataramana - founder and SEO strategist' },
-  { label: 'Insights', href: '#insights', title: 'Performance marketing blog and insights' },
+  { label: 'About', href: '#why-us', title: 'About Digi Brand Booster - founder-led boutique agency' },
+  { label: 'Blog', href: '/blog', title: 'Performance marketing blog - AEO, GEO, paid media guides' },
 ];
 
 export default function Header() {

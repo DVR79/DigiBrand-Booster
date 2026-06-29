@@ -486,7 +486,9 @@ export interface InsightPost {
   slug: string;
   category: string;
   readTime: string;
+  date: string;
   excerpt: string;
+  sections: { heading: string; body: string }[];
 }
 
 export const insightPosts: InsightPost[] = [
@@ -495,24 +497,93 @@ export const insightPosts: InsightPost[] = [
     slug: 'aeo-content-structure-ai-citations-2025',
     category: 'AEO',
     readTime: '7 min read',
+    date: 'June 2025',
     excerpt:
       'Most brands are still optimising for blue-link rankings while their competitors are getting cited in AI-generated answers. Here is the exact structure we use to earn those citations for our clients.',
+    sections: [
+      {
+        heading: 'Why AEO is not optional anymore',
+        body: 'In 2025, over 60 percent of Google searches end without a click on a blue link. Google AI Overviews, Perplexity, and ChatGPT Search now answer the query directly on the results page. If your content is not the source being cited, you are invisible to that buyer at the most important moment of their research. AEO is not a nice-to-have. It is the difference between being found and being skipped.',
+      },
+      {
+        heading: 'The three content formats AI platforms prefer to cite',
+        body: 'After analysing citation patterns across 50+ client pages, we have found that AI platforms consistently prefer three formats. First, direct-answer paragraphs that open with the exact question as a subheading and answer it in two to three sentences. Second, numbered or bulleted step-by-step guides for process queries. Third, comparison tables for "X vs Y" queries. Pages that mix long paragraphs without clear structure almost never get cited regardless of their ranking position.',
+      },
+      {
+        heading: 'The question-first structure that earns AI citations',
+        body: 'Every page targeting an AI citation should open its key sections with the user question as an H2 or H3 heading, followed immediately by a two-sentence answer, then expanded explanation. For example: "What is AEO?" followed by "Answer Engine Optimisation is the practice of structuring content so AI tools like ChatGPT and Perplexity cite it when answering user queries. Unlike traditional SEO which targets blue-link rankings, AEO targets AI-generated answers that now appear before search results." This format makes it easy for AI models to extract and cite your answer.',
+      },
+      {
+        heading: 'Schema markup and entity signals that amplify citations',
+        body: 'Structured data accelerates AI citation acquisition. FAQ schema tells AI crawlers exactly which questions a page answers. HowTo schema signals step-by-step processes. Speakable schema marks the paragraphs most suitable for AI extraction. Beyond schema, entity optimisation matters significantly. Publishing author credentials, linking to authoritative sources, and ensuring your brand entity is consistent across Wikipedia, LinkedIn, and press mentions all strengthen the trust signals AI models use when deciding which sources to cite.',
+      },
+      {
+        heading: 'How to track whether your AEO is working',
+        body: 'Traditional SEO metrics do not capture AEO performance. You need to track AI citations directly. We use a combination of manual prompt testing across ChatGPT, Perplexity, Gemini, and Google AI Overviews, and tools like Profound and Otterly.ai for automated citation monitoring. Track your brand mention rate, citation frequency, and the specific pages being cited. A page earning AI citations typically shows increased branded search volume even without a corresponding change in blue-link rank.',
+      },
+    ],
   },
   {
     title: 'GEO strategy: How to get your brand recommended by ChatGPT and Google Gemini',
     slug: 'geo-strategy-chatgpt-gemini-brand-recommendations',
     category: 'GEO',
     readTime: '8 min read',
+    date: 'May 2025',
     excerpt:
       'When a potential customer asks an AI tool to recommend the best product or service in your category, is your brand in the answer? Here is the authority-building framework that determines that.',
+    sections: [
+      {
+        heading: 'The shift from search rankings to AI recommendations',
+        body: 'A growing share of high-intent buyers now ask AI tools directly: "What is the best SEO agency in Bangalore?" or "Which D2C skincare brand should I try?" These recommendation queries bypass Google entirely. The brands that appear in those answers are not necessarily the ones that rank highest in traditional search. They are the ones that have built the right authority signals across the right sources. That is what GEO addresses.',
+      },
+      {
+        heading: 'How large language models decide what to recommend',
+        body: 'AI models like ChatGPT, Claude, and Gemini form their recommendations based on training data and real-time retrieval. For training-data-based recommendations, the signals that matter are: frequency of brand mentions across authoritative sources, consistent positive association between your brand and your category, and structured information about what your brand does. For retrieval-based recommendations (where the AI searches before answering), the signals are closer to AEO: structured content, citation-worthy pages, and strong domain authority.',
+      },
+      {
+        heading: 'The four pillars of a GEO strategy',
+        body: 'First, brand entity establishment: ensure your brand is described consistently across your website, LinkedIn, Crunchbase, press mentions, and any industry directories. Second, topical authority: publish in-depth content on your core category so AI models associate your brand with expertise in that area. Third, citation acquisition from AI-cited sources: identify which domains and publications AI platforms already cite for your category and earn mentions or backlinks from those sources. Fourth, review and case study visibility: real-world proof in formats AI models can easily retrieve and summarise.',
+      },
+      {
+        heading: 'The content types that drive AI brand recommendations',
+        body: 'Comparison content consistently performs well in GEO. Pages titled "Best [category] in [city]" or "[Brand A] vs [Brand B]" that objectively assess options earn citations when users ask recommendation queries. Expert opinion pieces, original research with proprietary data, and detailed case studies with specific numbers also earn strong GEO visibility. Generic blog posts without specific claims or original insights rarely appear in AI recommendations regardless of their SEO performance.',
+      },
+      {
+        heading: 'Measuring GEO visibility over time',
+        body: 'GEO measurement is still evolving but there are practical approaches. Run a monthly brand visibility audit: ask the same 20 recommendation queries across ChatGPT, Gemini, and Perplexity and track whether your brand appears. Monitor branded search volume in Google Search Console as a proxy for AI-driven discovery. Track referral traffic from Perplexity directly in your analytics. Over time, brands with strong GEO strategies see branded search grow independently of paid media investment.',
+      },
+    ],
   },
   {
     title: 'Why your Meta CPL spiked after iOS and the server-side fix that actually works',
     slug: 'meta-cpl-ios-server-side-conversions-api',
     category: 'Paid Media',
     readTime: '6 min read',
+    date: 'April 2025',
     excerpt:
       'Server-side Conversions API is not a nice-to-have anymore. Most agencies are still getting it wrong. Here is a practical guide to the migration that actually restores attribution accuracy.',
+    sections: [
+      {
+        heading: 'What actually broke after iOS 14',
+        body: 'Apple\'s App Tracking Transparency framework, launched in April 2021, required apps to ask users for permission before tracking. Most users said no. This broke the Meta pixel\'s ability to track conversions from iOS devices, which typically account for 40 to 60 percent of mobile traffic for most Indian D2C brands. Meta\'s attribution window shrank from 28 days to 7 days. Reported ROAS dropped. CPL appeared to spike. In most cases the ads were not actually performing worse, but the data was severely undercounting what was being attributed to Meta.',
+      },
+      {
+        heading: 'Why the browser pixel alone is no longer sufficient',
+        body: 'The Meta browser pixel fires from the user\'s device and relies on third-party cookies to match events to ad impressions. Post-iOS, this matching fails on a large portion of traffic. The result is that Meta\'s algorithm receives incomplete conversion data, which degrades its ability to optimise campaigns for the right users. The algorithm is only as smart as the data it receives. Degraded signals mean the algorithm optimises toward the users it can see, not the users most likely to convert.',
+      },
+      {
+        heading: 'What server-side Conversions API actually does',
+        body: 'Conversions API (CAPI) sends conversion events directly from your server to Meta\'s servers, bypassing the browser entirely. It does not rely on cookies or device-level tracking. When a purchase happens on your site, your server fires the event to Meta with the order details, customer email (hashed), and event parameters. Meta matches this against its user data on its side. This restores a significant portion of the attribution that the pixel alone was missing, giving Meta\'s algorithm better signals to optimise on.',
+      },
+      {
+        heading: 'The correct implementation: deduplication is critical',
+        body: 'The most common mistake we see when auditing accounts is running both the browser pixel and CAPI without proper deduplication. This results in the same conversion event being reported twice, which inflates reported ROAS and causes over-bidding. Proper deduplication requires passing a unique event ID from both the pixel and the CAPI event for the same conversion. Meta matches on the event ID and counts it only once. Without this, you are solving one problem (undercounting) and creating another (double counting).',
+      },
+      {
+        heading: 'What to expect after a proper CAPI implementation',
+        body: 'After a correctly implemented server-side CAPI migration with deduplication, most of our clients see reported conversions increase by 25 to 40 percent within the first two weeks. This does not mean more sales happened. It means Meta is now seeing conversions it was previously missing. The algorithm then has better data to optimise campaigns, which typically leads to gradual ROAS improvement over the following 4 to 8 weeks as the campaign learning phase resets with the improved signals.',
+      },
+    ],
   },
 ];
 
