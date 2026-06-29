@@ -19,17 +19,34 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = insightPosts.find((p) => p.slug === slug);
   if (!post) return {};
+  const url = `https://www.digibrandbooster.tech/blog/${slug}`;
   return {
-    title: `${post.title} | Digi Brand Booster Blog`,
-    description: post.excerpt,
+    title: post.metaTitle,
+    description: post.metaDescription,
+    alternates: { canonical: url },
+    openGraph: {
+      title: post.metaTitle,
+      description: post.metaDescription,
+      url,
+      siteName: 'Digi Brand Booster',
+      type: 'article',
+      publishedTime: post.date,
+      authors: ['D Venkataramana'],
+      tags: [post.category, 'Digital Marketing', 'Performance Marketing', 'Bangalore'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.metaTitle,
+      description: post.metaDescription,
+    },
   };
 }
 
 const categoryColors: Record<string, { bg: string; color: string }> = {
-  AEO:          { bg: 'rgba(124,58,237,0.1)',  color: '#7c3aed' },
+  AEO:          { bg: 'rgba(67,56,202,0.1)',   color: '#4338ca' },
   GEO:          { bg: 'rgba(37,99,235,0.1)',   color: '#2563eb' },
-  'Paid Media': { bg: 'rgba(245,158,11,0.1)',  color: '#d97706' },
-  SEO:          { bg: 'rgba(5,150,105,0.1)',   color: '#059669' },
+  'Paid Media': { bg: 'rgba(37,99,235,0.1)',   color: '#2563eb' },
+  SEO:          { bg: 'rgba(67,56,202,0.1)',   color: '#4338ca' },
 };
 
 export default async function BlogPostPage({ params }: Props) {
@@ -40,8 +57,34 @@ export default async function BlogPostPage({ params }: Props) {
   const cat = categoryColors[post.category] ?? { bg: 'rgba(37,99,235,0.1)', color: '#2563eb' };
   const related = insightPosts.filter((p) => p.slug !== slug).slice(0, 2);
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      '@type': 'Person',
+      name: 'D Venkataramana',
+      jobTitle: 'Founder, Digi Brand Booster',
+      url: 'https://www.digibrandbooster.tech/#why-us',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Digi Brand Booster',
+      url: 'https://www.digibrandbooster.tech',
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://www.digibrandbooster.tech/blog/${post.slug}`,
+    },
+    keywords: [post.category, 'Digital Marketing India', 'Performance Marketing Bangalore', 'SEO Agency India'],
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <Header />
       <main className="min-h-screen" style={{ background: 'var(--bg-dark)' }}>
 

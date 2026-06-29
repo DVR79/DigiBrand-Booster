@@ -16,11 +16,11 @@ const iconMap: Record<string, React.ReactNode> = {
 
 const cardColors = [
   { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', tagBg: 'rgba(37,99,235,0.08)',  tagColor: '#2563eb' },
-  { card: 'card-purple', iconBg: 'rgba(124,58,237,0.1)', iconColor: '#7c3aed', tagBg: 'rgba(124,58,237,0.08)', tagColor: '#7c3aed' },
-  { card: 'card-green',  iconBg: 'rgba(5,150,105,0.1)',  iconColor: '#059669', tagBg: 'rgba(5,150,105,0.08)',  tagColor: '#059669' },
+  { card: 'card-indigo', iconBg: 'rgba(67,56,202,0.1)',  iconColor: '#4338ca', tagBg: 'rgba(67,56,202,0.08)',  tagColor: '#4338ca' },
   { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', tagBg: 'rgba(37,99,235,0.08)',  tagColor: '#2563eb' },
-  { card: 'card-purple', iconBg: 'rgba(124,58,237,0.1)', iconColor: '#7c3aed', tagBg: 'rgba(124,58,237,0.08)', tagColor: '#7c3aed' },
-  { card: 'card-green',  iconBg: 'rgba(5,150,105,0.1)',  iconColor: '#059669', tagBg: 'rgba(5,150,105,0.08)',  tagColor: '#059669' },
+  { card: 'card-indigo', iconBg: 'rgba(67,56,202,0.1)',  iconColor: '#4338ca', tagBg: 'rgba(67,56,202,0.08)',  tagColor: '#4338ca' },
+  { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', tagBg: 'rgba(37,99,235,0.08)',  tagColor: '#2563eb' },
+  { card: 'card-indigo', iconBg: 'rgba(67,56,202,0.1)',  iconColor: '#4338ca', tagBg: 'rgba(67,56,202,0.08)',  tagColor: '#4338ca' },
 ];
 
 export default function Industries() {

@@ -7,9 +7,9 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import GlassCard from '@/components/ui/GlassCard';
 import { siteConfig } from '@/lib/data';
 
-const EMAILJS_SERVICE_ID = 'service_5eim0hb';
-const EMAILJS_TEMPLATE_ID = 'template_uqhv0en';
-const EMAILJS_PUBLIC_KEY = 'jtjhN7XHpbOIrNbar';
+const EMAILJS_SERVICE_ID  = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID  ?? 'service_5eim0hb';
+const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? 'template_uqhv0en';
+const EMAILJS_PUBLIC_KEY  = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY  ?? 'jtjhN7XHpbOIrNbar';
 
 interface FormState {
   name: string;

@@ -117,7 +117,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-heading text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl mb-5"
+              className="font-heading text-3xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl mb-5"
               style={{ color: 'var(--text-primary)' }}
             >
               Be found wherever{' '}
@@ -145,10 +145,10 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-3 mb-6"
             >
-              <ShimmerButton variant="primary" href="#contact" className="px-7 py-3 text-base" title="Get a free 48-hour SEO and paid media audit - no credit card required">
+              <ShimmerButton variant="primary" href="#contact" className="px-5 py-3 sm:px-7 text-base" title="Get a free 48-hour SEO and paid media audit - no credit card required">
                 Get Your Free Audit <ArrowRight size={16} aria-hidden="true" />
               </ShimmerButton>
-              <ShimmerButton variant="outline" href="#case-studies" className="px-7 py-3 text-base" title="See real client results: ROAS growth, organic traffic, and CPL reduction">
+              <ShimmerButton variant="outline" href="#case-studies" className="px-5 py-3 sm:px-7 text-base" title="See real client results: ROAS growth, organic traffic, and CPL reduction">
                 See Real Results
               </ShimmerButton>
             </motion.div>
@@ -179,27 +179,6 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Stats row */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4"
-          role="list"
-          aria-label="Agency performance statistics"
-        >
-          {[
-            { value: '50+', label: 'Brands Scaled', title: 'Over 50 D2C, EdTech, SaaS, and Real Estate brands scaled' },
-            { value: '3.8x', label: 'Average ROAS', title: 'Average return on ad spend across all paid media accounts' },
-            { value: '94%', label: 'Client Retention', title: '94% of clients renew after the first 90-day engagement' },
-            { value: '90', label: 'Day Guarantee', title: 'KPIs signed before we start, full refund if we miss them' },
-          ].map((s) => (
-            <div key={s.label} className="card py-5 px-4 text-center" role="listitem" title={s.title}>
-              <p className="font-heading text-3xl font-extrabold" style={{ color: 'var(--accent-primary)' }} aria-label={s.title}>{s.value}</p>
-              <p className="text-sm mt-1 font-medium" style={{ color: 'var(--text-secondary)' }}>{s.label}</p>
-            </div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );

@@ -20,10 +20,10 @@ const iconMap: Record<string, React.ReactNode> = {
 
 const colorMap: Record<string, { card: string; iconBg: string; iconColor: string; planBg: string; planColor: string }> = {
   blue:   { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', planBg: 'rgba(37,99,235,0.08)',  planColor: '#2563eb' },
-  purple: { card: 'card-purple', iconBg: 'rgba(124,58,237,0.1)', iconColor: '#7c3aed', planBg: 'rgba(124,58,237,0.08)', planColor: '#7c3aed' },
-  green:  { card: 'card-green',  iconBg: 'rgba(5,150,105,0.1)',  iconColor: '#059669', planBg: 'rgba(5,150,105,0.08)',  planColor: '#059669' },
-  cyan:   { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', planBg: 'rgba(37,99,235,0.08)',  planColor: '#2563eb' },
-  amber:  { card: 'card-purple', iconBg: 'rgba(124,58,237,0.1)', iconColor: '#7c3aed', planBg: 'rgba(124,58,237,0.08)', planColor: '#7c3aed' },
+  purple: { card: 'card-indigo', iconBg: 'rgba(67,56,202,0.1)',  iconColor: '#4338ca', planBg: 'rgba(67,56,202,0.08)',  planColor: '#4338ca' },
+  green:  { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', planBg: 'rgba(37,99,235,0.08)',  planColor: '#2563eb' },
+  cyan:   { card: 'card-indigo', iconBg: 'rgba(67,56,202,0.1)',  iconColor: '#4338ca', planBg: 'rgba(67,56,202,0.08)',  planColor: '#4338ca' },
+  amber:  { card: 'card-indigo', iconBg: 'rgba(67,56,202,0.1)',  iconColor: '#4338ca', planBg: 'rgba(67,56,202,0.08)',  planColor: '#4338ca' },
 };
 
 export default function Services() {
@@ -59,7 +59,7 @@ export default function Services() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {services.map((service, i) => {
             const c = colorMap[service.color] ?? colorMap.blue;
-            const planColor = service.plan === 'Starter' ? colorMap.blue : service.plan === 'Growth' ? colorMap.green : colorMap.purple;
+            const planColor = service.plan === 'Starter' ? colorMap.blue : service.plan === 'Growth' ? colorMap.blue : colorMap.purple;
             return (
               <motion.div
                 key={service.title}

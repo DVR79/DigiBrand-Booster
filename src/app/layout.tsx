@@ -10,10 +10,10 @@ const SITE_URL = 'https://www.digibrandbooster.tech';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Performance Marketing Agency India | Meta Ads, Google Ads, SEO, AEO & GEO | Digi Brand Booster',
+    default: 'Performance Marketing Agency India | Digi Brand Booster',
     template: `%s | Digi Brand Booster`,
   },
-  description: 'Boutique performance marketing agency in Bangalore. Meta Ads, Google Ads, SEO, AEO, and GEO for D2C, EdTech, and SaaS brands. Founder-led, 48-hour audit, 90-day results guarantee written into the contract.',
+  description: 'Boutique performance marketing agency in Bangalore. SEO, Meta Ads, Google Ads, AEO and GEO for D2C and SaaS brands. 90-day results guarantee.',
   keywords: [
     'performance marketing agency India',
     'digital marketing agency Bangalore',
@@ -49,14 +49,14 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: SITE_URL,
     siteName: siteConfig.name,
-    title: 'Performance Marketing Agency India | Meta Ads, Google Ads, SEO, AEO & GEO',
-    description: 'India\'s AI-native performance marketing agency in Bangalore. Meta Ads, Google Ads, SEO, AEO, GEO for D2C and SaaS. 90-day guarantee.',
+    title: 'Performance Marketing Agency India | Digi Brand Booster',
+    description: 'SEO, Meta Ads, Google Ads, AEO and GEO for D2C and SaaS brands in India. 90-day results guarantee.',
     images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: 'Digi Brand Booster: Performance Marketing Agency India' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Performance Marketing Agency India | Digi Brand Booster',
-    description: 'Meta Ads, Google Ads, SEO, AEO and GEO for D2C and SaaS brands. 90-day results guarantee.',
+    title: 'Performance Marketing Agency | Digi Brand Booster',
+    description: 'SEO, Meta Ads, Google Ads, AEO and GEO for D2C and SaaS brands. 90-day results guarantee.',
     images: [`${SITE_URL}/og-image.png`],
   },
   robots: {
@@ -71,7 +71,7 @@ const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   name: 'Digi Brand Booster',
-  description: 'AI-native performance marketing agency in Bangalore specialising in Meta Ads, Google Ads, SEO, AEO, GEO and CRO.',
+  description: 'Boutique performance marketing agency in Bangalore. SEO, Meta Ads, Google Ads, AEO and GEO. 90-day results guarantee.',
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
   image: `${SITE_URL}/og-image.png`,

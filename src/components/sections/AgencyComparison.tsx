@@ -16,19 +16,19 @@ const reasons = [
     icon: <FileCheck size={20} />,
     title: 'KPIs signed before we start',
     description: 'Your ROAS, CPL, or traffic target is written into the contract. If we miss it in 90 days, you get a full management fee refund.',
-    iconBg: 'rgba(124,58,237,0.1)', iconColor: '#7c3aed', card: 'card-purple',
+    iconBg: 'rgba(67,56,202,0.1)', iconColor: '#4338ca', card: 'card-indigo',
   },
   {
     icon: <BarChart3 size={20} />,
     title: 'Full transparency every week',
     description: 'Live dashboard access daily. Written Monday update — what changed, why, and what comes next. You never need to chase us for an update.',
-    iconBg: 'rgba(14,165,233,0.1)', iconColor: '#0ea5e9', card: 'card-cyan',
+    iconBg: 'rgba(37,99,235,0.1)', iconColor: '#2563eb', card: 'card-blue',
   },
   {
     icon: <Users size={20} />,
     title: 'Boutique capacity by design',
     description: 'We limit active clients deliberately. Fewer accounts means more attention, better results, and a 94% client retention rate.',
-    iconBg: 'rgba(5,150,105,0.1)', iconColor: '#059669', card: 'card-green',
+    iconBg: 'rgba(67,56,202,0.1)', iconColor: '#4338ca', card: 'card-indigo',
   },
 ];
 
@@ -76,38 +76,44 @@ export default function AgencyComparison() {
         <p className="text-center text-xs font-bold uppercase tracking-widest mb-6" style={{ color: 'var(--text-muted)' }}>
           How we compare
         </p>
-        <div className="grid grid-cols-3 gap-4 mb-3 px-4">
-          <p className="text-sm font-semibold" style={{ color: 'var(--text-secondary)' }}>What matters to you</p>
-          <div className="text-center text-sm font-bold py-2 rounded-xl" style={{ background: 'rgba(37,99,235,0.1)', color: 'var(--accent-primary)' }}>
-            Digi Brand Booster
-          </div>
-          <div className="text-center text-sm font-semibold py-2 rounded-xl" style={{ background: 'var(--bg-card)', color: 'var(--text-secondary)' }}>
-            Large Agency
-          </div>
-        </div>
 
-        <div className="flex flex-col gap-2">
-          {rows.map((row, i) => (
-            <motion.div
-              key={row.feature}
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.05, duration: 0.4 }}
-              className="grid grid-cols-3 gap-4 items-start rounded-2xl px-4 py-4"
-              style={{ background: 'var(--bg-card)', border: '1px solid var(--border)' }}
-            >
-              <p className="text-sm font-medium pt-0.5" style={{ color: 'var(--text-primary)' }}>{row.feature}</p>
-              <div className="flex items-start gap-2">
-                <CheckCircle size={15} className="mt-0.5 shrink-0" style={{ color: 'var(--accent-success)' }} aria-hidden="true" />
-                <p className="text-sm leading-relaxed" style={{ color: 'var(--text-primary)' }}>{row.us}</p>
+        {/* Scrollable table wrapper for mobile */}
+        <div className="overflow-x-auto -mx-4 px-4">
+          <div style={{ minWidth: '520px' }}>
+            <div className="grid grid-cols-3 gap-4 mb-3 px-4">
+              <p className="text-sm font-semibold" style={{ color: 'var(--text-secondary)' }}>What matters to you</p>
+              <div className="text-center text-sm font-bold py-2 rounded-xl" style={{ background: 'rgba(37,99,235,0.1)', color: 'var(--accent-primary)' }}>
+                Digi Brand Booster
               </div>
-              <div className="flex items-start gap-2">
-                <XCircle size={15} className="mt-0.5 shrink-0" style={{ color: '#ef4444' }} aria-hidden="true" />
-                <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>{row.them}</p>
+              <div className="text-center text-sm font-semibold py-2 rounded-xl" style={{ background: 'var(--bg-card)', color: 'var(--text-secondary)' }}>
+                Large Agency
               </div>
-            </motion.div>
-          ))}
+            </div>
+
+            <div className="flex flex-col gap-2">
+              {rows.map((row, i) => (
+                <motion.div
+                  key={row.feature}
+                  initial={{ opacity: 0, y: 12 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.05, duration: 0.4 }}
+                  className="grid grid-cols-3 gap-4 items-start rounded-2xl px-4 py-4"
+                  style={{ background: 'var(--bg-card)', border: '1px solid var(--border)' }}
+                >
+                  <p className="text-sm font-medium pt-0.5" style={{ color: 'var(--text-primary)' }}>{row.feature}</p>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle size={15} className="mt-0.5 shrink-0" style={{ color: 'var(--accent-success)' }} aria-hidden="true" />
+                    <p className="text-sm leading-relaxed" style={{ color: 'var(--text-primary)' }}>{row.us}</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <XCircle size={15} className="mt-0.5 shrink-0" style={{ color: '#ef4444' }} aria-hidden="true" />
+                    <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>{row.them}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
         </div>
 
         <motion.div

@@ -2,24 +2,24 @@ import { siteConfig } from '@/lib/data';
 
 const footerLinks = {
   Services: [
-    { label: 'Technical SEO', href: '#services' },
-    { label: 'Link Building', href: '#services' },
-    { label: 'Local SEO', href: '#services' },
-    { label: 'AEO and GEO', href: '#services' },
-    { label: 'Meta and Google Ads', href: '#services' },
+    { label: 'Technical SEO', href: '/#services' },
+    { label: 'Link Building', href: '/#services' },
+    { label: 'Local SEO', href: '/#services' },
+    { label: 'AEO and GEO', href: '/#services' },
+    { label: 'Meta and Google Ads', href: '/#services' },
   ],
   Company: [
-    { label: 'Why Us', href: '#why-us' },
-    { label: 'Case Studies', href: '#case-studies' },
-    { label: 'Insights', href: '#insights' },
-    { label: 'FAQ', href: '#faq' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Why Us', href: '/#why-us' },
+    { label: 'Case Studies', href: '/#case-studies' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'FAQ', href: '/#faq' },
+    { label: 'Contact', href: '/#contact' },
   ],
   'Work with us': [
-    { label: 'Free 48-Hour Audit', href: '#contact' },
-    { label: 'The 90-Day Guarantee', href: '#guarantee' },
-    { label: 'Our Process', href: '#framework' },
-    { label: 'Industries We Serve', href: '#industries' },
+    { label: 'Free 48-Hour Audit', href: '/#contact' },
+    { label: 'The 90-Day Guarantee', href: '/#guarantee' },
+    { label: 'Our Process', href: '/#framework' },
+    { label: 'Industries We Serve', href: '/#industries' },
   ],
 };
 

@@ -16,7 +16,7 @@ export default function Pricing() {
           description="Flat monthly retainer. KPIs written into the contract. 90-day guarantee on every plan. Ad spend is paid directly to the platform, not through us."
         />
 
-        <div className="grid md:grid-cols-3 gap-6 items-start">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
           {pricingTiers.map((tier, i) => (
             <motion.div
               key={tier.name}
@@ -36,7 +36,7 @@ export default function Pricing() {
               )}
 
               <div
-                className="card p-8 h-full flex flex-col"
+                className="card p-5 sm:p-8 h-full flex flex-col"
                 style={tier.highlight ? { borderColor: 'var(--accent-primary)', borderWidth: '2px' } : {}}
               >
                 {/* Header */}

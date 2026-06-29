@@ -17,7 +17,7 @@ export default function Insights() {
             title="Practical guides, no fluff"
             center={false}
           />
-          <ShimmerButton variant="outline" href="#insights" title="View all performance marketing insights and guides">
+          <ShimmerButton variant="outline" href="/blog" title="View all performance marketing insights and guides">
             View all
           </ShimmerButton>
         </div>
@@ -52,7 +52,7 @@ export default function Insights() {
                     {post.readTime}
                   </span>
                   <a
-                    href={`/insights/${post.slug}`}
+                    href={`/blog/${post.slug}`}
                     title={`Read: ${post.title}`}
                     className="flex items-center gap-1 text-xs font-semibold transition-colors"
                     style={{ color: 'var(--accent-primary)' }}

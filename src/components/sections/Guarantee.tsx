@@ -12,7 +12,7 @@ const steps = [
 
 export default function Guarantee() {
   return (
-    <section className="py-24 px-4 section-alt">
+    <section id="guarantee" className="py-24 px-4 section-alt">
       <div className="mx-auto max-w-4xl">
         <div className="card p-10 md:p-14 text-center">
           <motion.div

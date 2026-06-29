@@ -84,7 +84,7 @@ export default function Header() {
               Free Audit
             </ShimmerButton>
             <button
-              className="md:hidden p-2 rounded-lg"
+              className="md:hidden p-3 rounded-lg"
               style={{ color: '#ffffff', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.12)' }}
               onClick={() => setMenuOpen(v => !v)}
               aria-label={menuOpen ? 'Close menu' : 'Open navigation menu'}
@@ -104,7 +104,7 @@ export default function Header() {
                 key={l.href}
                 href={l.href}
                 title={l.title}
-                className="px-4 py-2.5 rounded-lg text-sm font-medium"
+                className="px-4 py-3 rounded-lg text-sm font-medium"
                 style={{ color: 'rgba(255,255,255,0.8)' }}
                 onClick={() => setMenuOpen(false)}
               >
