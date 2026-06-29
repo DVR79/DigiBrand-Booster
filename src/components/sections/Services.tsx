@@ -19,11 +19,11 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 const colorMap: Record<string, { card: string; iconBg: string; iconColor: string; planBg: string; planColor: string }> = {
-  blue:   { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',   iconColor: '#2563eb', planBg: 'rgba(37,99,235,0.08)',   planColor: '#2563eb' },
-  purple: { card: 'card-purple', iconBg: 'rgba(124,58,237,0.1)',  iconColor: '#7c3aed', planBg: 'rgba(124,58,237,0.08)',  planColor: '#7c3aed' },
-  cyan:   { card: 'card-cyan',   iconBg: 'rgba(14,165,233,0.1)',  iconColor: '#0ea5e9', planBg: 'rgba(14,165,233,0.08)',  planColor: '#0891b2' },
-  green:  { card: 'card-green',  iconBg: 'rgba(5,150,105,0.1)',   iconColor: '#059669', planBg: 'rgba(5,150,105,0.08)',   planColor: '#059669' },
-  amber:  { card: 'card-amber',  iconBg: 'rgba(245,158,11,0.1)',  iconColor: '#f59e0b', planBg: 'rgba(245,158,11,0.08)',  planColor: '#d97706' },
+  blue:   { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', planBg: 'rgba(37,99,235,0.08)',  planColor: '#2563eb' },
+  purple: { card: 'card-purple', iconBg: 'rgba(124,58,237,0.1)', iconColor: '#7c3aed', planBg: 'rgba(124,58,237,0.08)', planColor: '#7c3aed' },
+  green:  { card: 'card-green',  iconBg: 'rgba(5,150,105,0.1)',  iconColor: '#059669', planBg: 'rgba(5,150,105,0.08)',  planColor: '#059669' },
+  cyan:   { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', planBg: 'rgba(37,99,235,0.08)',  planColor: '#2563eb' },
+  amber:  { card: 'card-purple', iconBg: 'rgba(124,58,237,0.1)', iconColor: '#7c3aed', planBg: 'rgba(124,58,237,0.08)', planColor: '#7c3aed' },
 };
 
 export default function Services() {

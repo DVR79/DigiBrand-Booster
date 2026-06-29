@@ -17,11 +17,11 @@ export default function Team() {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {team.map((member, i) => {
-            const cardColors = ['card-blue', 'card-purple', 'card-cyan'] as const;
+            const cardColors = ['card-blue', 'card-purple', 'card-green'] as const;
             const avatarColors = [
-              { bg: 'rgba(37,99,235,0.1)', color: '#2563eb' },
+              { bg: 'rgba(37,99,235,0.1)',  color: '#2563eb' },
               { bg: 'rgba(124,58,237,0.1)', color: '#7c3aed' },
-              { bg: 'rgba(14,165,233,0.1)', color: '#0ea5e9' },
+              { bg: 'rgba(5,150,105,0.1)',  color: '#059669' },
             ];
             const colorIdx = i % 3;
             return (

@@ -27,7 +27,7 @@ const insights = [
     stat: '100M+',
     label: 'queries per day on ChatGPT alone',
     detail: 'Your potential customers are asking AI tools to recommend the best product or service in your category. Most brands have zero visibility in those answers.',
-    color: 'amber',
+    color: 'green',
     source: 'OpenAI, 2024',
   },
   {
@@ -35,7 +35,7 @@ const insights = [
     stat: '3–5x',
     label: 'higher CTR from AI Overview citations vs. blue links',
     detail: 'Being cited in a Google AI Overview drives more clicks than ranking #1 in traditional results. AEO is now the highest-value organic channel available.',
-    color: 'cyan',
+    color: 'blue',
     source: 'Semrush, 2024',
   },
   {
@@ -59,9 +59,9 @@ const insights = [
 const colorMap: Record<string, { iconBg: string; iconColor: string; statColor: string; card: string }> = {
   blue:   { iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', statColor: '#2563eb', card: 'card-blue' },
   purple: { iconBg: 'rgba(124,58,237,0.1)', iconColor: '#7c3aed', statColor: '#7c3aed', card: 'card-purple' },
-  cyan:   { iconBg: 'rgba(14,165,233,0.1)', iconColor: '#0ea5e9', statColor: '#0ea5e9', card: 'card-cyan' },
   green:  { iconBg: 'rgba(5,150,105,0.1)',  iconColor: '#059669', statColor: '#059669', card: 'card-green' },
-  amber:  { iconBg: 'rgba(245,158,11,0.1)', iconColor: '#d97706', statColor: '#d97706', card: 'card-amber' },
+  cyan:   { iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', statColor: '#2563eb', card: 'card-blue' },
+  amber:  { iconBg: 'rgba(124,58,237,0.1)', iconColor: '#7c3aed', statColor: '#7c3aed', card: 'card-purple' },
 };
 
 export default function MarketInsights() {
