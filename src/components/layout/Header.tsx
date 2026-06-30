@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { Menu, X, Search } from 'lucide-react';
+import Image from 'next/image';
 import ThemeToggle from '@/components/ui/ThemeToggle';
 import ShimmerButton from '@/components/ui/ShimmerButton';
 import { siteConfig } from '@/lib/data';
@@ -42,8 +43,8 @@ export default function Header() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <a href="/" className="font-heading text-xl font-extrabold" style={{ color: '#60a5fa' }} title="Digi Brand Booster - Home">
-            {siteConfig.name}
+          <a href="/" title="Digi Brand Booster - Home" className="flex items-center">
+            <Image src="/logo.svg" alt="Digi Brand Booster" width={180} height={48} priority style={{ height: '40px', width: 'auto' }} />
           </a>
 
           <nav className="hidden md:flex items-center gap-1">

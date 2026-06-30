@@ -44,6 +44,10 @@ export const metadata: Metadata = {
   publisher: siteConfig.name,
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: SITE_URL },
+  icons: {
+    icon: `${SITE_URL}/logo.svg`,
+    shortcut: `${SITE_URL}/logo.svg`,
+  },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
