@@ -1,6 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 70" width="480" height="70" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 70" width="500" height="70" role="img">
   <title>DigiBrand Booster — Performance Marketing Agency Bangalore</title>
   <desc>Logo for DigiBrand Booster</desc>
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&amp;display=swap');
+    </style>
+  </defs>
 
   <!-- Icon circle -->
   <circle cx="32" cy="32" r="30" fill="#1a73e8"/>
@@ -11,12 +17,14 @@
   <polyline points="14,40 28,26 40,33 54,14" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
   <polygon points="54,14 47,23 61,22" fill="#ffffff"/>
 
-  <!-- DigiBrand in one weight, Booster bold -->
-  <text x="76" y="38" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="34" fill="#1a73e8" letter-spacing="-0.5">Digi<tspan fill="#60a5fa">Brand</tspan> Booster</text>
+  <!-- Wordmark in Nunito -->
+  <text x="76" y="40" font-family="'Nunito', sans-serif" font-weight="900" font-size="36" letter-spacing="-0.5">
+    <tspan fill="#1a73e8">Digi</tspan><tspan fill="#60a5fa">Brand</tspan><tspan fill="#1a73e8"> Booster</tspan>
+  </text>
 
   <!-- Underline accent -->
-  <rect x="76" y="48" width="60" height="3" rx="1.5" fill="#60a5fa"/>
+  <rect x="76" y="49" width="65" height="3" rx="1.5" fill="#60a5fa"/>
 
   <!-- Tagline -->
-  <text x="76" y="64" font-family="'Segoe UI', Arial, sans-serif" font-weight="400" font-size="9" fill="#aaaaaa" letter-spacing="2.5">PERFORMANCE MARKETING AGENCY · BANGALORE</text>
+  <text x="76" y="65" font-family="'Nunito', sans-serif" font-weight="400" font-size="9" fill="#aaaaaa" letter-spacing="2.5">PERFORMANCE MARKETING AGENCY · BANGALORE</text>
 </svg>
