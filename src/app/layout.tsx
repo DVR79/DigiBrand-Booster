@@ -96,7 +96,7 @@ const organizationSchema = {
   },
   sameAs: [
     'https://www.linkedin.com/company/digibrandbooster',
-    'https://www.linkedin.com/in/d-venkataramana',
+    'https://www.linkedin.com/in/venkata-ramana-7a2251194/',
   ],
 };
 

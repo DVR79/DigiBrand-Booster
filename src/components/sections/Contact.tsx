@@ -264,7 +264,7 @@ Message: ${form.message || 'Not provided'}`;
               </div>
 
               <a
-                href="https://www.linkedin.com/in/d-venkataramana"
+                href="https://www.linkedin.com/in/venkata-ramana-7a2251194/"
                 title="Connect on LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
