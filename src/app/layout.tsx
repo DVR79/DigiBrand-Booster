@@ -64,7 +64,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
-  // verification: { google: 'ADD_YOUR_CODE_HERE' },
+  verification: {
+    google: 'PASTE_YOUR_GSC_VERIFICATION_CODE_HERE',
+  },
 };
 
 const organizationSchema = {
@@ -99,6 +101,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+        {/* Google Analytics 4 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHVK9W5N3N" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KHVK9W5N3N');`,
+          }}
+        />
       </head>
       <body className={`${inter.variable} ${bricolage.variable}`}>
         {children}
