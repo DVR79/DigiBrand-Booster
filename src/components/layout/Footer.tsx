@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { siteConfig } from '@/lib/data';
 
 const footerLinks = {
@@ -29,7 +30,9 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
           <div className="col-span-2 md:col-span-1">
-            <p className="font-heading text-lg font-extrabold mb-3" style={{ color: '#60a5fa' }}>{siteConfig.name}</p>
+            <a href="/" className="inline-block mb-4">
+              <Image src="/logo.svg" alt="DigiBrand Booster" width={220} height={55} style={{ height: '45px', width: 'auto' }} />
+            </a>
             <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.55)' }}>
               Performance marketing with a 90-day guarantee. Founder-led, boutique, Bangalore.
             </p>
