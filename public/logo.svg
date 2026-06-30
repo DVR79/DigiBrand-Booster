@@ -1,30 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 140" width="480" height="140" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="420" height="100" role="img">
   <title>Digi Brand Booster — Performance Marketing Agency Bangalore</title>
   <desc>Logo for Digi Brand Booster, a performance marketing agency based in Bangalore, India</desc>
 
-  <!-- Icon box -->
-  <rect x="0" y="0" width="120" height="120" rx="14" fill="none" stroke="#1a1a2e" stroke-width="2.5"/>
+  <!-- Icon box — white outline for dark navbar -->
+  <rect x="0" y="4" width="88" height="88" rx="12" fill="none" stroke="#ffffff" stroke-width="2"/>
 
-  <!-- Bar chart -->
-  <rect x="16" y="86" width="12" height="24" rx="2" fill="#1a1a2e" opacity="0.2"/>
-  <rect x="32" y="70" width="12" height="40" rx="2" fill="#1a1a2e" opacity="0.45"/>
-  <rect x="48" y="52" width="12" height="58" rx="2" fill="#1a1a2e" opacity="0.7"/>
-  <rect x="64" y="34" width="12" height="76" rx="2" fill="#00C6A2"/>
+  <!-- Bar chart — white bars -->
+  <rect x="12" y="66" width="10" height="20" rx="2" fill="#ffffff" opacity="0.25"/>
+  <rect x="26" y="54" width="10" height="32" rx="2" fill="#ffffff" opacity="0.45"/>
+  <rect x="40" y="40" width="10" height="46" rx="2" fill="#ffffff" opacity="0.7"/>
+  <rect x="54" y="26" width="10" height="60" rx="2" fill="#00C6A2"/>
 
   <!-- Trend line -->
-  <polyline points="16,76 36,54 52,62 76,30" fill="none" stroke="#00C6A2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <polygon points="76,30 67,42 85,40" fill="#00C6A2"/>
+  <polyline points="12,58 30,40 44,48 64,24" fill="none" stroke="#00C6A2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="64,24 57,34 71,32" fill="#00C6A2"/>
 
   <!-- Brand text -->
-  <text x="140" y="46" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="13" fill="#1a1a2e" letter-spacing="5">DIGI BRAND</text>
-  <text x="137" y="94" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="50" fill="#1a1a2e" letter-spacing="-1">Booster</text>
+  <text x="104" y="36" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="11" fill="#ffffff" opacity="0.75" letter-spacing="4">DIGI BRAND</text>
+  <text x="101" y="74" font-family="'Segoe UI', Arial, sans-serif" font-weight="900" font-size="42" fill="#ffffff" letter-spacing="-1">Booster</text>
 
   <!-- Teal underline -->
-  <rect x="140" y="103" width="90" height="4" rx="2" fill="#00C6A2"/>
-
-  <!-- Divider -->
-  <line x1="140" y1="118" x2="475" y2="118" stroke="#e0e0ee" stroke-width="1.5"/>
-
-  <!-- Tagline -->
-  <text x="140" y="134" font-family="'Segoe UI', Arial, sans-serif" font-weight="600" font-size="9" fill="#aaaaaa" letter-spacing="3">PERFORMANCE MARKETING AGENCY · BANGALORE</text>
+  <rect x="103" y="80" width="70" height="3" rx="1.5" fill="#00C6A2"/>
 </svg>
