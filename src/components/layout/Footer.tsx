@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { siteConfig } from '@/lib/data';
+import ContactPopupButton from '@/components/ui/ContactPopupButton';
 
 const footerLinks = {
   Services: [
@@ -36,42 +37,7 @@ export default function Footer() {
             <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.55)' }}>
               Performance marketing with a 90-day guarantee. Founder-led, boutique, Bangalore.
             </p>
-            <div className="flex flex-wrap gap-2">
-              <a
-                href={`tel:${siteConfig.phone}`}
-                title="Call DigiBrand Booster"
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors"
-                style={{ border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.6)' }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.borderColor = '#60a5fa';
-                  (e.currentTarget as HTMLAnchorElement).style.color = '#60a5fa';
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.15)';
-                  (e.currentTarget as HTMLAnchorElement).style.color = 'rgba(255,255,255,0.6)';
-                }}
-              >
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                Call Us
-              </a>
-              <a
-                href={`mailto:${siteConfig.email}`}
-                title="Email DigiBrand Booster"
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors"
-                style={{ border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.6)' }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.borderColor = '#60a5fa';
-                  (e.currentTarget as HTMLAnchorElement).style.color = '#60a5fa';
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.15)';
-                  (e.currentTarget as HTMLAnchorElement).style.color = 'rgba(255,255,255,0.6)';
-                }}
-              >
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                Mail Us
-              </a>
-            </div>
+            <ContactPopupButton />
           </div>
 
           {Object.entries(footerLinks).map(([group, links]) => (
