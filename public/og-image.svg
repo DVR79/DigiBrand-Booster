@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a14"/>
+      <stop offset="100%" style="stop-color:#14141f"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5b8dff"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a73e8;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Glow circle top-left -->
+  <ellipse cx="200" cy="180" rx="300" ry="280" fill="url(#glow)" opacity="0.6"/>
+
+  <!-- Grid lines subtle -->
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="630" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="800" y1="0" x2="800" y2="630" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Logo icon -->
+  <circle cx="96" cy="96" r="60" fill="#1a73e8"/>
+  <rect x="70" y="120" width="14" height="28" rx="3" fill="#ffffff" opacity="0.3"/>
+  <rect x="90" y="104" width="14" height="44" rx="3" fill="#ffffff" opacity="0.55"/>
+  <rect x="110" y="84" width="14" height="64" rx="3" fill="#ffffff" opacity="0.8"/>
+  <rect x="130" y="64" width="14" height="84" rx="3" fill="#60a5fa"/>
+  <polyline points="70,116 96,84 116,97 144,60" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="144,60 130,76 158,75" fill="#ffffff"/>
+
+  <!-- Wordmark -->
+  <text x="180" y="116" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="72" letter-spacing="-1">
+    <tspan fill="#1a73e8">Digi</tspan><tspan fill="#60a5fa">Brand</tspan><tspan fill="#1a73e8"> Booster</tspan>
+  </text>
+
+  <!-- Blue underline -->
+  <rect x="180" y="130" width="140" height="5" rx="2.5" fill="#60a5fa"/>
+
+  <!-- Tagline -->
+  <text x="180" y="168" font-family="Arial, sans-serif" font-weight="400" font-size="18" fill="#aaaaaa" letter-spacing="3">PERFORMANCE MARKETING AGENCY · BANGALORE</text>
+
+  <!-- Divider -->
+  <rect x="96" y="210" width="1008" height="1" fill="rgba(255,255,255,0.08)"/>
+
+  <!-- Headline -->
+  <text x="96" y="308" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="64" fill="#f4f4f7" letter-spacing="-1">90-Day Growth Guarantee.</text>
+  <text x="96" y="386" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="64" fill="url(#accent)" letter-spacing="-1">Or We Work Free.</text>
+
+  <!-- Sub text -->
+  <text x="96" y="442" font-family="Arial, sans-serif" font-size="22" fill="rgba(255,255,255,0.55)">Meta Ads · Google Ads · SEO · AEO · GEO · Local SEO</text>
+
+  <!-- Stats pills -->
+  <rect x="96" y="490" width="200" height="56" rx="12" fill="rgba(91,141,255,0.12)" stroke="rgba(91,141,255,0.3)" stroke-width="1"/>
+  <text x="196" y="514" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="22" fill="#5b8dff" text-anchor="middle">3.5x ROAS</text>
+  <text x="196" y="534" font-family="Arial, sans-serif" font-size="13" fill="rgba(255,255,255,0.4)" text-anchor="middle">avg in 90 days</text>
+
+  <rect x="316" y="490" width="200" height="56" rx="12" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+  <text x="416" y="514" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="22" fill="#a78bfa" text-anchor="middle">48-hr Audit</text>
+  <text x="416" y="534" font-family="Arial, sans-serif" font-size="13" fill="rgba(255,255,255,0.4)" text-anchor="middle">free, no commitment</text>
+
+  <rect x="536" y="490" width="200" height="56" rx="12" fill="rgba(34,211,238,0.12)" stroke="rgba(34,211,238,0.3)" stroke-width="1"/>
+  <text x="636" y="514" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="22" fill="#22d3ee" text-anchor="middle">Founder-Led</text>
+  <text x="636" y="534" font-family="Arial, sans-serif" font-size="13" fill="rgba(255,255,255,0.4)" text-anchor="middle">boutique agency</text>
+
+  <!-- URL -->
+  <text x="1104" y="580" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.3)" text-anchor="end">digibrandbooster.tech</text>
+</svg>
