@@ -19,9 +19,9 @@ export default function Team() {
           {team.map((member, i) => {
             const cardColors = ['card-blue', 'card-indigo', 'card-blue'] as const;
             const avatarColors = [
-              { bg: 'rgba(37,99,235,0.1)',  color: '#2563eb' },
-              { bg: 'rgba(67,56,202,0.1)',  color: '#4338ca' },
-              { bg: 'rgba(37,99,235,0.1)',  color: '#2563eb' },
+              { bg: 'rgba(0, 88, 190,0.1)',  color: '#0058be' },
+              { bg: 'rgba(230, 151, 0,0.1)',  color: '#2170e4' },
+              { bg: 'rgba(0, 88, 190,0.1)',  color: '#0058be' },
             ];
             const colorIdx = i % 3;
             return (

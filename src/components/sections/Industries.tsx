@@ -15,22 +15,22 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 const cardColors = [
-  { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', tagBg: 'rgba(37,99,235,0.08)',  tagColor: '#2563eb' },
-  { card: 'card-indigo', iconBg: 'rgba(67,56,202,0.1)',  iconColor: '#4338ca', tagBg: 'rgba(67,56,202,0.08)',  tagColor: '#4338ca' },
-  { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', tagBg: 'rgba(37,99,235,0.08)',  tagColor: '#2563eb' },
-  { card: 'card-indigo', iconBg: 'rgba(67,56,202,0.1)',  iconColor: '#4338ca', tagBg: 'rgba(67,56,202,0.08)',  tagColor: '#4338ca' },
-  { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', tagBg: 'rgba(37,99,235,0.08)',  tagColor: '#2563eb' },
-  { card: 'card-indigo', iconBg: 'rgba(67,56,202,0.1)',  iconColor: '#4338ca', tagBg: 'rgba(67,56,202,0.08)',  tagColor: '#4338ca' },
+  { card: 'card-blue',   iconBg: 'rgba(0, 88, 190,0.1)',  iconColor: '#0058be', tagBg: 'rgba(0, 88, 190,0.08)',  tagColor: '#0058be' },
+  { card: 'card-indigo', iconBg: 'rgba(230, 151, 0,0.1)',  iconColor: '#2170e4', tagBg: 'rgba(230, 151, 0,0.08)',  tagColor: '#2170e4' },
+  { card: 'card-blue',   iconBg: 'rgba(0, 88, 190,0.1)',  iconColor: '#0058be', tagBg: 'rgba(0, 88, 190,0.08)',  tagColor: '#0058be' },
+  { card: 'card-indigo', iconBg: 'rgba(230, 151, 0,0.1)',  iconColor: '#2170e4', tagBg: 'rgba(230, 151, 0,0.08)',  tagColor: '#2170e4' },
+  { card: 'card-blue',   iconBg: 'rgba(0, 88, 190,0.1)',  iconColor: '#0058be', tagBg: 'rgba(0, 88, 190,0.08)',  tagColor: '#0058be' },
+  { card: 'card-indigo', iconBg: 'rgba(230, 151, 0,0.1)',  iconColor: '#2170e4', tagBg: 'rgba(230, 151, 0,0.08)',  tagColor: '#2170e4' },
 ];
 
 export default function Industries() {
   return (
-    <section id="industries" className="py-24 px-4" style={{ background: 'var(--bg-card)' }}>
+    <section id="industries" className="py-14 md:py-20 px-4" style={{ background: '#f3f3f4' }}>
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           eyebrow="Industries"
-          title="We know your market, not just your metrics"
-          description="Vertical expertise means faster ramp-up, fewer wasted experiments, and campaigns built around how your customers actually buy."
+          title="We already know how your buyers buy"
+          description="Vertical experience means a faster start, fewer wasted tests, and campaigns shaped around how customers in your category actually decide."
         />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

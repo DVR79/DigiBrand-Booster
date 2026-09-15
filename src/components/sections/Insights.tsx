@@ -9,12 +9,13 @@ import { insightPosts } from '@/lib/data';
 
 export default function Insights() {
   return (
-    <section id="insights" className="py-24 px-4" style={{ background: 'var(--bg-card)' }}>
+    <section id="insights" className="py-14 md:py-20 px-4" style={{ background: '#ffffff' }}>
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-12 gap-4">
           <SectionHeader
             eyebrow="Insights"
-            title="Practical guides, no fluff"
+            title="Playbooks from the actual work"
+            description="Deep dives on SEO, AEO, GEO, and paid media, written from what we ran in real Indian client accounts, not summarised from someone else's blog."
             center={false}
           />
           <ShimmerButton variant="outline" href="/blog" title="View all performance marketing insights and guides">

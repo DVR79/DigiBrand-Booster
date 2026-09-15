@@ -166,16 +166,16 @@ Message: ${form.message || 'Not provided'}`;
   const focusStyle = {
     outline: 'none',
     border: '1px solid var(--accent-primary)',
-    boxShadow: '0 0 0 3px rgba(91,141,255,0.12)',
+    boxShadow: '0 0 0 3px rgba(0,88,190,0.12)',
   };
 
   return (
-    <section id="contact" className="py-24 px-4" style={{ background: 'var(--bg-card)' }}>
+    <section id="contact" className="py-14 md:py-20 px-4" style={{ background: '#ffffff' }}>
       <div className="mx-auto max-w-6xl">
         <SectionHeader
           eyebrow="Get in touch"
-          title="Book your free 48-hour audit"
-          description="Share your details and we will deliver a written audit of your ad accounts, SEO, and conversion funnel within 48 hours. No credit card. No sales call first."
+          title="Get your free 48-hour audit"
+          description="Tell us where you are stuck. Within 48 hours you get a written audit of your ad accounts, SEO, and conversion path, read by a senior specialist. No credit card, no sales call before the audit."
         />
 
         <div className="grid lg:grid-cols-[1fr_1.2fr] gap-10 items-start">
@@ -188,8 +188,8 @@ Message: ${form.message || 'Not provided'}`;
             transition={{ duration: 0.5 }}
           >
             <p className="text-sm leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
-              Based in Bangalore, working with brands across India and internationally.
-              Submit the form and get a written audit within 48 hours. Or reach us directly on any channel below.
+              Based in Bangalore, working with brands across India and beyond.
+              Send the form and get a written audit within 48 hours, or reach us directly on any channel below.
             </p>
 
             <div className="space-y-3 mb-7">
@@ -204,7 +204,7 @@ Message: ${form.message || 'Not provided'}`;
                   style={{ background: 'var(--bg-card-hover)', border: '1px solid var(--border)' }}
                   onMouseEnter={(e) =>
                     ((e.currentTarget as HTMLAnchorElement).style.borderColor =
-                      'rgba(91,141,255,0.4)')
+                      'rgba(0,88,190,0.4)')
                   }
                   onMouseLeave={(e) =>
                     ((e.currentTarget as HTMLAnchorElement).style.borderColor = 'var(--border)')
@@ -290,7 +290,7 @@ Message: ${form.message || 'Not provided'}`;
               </div>
 
               <a
-                href="https://www.linkedin.com/in/venkata-ramana-7a2251194/"
+                href="https://www.linkedin.com/in/d-venkata-ramana/"
                 title="Connect on LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -470,7 +470,7 @@ Message: ${form.message || 'Not provided'}`;
                     title="Submit your audit request - we will respond within 48 hours"
                     className="mt-2 inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold transition-all disabled:opacity-60 disabled:cursor-not-allowed"
                     style={{
-                      background: 'linear-gradient(135deg, var(--accent-primary), var(--accent-purple))',
+                      background: '#0058be',
                       color: '#fff',
                     }}
                   >

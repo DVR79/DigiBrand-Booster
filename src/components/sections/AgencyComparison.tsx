@@ -8,48 +8,48 @@ import ShimmerButton from '@/components/ui/ShimmerButton';
 const reasons = [
   {
     icon: <Clock size={20} />,
-    title: 'Founder-led on every account',
-    description: 'Venkat personally leads strategy and reviews every campaign. You always speak with the person doing the work, not a junior account manager.',
-    iconBg: 'rgba(37,99,235,0.1)', iconColor: '#2563eb', card: 'card-blue',
+    title: 'Senior-led on every account',
+    description: 'Venkat leads strategy and reviews every campaign personally. You talk to the person doing the work, not an account manager relaying it.',
+    iconBg: 'rgba(0, 88, 190,0.1)', iconColor: '#0058be', card: 'card-blue',
   },
   {
     icon: <FileCheck size={20} />,
     title: 'KPIs signed before we start',
-    description: 'Your ROAS, CPL, or traffic target is written into the contract. If we miss it in 90 days, you get a full management fee refund.',
-    iconBg: 'rgba(67,56,202,0.1)', iconColor: '#4338ca', card: 'card-indigo',
+    description: 'Your ROAS, cost per lead, or traffic target is written into the contract up front, so what we are accountable for is never in doubt.',
+    iconBg: 'rgba(230, 151, 0,0.1)', iconColor: '#2170e4', card: 'card-indigo',
   },
   {
     icon: <BarChart3 size={20} />,
-    title: 'Full transparency every week',
-    description: 'Live dashboard access daily. Written Monday update covering what changed, why, and what comes next. You never need to chase us for an update.',
-    iconBg: 'rgba(37,99,235,0.1)', iconColor: '#2563eb', card: 'card-blue',
+    title: 'Reporting you never have to chase',
+    description: 'A live dashboard you can open any day, plus a written update every Monday covering what changed, why, and what is next.',
+    iconBg: 'rgba(0, 88, 190,0.1)', iconColor: '#0058be', card: 'card-blue',
   },
   {
     icon: <Users size={20} />,
-    title: 'Boutique capacity by design',
-    description: 'We limit active clients deliberately. Fewer accounts means more attention, better results, and a 94% client retention rate.',
-    iconBg: 'rgba(67,56,202,0.1)', iconColor: '#4338ca', card: 'card-indigo',
+    title: 'Small client list, by design',
+    description: 'We cap active clients on purpose. Fewer accounts means real attention, which is how we hold a 94% retention rate.',
+    iconBg: 'rgba(230, 151, 0,0.1)', iconColor: '#2170e4', card: 'card-indigo',
   },
 ];
 
 const rows = [
-  { feature: 'Who works on your account', us: 'Founder personally, on every account', them: 'Junior exec who changes every 6 months' },
+  { feature: 'Who works on your account', us: 'Senior strategist on every account', them: 'Junior exec who rotates off in months' },
   { feature: 'Onboarding time', us: '48 hours from contract signing', them: '2 to 4 weeks of discovery calls' },
-  { feature: 'KPIs and accountability', us: 'Signed into the contract before we start', them: 'Discussed verbally, rarely documented' },
-  { feature: 'Reporting', us: 'Live dashboard daily, written update every Monday', them: 'Monthly PDF sent when they remember' },
-  { feature: 'Response time', us: 'Same day on WhatsApp or email', them: 'Scheduled calls and ticketing systems' },
-  { feature: 'AI search visibility (AEO and GEO)', us: 'Core service, built into every strategy', them: 'Most have not built this capability yet' },
-  { feature: 'Client capacity', us: 'Limited deliberately for quality', them: '50 to 100 accounts per team member' },
+  { feature: 'KPIs and accountability', us: 'In the signed contract before we start', them: 'Discussed on a call, rarely written down' },
+  { feature: 'Reporting', us: 'Live dashboard, plus a written Monday update', them: 'A monthly PDF, when they remember' },
+  { feature: 'Response time', us: 'Same day on WhatsApp or email', them: 'Scheduled calls and support tickets' },
+  { feature: 'AI search visibility (AEO and GEO)', us: 'A core service, in every strategy', them: 'Most have not built this capability yet' },
+  { feature: 'Client capacity', us: 'Kept deliberately low for quality', them: '50 to 100 accounts per team member' },
 ];
 
 export default function AgencyComparison() {
   return (
-    <section id="why-us" className="py-24 px-4" style={{ background: 'var(--bg-dark)' }}>
+    <section id="why-us" className="py-14 md:py-20 px-4" style={{ background: '#ffffff' }}>
       <div className="mx-auto max-w-5xl">
         <SectionHeader
           eyebrow="Why us"
-          title="Boutique by choice. Accountable by design."
-          description="Big agencies win awards. We win results. Here is what actually changes when your account is managed by a founder who is personally invested in your growth."
+          title="Small on purpose. Accountable by design."
+          description="Large agencies are built to scale headcount. We are built to stay close to a small number of accounts. Here is what changes when a senior specialist who is personally on the hook runs your growth."
         />
 
         {/* Reason cards */}
@@ -82,7 +82,7 @@ export default function AgencyComparison() {
           <div style={{ minWidth: '520px' }}>
             <div className="grid grid-cols-3 gap-4 mb-3 px-4">
               <p className="text-sm font-semibold" style={{ color: 'var(--text-secondary)' }}>What matters to you</p>
-              <div className="text-center text-sm font-bold py-2 rounded-xl" style={{ background: 'rgba(37,99,235,0.1)', color: 'var(--accent-primary)' }}>
+              <div className="text-center text-sm font-bold py-2 rounded-xl" style={{ background: 'rgba(0, 88, 190,0.1)', color: 'var(--accent-primary)' }}>
                 Digi Brand Booster
               </div>
               <div className="text-center text-sm font-semibold py-2 rounded-xl" style={{ background: 'var(--bg-card)', color: 'var(--text-secondary)' }}>

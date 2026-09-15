@@ -10,7 +10,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 px-4 section-alt">
+    <section id="faq" className="py-14 md:py-20 px-4 section-alt">
       <div className="mx-auto max-w-3xl">
         <SectionHeader eyebrow="FAQ" title="Common questions" description="If your question is not here, drop us a message." />
         <div className="space-y-2">

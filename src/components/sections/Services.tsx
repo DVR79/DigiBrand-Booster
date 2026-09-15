@@ -19,21 +19,21 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 const colorMap: Record<string, { card: string; iconBg: string; iconColor: string; planBg: string; planColor: string }> = {
-  blue:   { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', planBg: 'rgba(37,99,235,0.08)',  planColor: '#2563eb' },
-  purple: { card: 'card-indigo', iconBg: 'rgba(67,56,202,0.1)',  iconColor: '#4338ca', planBg: 'rgba(67,56,202,0.08)',  planColor: '#4338ca' },
-  green:  { card: 'card-blue',   iconBg: 'rgba(37,99,235,0.1)',  iconColor: '#2563eb', planBg: 'rgba(37,99,235,0.08)',  planColor: '#2563eb' },
-  cyan:   { card: 'card-indigo', iconBg: 'rgba(67,56,202,0.1)',  iconColor: '#4338ca', planBg: 'rgba(67,56,202,0.08)',  planColor: '#4338ca' },
-  amber:  { card: 'card-indigo', iconBg: 'rgba(67,56,202,0.1)',  iconColor: '#4338ca', planBg: 'rgba(67,56,202,0.08)',  planColor: '#4338ca' },
+  blue:   { card: 'card-blue',   iconBg: 'rgba(0, 88, 190,0.1)',  iconColor: '#0058be', planBg: 'rgba(0, 88, 190,0.08)',  planColor: '#0058be' },
+  purple: { card: 'card-indigo', iconBg: 'rgba(230, 151, 0,0.1)',  iconColor: '#2170e4', planBg: 'rgba(230, 151, 0,0.08)',  planColor: '#2170e4' },
+  green:  { card: 'card-blue',   iconBg: 'rgba(0, 88, 190,0.1)',  iconColor: '#0058be', planBg: 'rgba(0, 88, 190,0.08)',  planColor: '#0058be' },
+  cyan:   { card: 'card-indigo', iconBg: 'rgba(230, 151, 0,0.1)',  iconColor: '#2170e4', planBg: 'rgba(230, 151, 0,0.08)',  planColor: '#2170e4' },
+  amber:  { card: 'card-indigo', iconBg: 'rgba(230, 151, 0,0.1)',  iconColor: '#2170e4', planBg: 'rgba(230, 151, 0,0.08)',  planColor: '#2170e4' },
 };
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-4 section-alt">
+    <section id="services" className="py-14 md:py-20 px-4" style={{ background: '#ffffff' }}>
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           eyebrow="What we do"
-          title="Eight services. One goal: measurable growth."
-          description="Every service is tied to a specific outcome. Pick the plan that fits your stage and we handle execution, reporting, and results."
+          title="Nine services. One job: growth you can measure."
+          description="Every service maps to a specific outcome and a specific plan. You pick the stage you are at; we handle the execution, the weekly reporting, and the number we agreed to hit."
         />
 
         {/* Plan legend */}
@@ -79,7 +79,7 @@ export default function Services() {
                   </div>
                   <div className="flex items-center gap-1.5">
                     {service.badge && (
-                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ background: 'rgba(124,58,237,0.1)', color: '#7c3aed' }}>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ background: 'rgba(230, 151, 0,0.1)', color: '#2170e4' }}>
                         {service.badge}
                       </span>
                     )}

@@ -2,9 +2,9 @@
 
 export const siteConfig = {
   name: 'Digi Brand Booster',
-  tagline: 'AI-Native Performance Marketing Agency',
+  tagline: 'Senior-Led Performance Marketing for Search and AI Search',
   description:
-    "Bangalore-based AI-native performance marketing agency. We help D2C, EdTech, and SaaS brands grow through Meta Ads, Google Ads, SEO, AEO, and GEO, with written KPIs and a 90-day guarantee in every engagement.",
+    "Bangalore-based performance marketing agency for D2C, SaaS, and EdTech brands. We run SEO, Meta Ads, and Google Ads, and we get you cited and recommended inside AI answers through AEO and GEO. A senior specialist works your account, your KPIs are written into the contract, and you can leave any month.",
   phone: '+91 79816 32581',
   email: 'venkat.digitalseo@gmail.com',
   whatsapp: '917981632581',
@@ -36,7 +36,7 @@ export const testimonials: Testimonial[] = [
   {
     name: 'Meera Krishnan',
     title: 'Founder',
-    company: 'Aura Naturals (D2C Skincare)',
+    company: 'Aura Naturals (D2C E-commerce)',
     quote:
       'We had been burning budget on Meta for months with no idea why it was not converting. Venkat audited our account in 48 hours and identified three critical issues we had completely missed. Within 9 weeks our ROAS moved from 1.3x to 4.0x with the same spend. The weekly Monday reports meant we always knew exactly what was being tested and why.',
     metric: '4.0x ROAS in 9 weeks',
@@ -62,7 +62,7 @@ export const testimonials: Testimonial[] = [
     title: 'Marketing Manager',
     company: 'NourishCo (Health and Wellness)',
     quote:
-      'The 90-day guarantee made the decision simple. But what impressed us more was the transparency throughout. Live dashboard access, weekly written updates, and a founder who picks up the phone. We hit our ROAS target in week 11 and renewed immediately. The GEO work in month 3 started surfacing our brand in Perplexity recommendations, which was something we did not even know was possible.',
+      'What sold us was the transparency from the start. Live dashboard access, weekly written updates, and a senior lead who picks up the phone. We hit our ROAS target in week 11 and renewed immediately. The GEO work in month 3 started surfacing our brand in Perplexity recommendations, which was something we did not even know was possible.',
     metric: '3.6x ROAS, AI citations from month 3',
   },
 ];
@@ -81,11 +81,11 @@ export const services: Service[] = [
   {
     title: 'Technical SEO',
     icon: 'code',
-    outcome: 'Fix the hidden issues stopping Google from ranking your site.',
+    outcome: 'Fix the technical faults that quietly stop Google from ranking pages you have already written.',
     points: [
       'Full crawl and indexation audit with priority fix list',
       'Core Web Vitals optimisation for speed and user experience',
-      'Schema markup so Google understands every page clearly',
+      'Schema markup so Google, and AI answer engines, understand what each page is about',
     ],
     plan: 'Starter',
     color: 'blue',
@@ -93,7 +93,7 @@ export const services: Service[] = [
   {
     title: 'On-Page and Content SEO',
     icon: 'fileText',
-    outcome: 'Rank for the exact keywords your buyers search before they buy.',
+    outcome: 'Rank for the specific searches your buyers make right before they buy.',
     points: [
       'Keyword research mapped to buyer intent stages',
       'Title tags, headings, and page structure optimised per page',
@@ -105,11 +105,11 @@ export const services: Service[] = [
   {
     title: 'Meta Ads',
     icon: 'trendingUp',
-    outcome: 'Turn ad spend into measurable revenue with full-funnel Meta campaigns.',
+    outcome: 'Turn Meta spend into revenue you can trace, from cold prospecting through to retargeting.',
     points: [
       'Campaign builds across prospecting, warm, and retargeting audiences',
       'Weekly creative testing so your ads do not go stale',
-      'Server-side Conversions API for accurate post-iOS tracking',
+      'Server-side Conversions API with event deduplication, so post-iOS tracking is accurate, not double-counted',
     ],
     plan: 'Starter',
     color: 'purple',
@@ -117,7 +117,7 @@ export const services: Service[] = [
   {
     title: 'Google Ads',
     icon: 'search',
-    outcome: 'Capture buyers who are actively searching for what you sell.',
+    outcome: 'Capture the buyers already searching for exactly what you sell.',
     points: [
       'Search, Shopping, and Performance Max campaign builds',
       'Tight negative keyword lists to stop budget going to wrong searches',
@@ -129,7 +129,7 @@ export const services: Service[] = [
   {
     title: 'Link Building',
     icon: 'target',
-    outcome: 'Build the authority signals that push your rankings past competitors.',
+    outcome: 'Earn the authority signals that lift rankings past better-funded competitors.',
     points: [
       'Manual outreach to real, high-authority sites in your industry',
       'Digital PR to earn editorial mentions and news links',
@@ -141,7 +141,7 @@ export const services: Service[] = [
   {
     title: 'Local SEO',
     icon: 'mapPin',
-    outcome: 'Show up at the top of Google Maps when nearby customers search.',
+    outcome: 'Show up at the top of Google Maps when a nearby customer is ready to act.',
     points: [
       'Google Business Profile setup and full optimisation',
       'Citation building across 50+ directories for consistent NAP data',
@@ -153,9 +153,9 @@ export const services: Service[] = [
   {
     title: 'AEO: Answer Engine Optimisation',
     icon: 'brain',
-    outcome: 'Get your content cited by ChatGPT, Perplexity, and Google AI Overviews.',
+    outcome: 'Get your content cited when ChatGPT, Perplexity, and Google AI Overviews answer questions from your buyers.',
     points: [
-      'Content restructured specifically to earn AI platform citations',
+      'Content restructured question-first, so answer engines can extract and cite it',
       'Featured snippet and AI Overview targeting by keyword cluster',
       'Monthly citation tracking across all major AI search platforms',
     ],
@@ -166,7 +166,7 @@ export const services: Service[] = [
   {
     title: 'GEO: Generative Engine Optimisation',
     icon: 'sparkles',
-    outcome: 'Get recommended by AI when buyers ask for the best in your category.',
+    outcome: 'Get named when a buyer asks AI for the best option in your category.',
     points: [
       'Brand visibility audit across ChatGPT, Gemini, and Perplexity',
       'Authority content built to align with how AI models cite sources',
@@ -179,7 +179,7 @@ export const services: Service[] = [
   {
     title: 'Social Media Marketing',
     icon: 'share',
-    outcome: 'Build an active, converting social presence across Instagram and LinkedIn.',
+    outcome: 'Build a social presence that actually moves people toward buying, not just a follower count.',
     points: [
       'Content calendar planning and post scheduling every month',
       'Branded creatives and copy aligned to your campaign goals',
@@ -200,12 +200,12 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
-    brand: 'D2C Skincare Brand',
+    brand: 'D2C E-commerce Brand',
     industry: 'Direct-to-Consumer Beauty',
     challenge:
       'Meta ROAS had been stuck at 1.3x for four months despite increasing spend by 30%. The real problems were creative fatigue across all active ad sets, broken pixel tracking following iOS changes, and zero audience segmentation beyond broad interest targeting.',
     result:
-      'Rebuilt the full campaign architecture across prospecting, warm, and retargeting segments. Deployed server-side Conversions API to restore attribution accuracy. Introduced a weekly creative testing sprint with clear hypotheses and Monday learnings shared with the client team.',
+      'Rebuilt the full campaign architecture across prospecting, warm, and retargeting segments. Deployed server-side Conversions API to restore attribution accuracy. Set up a weekly creative testing sprint with a written hypothesis for each test and Monday learnings shared with the client.',
     metrics: [
       { label: 'ROAS achieved', value: '4.0x' },
       { label: 'Timeline', value: '9 weeks' },
@@ -251,37 +251,37 @@ export const industries: Industry[] = [
   {
     name: 'D2C and E-commerce',
     icon: 'shopping',
-    pain: 'High Meta CPL, post-iOS attribution gaps, and creative fatigue eating into ROAS.',
+    pain: 'Rising Meta costs, post-iOS attribution gaps, and creative that fatigues faster than you can replace it.',
     channels: ['Meta Ads', 'Google Shopping', 'SEO', 'GEO'],
   },
   {
     name: 'EdTech and Upskilling',
     icon: 'graduation',
-    pain: 'Organic traffic flat despite content investment. AI search driving discovery you are not capturing.',
+    pain: 'Content going out every week and traffic still flat, while AI answers quietly take the discovery you used to own.',
     channels: ['AEO', 'Technical SEO', 'Google Ads', 'Meta Ads'],
   },
   {
     name: 'Real Estate',
     icon: 'building',
-    pain: 'High ad spend, poor lead quality, and no feedback loop between sales and marketing.',
+    pain: 'High ad spend, leads that do not qualify, and no loop between what sales hears and what marketing spends on.',
     channels: ['Google Ads', 'Meta Ads', 'Local SEO', 'Landing Page CRO'],
   },
   {
     name: 'B2B SaaS',
     icon: 'cpu',
-    pain: 'Long sales cycles, low organic visibility for high-intent keywords, and no AI search presence.',
+    pain: 'Long sales cycles, thin organic visibility on high-intent terms, and no presence in AI recommendations.',
     channels: ['Technical SEO', 'AEO', 'GEO', 'LinkedIn Ads'],
   },
   {
     name: 'Health and Wellness',
     icon: 'heart',
-    pain: 'Meta ad policy restrictions, trust-building challenges, and competitive paid media landscape.',
+    pain: 'Meta policy limits, a trust barrier with new buyers, and a crowded paid-media auction.',
     channels: ['SEO', 'AEO', 'Meta Ads', 'Google Ads'],
   },
   {
     name: 'Financial Services',
     icon: 'chart',
-    pain: 'Strict compliance requirements, low quality scores, and difficulty standing out in paid search.',
+    pain: 'Strict compliance, low quality scores, and the difficulty of standing out in paid search.',
     channels: ['Technical SEO', 'Google Ads', 'AEO', 'Content SEO'],
   },
 ];
@@ -297,31 +297,31 @@ export const frameworkSteps: FrameworkStep[] = [
     step: 1,
     title: 'Audit',
     description:
-      'A 48-hour deep-dive into your ad accounts, analytics, SEO profile, and top three competitors. We document every budget leak, every missed opportunity, and every technical issue before recommending anything.',
+      'A 48-hour deep dive into your ad accounts, analytics, SEO, and your three closest competitors. We document every budget leak, every missed opportunity, and every technical fault before we recommend a single change.',
   },
   {
     step: 2,
     title: 'Strategy',
     description:
-      'A written growth plan with channel priorities, creative direction, and 90-day KPI targets. Every target goes into the contract before we spend a rupee. You know exactly what we are accountable for.',
+      'A written growth plan: which channels to prioritise, the creative direction, and clear KPI targets. Every target goes into the contract before we spend, so you know precisely what we are accountable for.',
   },
   {
     step: 3,
     title: 'Build',
     description:
-      'Campaign architecture, tracking infrastructure, landing page improvements, and creative production. Every element is tested for technical accuracy and aligned to your brand standards before going live.',
+      'Campaign architecture, tracking that actually fires, landing-page fixes, and creative. Everything is checked for technical accuracy and matched to your brand before it goes live.',
   },
   {
     step: 4,
     title: 'Optimise',
     description:
-      'Weekly sprints with documented hypotheses, test results, and learnings delivered every Monday. Every decision traces to a data point. You always know what we tested, what worked, and what we are doing next.',
+      'Weekly sprints with a written hypothesis, the result, and the learning, delivered every Monday. Each decision traces back to a number. You always know what we tested and what happens next.',
   },
   {
     step: 5,
     title: 'Scale',
     description:
-      'Once unit economics are proven and repeatable, we scale spend methodically across Meta, Google, and organic channels. We protect what is working while systematically identifying what can grow further.',
+      'Once the unit economics hold up and repeat, we scale spend methodically across Meta, Google, and organic, protecting what works while finding the next thing that can grow.',
   },
 ];
 
@@ -341,8 +341,8 @@ export const pricingTiers: PricingTier[] = [
     name: 'Starter',
     price: '₹15,000',
     priceNote: '/month onwards',
-    tagline: 'One channel. Real work. Clear results.',
-    ideal: 'Brands starting with SEO, paid media, or SMM for the first time.',
+    tagline: 'One channel, run properly.',
+    ideal: 'Brands running SEO, paid media, or social for the first time and wanting it done right.',
     features: [
       'One channel: SEO, Meta Ads, Google Ads, or SMM',
       'Month 1: full account or site audit',
@@ -350,7 +350,7 @@ export const pricingTiers: PricingTier[] = [
       'Weekly performance report every Monday',
       'Monthly strategy call',
       'Written KPIs in the contract before we start',
-      '90-day results guarantee',
+      'Month-to-month, no lock-in',
     ],
     cta: 'Book free audit',
     highlight: false,
@@ -359,8 +359,8 @@ export const pricingTiers: PricingTier[] = [
     name: 'Growth',
     price: '₹22,000',
     priceNote: '/month onwards',
-    tagline: 'Two channels working together.',
-    ideal: 'Brands ready to combine SEO with paid media or SMM for compounding growth.',
+    tagline: 'Two channels that feed each other.',
+    ideal: 'Brands ready to pair SEO with paid or social so the channels compound instead of competing.',
     features: [
       'Two channels: any combination of SEO, Paid Media, and SMM',
       'Month 1: full audit across both channels',
@@ -369,7 +369,7 @@ export const pricingTiers: PricingTier[] = [
       'SMM: content calendar, branded creatives, and scheduling',
       'Weekly report + bi-weekly strategy call',
       'Written KPIs across both channels',
-      '90-day results guarantee',
+      'Month-to-month, no lock-in',
     ],
     cta: 'Book free audit',
     highlight: true,
@@ -378,8 +378,8 @@ export const pricingTiers: PricingTier[] = [
     name: 'Scale',
     price: '₹29,000',
     priceNote: '/month onwards',
-    tagline: 'Full stack. Every channel. One accountable team.',
-    ideal: 'Growing brands that need SEO, paid media, SMM, and AI search all working as one system.',
+    tagline: 'Every channel, one team accountable for the number.',
+    ideal: 'Brands that need SEO, paid, social, and AI search working as a single system.',
     features: [
       'All channels: SEO, Paid Media, SMM, AEO, and GEO',
       'Month 1: deep-dive audit across every channel',
@@ -388,7 +388,7 @@ export const pricingTiers: PricingTier[] = [
       'SMM: content calendar, creatives, and community engagement',
       'AEO and GEO: AI citation content and monthly citation tracking',
       'Weekly report + weekly strategy call',
-      'Written KPIs across every channel, 90-day guarantee',
+      'Written KPIs across every channel, month-to-month',
     ],
     cta: 'Book free audit',
     highlight: false,
@@ -402,54 +402,54 @@ export interface FAQItem {
 
 export const faqs: FAQItem[] = [
   {
-    question: 'What exactly does the 90-day results guarantee cover?',
+    question: 'How do you make sure you actually deliver results?',
     answer:
-      'Your KPIs are agreed and written into the contract before we start. Depending on the engagement, these are typically ROAS, cost per lead, organic traffic growth, or conversion rate improvement. If we do not hit the agreed targets by day 90, you receive a full refund of management fees. The guarantee covers our fees only. Ad spend paid directly to Meta or Google is not refundable as it is between you and the platform.',
+      'Your KPIs are agreed and written into the contract before we start. Depending on the work, that is usually ROAS, cost per lead, organic traffic growth, or conversion rate. You get a live dashboard and a written report every week, so you can check progress against those targets any time. A senior specialist reviews your account personally, and because we work month to month, we have to keep earning the engagement.',
   },
   {
     question: 'How is this different from hiring a large agency?',
     answer:
-      'At a large agency, your account is won by a senior person and then handed to a junior team you never meet. At Digi Brand Booster, Venkat personally leads strategy and reviews every campaign. You always speak with the person doing the work. We also limit client intake deliberately, so you are never in a queue waiting for attention. Most of our clients have left larger agencies for exactly this reason.',
+      'At a large agency, a senior person wins your account and a junior team you never meet runs it. Here, Venkat leads strategy and reviews every campaign, so you speak with the person doing the work. We also cap how many clients we take, so you are never in a queue for attention. Most of our clients came to us from a larger agency for exactly that reason.',
   },
   {
-    question: 'What are your fees? How does pricing work?',
+    question: 'What are your fees, and how does pricing work?',
     answer:
-      'We charge a flat monthly retainer, not a percentage of ad spend. Starter plans for a single channel begin at Rs 15,000 per month. Growth plans covering two channels start at Rs 22,000 per month. Full-stack Scale plans covering all channels including AEO and GEO start at Rs 29,000 per month. Every plan includes weekly reports, written KPIs, 48-hour onboarding, and the 90-day results guarantee. Ad spend is separate and paid directly to the platform.',
+      'A flat monthly retainer, never a percentage of your ad spend. A single channel starts at Rs 15,000 a month, two channels at Rs 22,000, and the full stack including AEO and GEO at Rs 29,000. Every plan includes weekly reporting, written KPIs, and 48-hour onboarding. Ad spend is separate and paid straight to the platform.',
   },
   {
     question: 'Can we cancel at any time?',
     answer:
-      'Yes. We work on monthly rolling contracts with 30 days notice to exit. There is no lock-in beyond the initial 90-day guarantee period, which exists so we have enough time to hit the targets we sign. Most clients renew because the results keep improving, not because they are contractually obligated to.',
+      'Yes. Monthly rolling contract, 30 days notice to leave. No long lock-in. Most clients renew because the results keep improving, not because a contract obliges them to.',
   },
   {
     question: 'How quickly do you start after we sign?',
     answer:
-      'Full onboarding takes 48 hours from contract signing. Within that window you receive complete account access, a written audit of your current performance, your kickoff call, and a signed strategy document with your 90-day KPI targets. Most agencies take 2 to 3 weeks for this. We start in 48 hours.',
+      'Onboarding is 48 hours from signing. In that window you get full account access, a written audit of current performance, your kickoff call, and a signed strategy document with your KPI targets. Most agencies take two to three weeks. We start in two days.',
   },
   {
-    question: 'What is AEO and how is it different from traditional SEO?',
+    question: 'What is AEO, and how is it different from SEO?',
     answer:
-      'Answer Engine Optimisation (AEO) structures your content so AI tools like ChatGPT, Perplexity, Google AI Overviews, and Gemini cite your website when answering user questions. Traditional SEO targets blue-link rankings. AEO targets the AI-generated answers that are increasingly the first thing a buyer sees. If your content is not structured for citation, you are invisible in that channel regardless of your ranking.',
+      'Answer Engine Optimisation structures your content so tools like ChatGPT, Perplexity, Google AI Overviews, and Gemini cite your site when they answer a question. Traditional SEO chases blue-link rankings; AEO targets the AI answer that a buyer now sees first. If your content is not built to be cited, you are missing from that channel no matter how well you rank.',
   },
   {
-    question: 'What is GEO and why does my brand need it now?',
+    question: 'What is GEO, and why now?',
     answer:
-      'Generative Engine Optimisation (GEO) ensures your brand is recommended when AI tools respond to "what is the best [product or service]" queries. A growing share of high-intent buyers discover brands through AI recommendations rather than search results. GEO builds that visibility systematically. Brands that invest in it now will have a significant head start over competitors who wait.',
+      'Generative Engine Optimisation is about being recommended when someone asks AI for "the best [product or service]". A growing share of high-intent buyers discover brands through those recommendations rather than a search results page. GEO builds that visibility deliberately, and the brands investing now get a real head start on ones that wait.',
   },
   {
-    question: 'What is your minimum ad spend requirement?',
+    question: 'Is there a minimum ad spend?',
     answer:
-      'For paid media engagements, we work best with brands spending Rs 1.5 lakh or more per month on ads. Below that level, the management fee relative to ad spend rarely makes commercial sense. For SEO, AEO, or GEO-only retainers, there is no minimum ad spend. We are happy to discuss what makes sense for your specific situation on a free audit call.',
+      'For paid media, we work best with brands spending Rs 1.5 lakh a month or more. Below that, our fee relative to spend rarely makes sense for you, and we will say so. For SEO, AEO, or GEO retainers there is no ad-spend minimum. The free audit is the honest way to work out what fits.',
   },
   {
     question: 'Do you work with brands that have an in-house team?',
     answer:
-      'Yes, regularly. We operate as a specialist execution layer alongside your team. You keep strategic oversight and brand decisions. We handle channel execution, technical implementation, weekly testing, and reporting. Your team stays in control of the bigger picture while we run the channels we specialise in.',
+      'Often. We act as a specialist execution layer beside your team. You keep strategy and brand decisions; we handle channel execution, technical implementation, weekly testing, and reporting. You stay in control of the big picture while we run the channels we specialise in.',
   },
   {
-    question: 'How do you keep us informed on performance?',
+    question: 'How do you keep us informed?',
     answer:
-      'Three ways. First, a live dashboard you can check any time with the same data we see. Second, a written Monday update every week covering what we tested, what the numbers showed, and what we are doing next. Third, a strategy call on the cadence agreed in your plan: monthly for Starter, bi-weekly for Growth, weekly for Scale. You will never need to ask us what is happening.',
+      'Three ways. A live dashboard with the same data we see. A written Monday update covering what we tested, what the numbers said, and what is next. And a strategy call at the cadence in your plan: monthly on Starter, bi-weekly on Growth, weekly on Scale. You will never have to ask what is happening.',
   },
 ];
 
@@ -540,7 +540,7 @@ export const insightPosts: InsightPost[] = [
     sections: [
       {
         heading: 'The shift from search rankings to AI recommendations',
-        body: 'A growing share of high-intent buyers now ask AI tools directly: "What is the best SEO agency in Bangalore?" or "Which D2C skincare brand should I try?" These recommendation queries bypass Google entirely. The brands that appear in those answers are not necessarily the ones that rank highest in traditional search. They are the ones that have built the right authority signals across the right sources. That is what GEO addresses.',
+        body: 'A growing share of high-intent buyers now ask AI tools directly: "What is the best SEO agency in Bangalore?" or "Which D2C coffee brand should I try?" These recommendation queries bypass Google entirely. The brands that appear in those answers are not necessarily the ones that rank highest in traditional search. They are the ones that have built the right authority signals across the right sources. That is what GEO addresses.',
       },
       {
         heading: 'How large language models decide what to recommend',
@@ -694,7 +694,7 @@ export const insightPosts: InsightPost[] = [
     sections: [
       {
         heading: 'Why WhatsApp outperforms email for Indian D2C audiences',
-        body: 'Email open rates for Indian D2C brands average 18 to 22 percent on a good day. WhatsApp messages average over 90 percent open rates and are typically read within three minutes of delivery. For a country where a significant portion of online shoppers still primarily use mobile and communicate almost entirely through WhatsApp, treating it as a secondary channel after email is a structural mistake. The brands scaling fastest in Indian D2C, from skincare to edtech to furniture, have built WhatsApp as their primary retention and re-engagement channel.',
+        body: 'Email open rates for Indian D2C brands average 18 to 22 percent on a good day. WhatsApp messages average over 90 percent open rates and are typically read within three minutes of delivery. For a country where a significant portion of online shoppers still primarily use mobile and communicate almost entirely through WhatsApp, treating it as a secondary channel after email is a structural mistake. The brands scaling fastest in Indian D2C, from apparel to edtech to furniture, have built WhatsApp as their primary retention and re-engagement channel.',
       },
       {
         heading: 'WhatsApp Business API vs the regular Business app: what you actually need',
@@ -702,7 +702,7 @@ export const insightPosts: InsightPost[] = [
       },
       {
         heading: 'The four flows that generate measurable revenue',
-        body: 'Based on our work with Indian D2C clients, four WhatsApp flows consistently produce positive ROI. First, abandoned cart recovery: a three-message sequence sent at one hour, six hours, and 24 hours after cart abandonment, with the third message including a time-limited offer. Second, post-purchase onboarding: a flow that delivers order confirmation, shipping updates, and product usage tips that reduces return rates and builds brand loyalty. Third, reorder reminders for consumable products: triggered 15 to 20 days after the expected product finish date with a personalised restock link. Fourth, win-back campaigns for lapsed customers: sent to buyers who have not purchased in 60 to 90 days with a category-specific incentive.',
+        body: 'Based on our work with Indian D2C clients, four WhatsApp flows consistently produce positive ROI. First, abandoned cart recovery: a three-message sequence sent at one hour, six hours, and 24 hours after cart abandonment, with the third message including a time-limited offer. Second, post-purchase onboarding: a flow that delivers order confirmation, shipping updates, and product usage tips that reduces return rates and builds brand loyalty. Third, reorder reminders for consumable products: triggered 15 to 20 days after the expected product finish date with a personalised restock link. Fourth, win-back campaigns for lapsed customers: sent to buyers who have not purchased in the last two to three months with a category-specific incentive.',
       },
       {
         heading: 'Opt-in strategy: building a list that actually converts',

@@ -43,10 +43,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const categoryColors: Record<string, { bg: string; color: string }> = {
-  AEO:          { bg: 'rgba(67,56,202,0.1)',   color: '#4338ca' },
-  GEO:          { bg: 'rgba(37,99,235,0.1)',   color: '#2563eb' },
-  'Paid Media': { bg: 'rgba(37,99,235,0.1)',   color: '#2563eb' },
-  SEO:          { bg: 'rgba(67,56,202,0.1)',   color: '#4338ca' },
+  AEO:          { bg: 'rgba(230, 151, 0,0.1)',   color: '#2170e4' },
+  GEO:          { bg: 'rgba(0, 88, 190,0.1)',   color: '#0058be' },
+  'Paid Media': { bg: 'rgba(0, 88, 190,0.1)',   color: '#0058be' },
+  SEO:          { bg: 'rgba(230, 151, 0,0.1)',   color: '#2170e4' },
 };
 
 export default async function BlogPostPage({ params }: Props) {
@@ -54,7 +54,7 @@ export default async function BlogPostPage({ params }: Props) {
   const post = insightPosts.find((p) => p.slug === slug);
   if (!post) notFound();
 
-  const cat = categoryColors[post.category] ?? { bg: 'rgba(37,99,235,0.1)', color: '#2563eb' };
+  const cat = categoryColors[post.category] ?? { bg: 'rgba(0, 88, 190,0.1)', color: '#0058be' };
   const related = insightPosts.filter((p) => p.slug !== slug).slice(0, 2);
 
   const articleSchema = {
@@ -167,7 +167,7 @@ export default async function BlogPostPage({ params }: Props) {
               </p>
               <div className="grid sm:grid-cols-2 gap-5">
                 {related.map((r) => {
-                  const rc = categoryColors[r.category] ?? { bg: 'rgba(37,99,235,0.1)', color: '#2563eb' };
+                  const rc = categoryColors[r.category] ?? { bg: 'rgba(0, 88, 190,0.1)', color: '#0058be' };
                   return (
                     <Link key={r.slug} href={`/blog/${r.slug}`} className="card p-5 no-underline" style={{ textDecoration: 'none' }}>
                       <span className="text-xs font-bold px-2 py-0.5 rounded-full mb-3 inline-block" style={{ background: rc.bg, color: rc.color }}>

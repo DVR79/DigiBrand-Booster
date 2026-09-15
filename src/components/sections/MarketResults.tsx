@@ -13,13 +13,13 @@ const pairs = [
     challenge: {
       stat: '60%',
       label: 'of Google searches end without a click',
-      detail: 'AI Overviews now answer queries directly on the results page. Brands not cited as the source are invisible to that buyer.',
+      detail: 'AI Overviews and answer engines now respond on the results page itself. If your page is not the source they cite, that buyer never sees you.',
       source: 'SparkToro, 2024',
     },
     result: {
       stat: '15+',
       label: 'AI citations earned per AEO client',
-      detail: 'We structure your content so AI engines like ChatGPT, Perplexity, and Google AI Overviews cite your brand as the answer.',
+      detail: 'We restructure content question-first so ChatGPT, Perplexity, and Google AI Overviews can lift the answer and name your brand as the source.',
       badge: 'AEO / GEO',
     },
   },
@@ -29,13 +29,13 @@ const pairs = [
     challenge: {
       stat: '~40%',
       label: 'of Meta ad data lost post-iOS 14',
-      detail: 'Without server-side Conversions API, your Meta pixel undercounts conversions. Most brands bid on incomplete data and overspend.',
+      detail: 'Without server-side Conversions API, the browser pixel undercounts conversions, so Meta optimises on partial data and you overspend to hit the same result.',
       source: 'Meta Business, 2023',
     },
     result: {
       stat: '41%',
-      label: 'avg CPL reduction (paid media clients)',
-      detail: 'We implement server-side tracking, rebuild audience targeting from first-party data, and cut wasted spend within the first 30 days.',
+      label: 'average CPL reduction, paid media clients',
+      detail: 'We install server-side tracking with proper deduplication, rebuild targeting on first-party data, and cut wasted spend inside the first 30 days.',
       badge: 'Meta Ads',
     },
   },
@@ -45,13 +45,13 @@ const pairs = [
     challenge: {
       stat: '75%',
       label: 'of users never scroll past page one',
-      detail: "If you are not ranking on page one for your buyers' search terms, you effectively do not exist to that traffic.",
+      detail: "If you are not on page one for the terms your buyers use, that traffic effectively does not exist for you.",
       source: 'Backlinko, 2024',
     },
     result: {
       stat: '260%',
-      label: 'avg organic traffic growth (SEO clients)',
-      detail: 'Technical SEO fixes, content built around buyer intent, and systematic link building that moves rankings within 90 days.',
+      label: 'average organic growth, SEO clients',
+      detail: 'Technical fixes first, then content mapped to buyer intent and links that actually shift rankings, not vanity metrics.',
       badge: 'SEO',
     },
   },
@@ -61,13 +61,13 @@ const pairs = [
     challenge: {
       stat: '100M+',
       label: 'queries per day on ChatGPT alone',
-      detail: 'Your buyers are asking AI tools which brand to choose. Most businesses have zero strategy for appearing in those answers.',
+      detail: 'Your buyers are asking AI tools which brand to pick. Most businesses have no plan for showing up in that answer.',
       source: 'OpenAI, 2024',
     },
     result: {
       stat: '4x',
-      label: 'best paid ROAS achieved (Google Ads)',
-      detail: 'While competitors chase clicks, we combine paid media precision with AI-search visibility so your brand wins across every touchpoint.',
+      label: 'best paid ROAS achieved',
+      detail: 'We pair tight paid-search targeting with AI-search visibility, so you win the click and the recommendation.',
       badge: 'Google Ads',
     },
   },
@@ -84,35 +84,35 @@ const colorMap: Record<string, {
   resultBg: string;
 }> = {
   blue: {
-    accent: '#2563eb',
-    iconBg: 'rgba(37,99,235,0.1)',
-    iconColor: '#2563eb',
-    badgeBg: 'rgba(37,99,235,0.08)',
-    badgeColor: '#2563eb',
-    statColor: '#2563eb',
-    border: 'rgba(37,99,235,0.18)',
-    resultBg: 'rgba(37,99,235,0.03)',
+    accent: '#0058be',
+    iconBg: 'rgba(0, 88, 190,0.1)',
+    iconColor: '#0058be',
+    badgeBg: 'rgba(0, 88, 190,0.08)',
+    badgeColor: '#0058be',
+    statColor: '#0058be',
+    border: 'rgba(0, 88, 190,0.18)',
+    resultBg: 'rgba(0, 88, 190,0.03)',
   },
   indigo: {
-    accent: '#4338ca',
-    iconBg: 'rgba(67,56,202,0.1)',
-    iconColor: '#4338ca',
-    badgeBg: 'rgba(67,56,202,0.08)',
-    badgeColor: '#4338ca',
-    statColor: '#4338ca',
-    border: 'rgba(67,56,202,0.18)',
-    resultBg: 'rgba(67,56,202,0.03)',
+    accent: '#2170e4',
+    iconBg: 'rgba(230, 151, 0,0.1)',
+    iconColor: '#2170e4',
+    badgeBg: 'rgba(230, 151, 0,0.08)',
+    badgeColor: '#2170e4',
+    statColor: '#2170e4',
+    border: 'rgba(230, 151, 0,0.18)',
+    resultBg: 'rgba(230, 151, 0,0.03)',
   },
 };
 
 export default function MarketResults() {
   return (
-    <section id="results" className="py-24 px-4" style={{ background: 'var(--bg-dark)' }}>
+    <section id="results" className="py-14 md:py-20 px-4" style={{ background: '#f3f3f4' }}>
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          eyebrow="Market reality vs. our results"
-          title="The problem is real. So is the proof."
-          description="Every stat below is a market-wide challenge. Next to it is what we actually delivered for clients facing the same problem."
+          eyebrow="The market problem, and our answer"
+          title="Each number is a problem we were hired to solve"
+          description="On the left, a shift happening across the market. On the right, what we did for a client facing exactly that. The market stats are sourced; the results come from client accounts."
         />
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -144,7 +144,7 @@ export default function MarketResults() {
                 </div>
 
                 {/* Two columns: challenge | result */}
-                <div className="grid grid-cols-2 divide-x" style={{ borderColor: c.border }}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x" style={{ borderColor: c.border }}>
 
                   {/* Left: market challenge */}
                   <div className="px-5 py-5" style={{ background: 'var(--bg-card)' }}>
@@ -191,7 +191,7 @@ export default function MarketResults() {
 
         <div className="mt-12 text-center">
           <p className="text-sm mb-6" style={{ color: 'var(--text-secondary)' }}>
-            These are not projections. They are pulled from live client accounts in the last 12 months.
+            Client results here are actual, from accounts we ran in the last 12 months. Best cases are marked as such, not presented as averages.
           </p>
           <ShimmerButton variant="cta" href="/#contact" title="Book a free audit and see how we can move the numbers for your brand">
             Get a free audit for your brand

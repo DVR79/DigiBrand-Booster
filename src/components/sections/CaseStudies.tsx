@@ -7,12 +7,12 @@ import { caseStudies } from '@/lib/data';
 
 export default function CaseStudies() {
   return (
-    <section id="case-studies" className="py-24 px-4" style={{ background: 'var(--bg-dark)' }}>
+    <section id="case-studies" className="py-14 md:py-20 px-4" style={{ background: '#f3f3f4' }}>
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           eyebrow="Case studies"
-          title="Work that moved the needle"
-          description="Real brands, real numbers, real timelines."
+          title="What changed, by the numbers"
+          description="Three engagements, the actual problem we found, and what it did to the metric that mattered. Client names withheld on request; numbers pulled from their accounts."
         />
         <div className="grid md:grid-cols-3 gap-6">
           {caseStudies.map((cs, i) => (

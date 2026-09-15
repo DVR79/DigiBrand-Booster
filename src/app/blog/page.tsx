@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 };
 
 const categoryColors: Record<string, { bg: string; color: string }> = {
-  AEO:        { bg: 'rgba(124,58,237,0.1)',  color: '#7c3aed' },
-  GEO:        { bg: 'rgba(37,99,235,0.1)',   color: '#2563eb' },
+  AEO:        { bg: 'rgba(230, 151, 0,0.1)',  color: '#2170e4' },
+  GEO:        { bg: 'rgba(0, 88, 190,0.1)',   color: '#0058be' },
   'Paid Media': { bg: 'rgba(245,158,11,0.1)', color: '#d97706' },
   SEO:        { bg: 'rgba(5,150,105,0.1)',   color: '#059669' },
 };
@@ -40,7 +40,7 @@ export default function BlogPage() {
           <div className="mx-auto max-w-5xl">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {insightPosts.map((post) => {
-                const cat = categoryColors[post.category] ?? { bg: 'rgba(37,99,235,0.1)', color: '#2563eb' };
+                const cat = categoryColors[post.category] ?? { bg: 'rgba(0, 88, 190,0.1)', color: '#0058be' };
                 return (
                   <Link
                     key={post.slug}

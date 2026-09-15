@@ -43,3 +43,9 @@ next-env.d.ts
 .vercel
 
 .vercel
+
+# Vendor template + design source (reference only, do not commit)
+/hamela-package
+/New Design
+/Digi Photos
+/logos

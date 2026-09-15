@@ -7,9 +7,9 @@ import { testimonials } from '@/lib/data';
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 px-4" style={{ background: 'var(--bg-dark)' }}>
+    <section id="testimonials" className="py-14 md:py-20 px-4" style={{ background: '#f3f3f4' }}>
       <div className="mx-auto max-w-7xl">
-        <SectionHeader eyebrow="Client stories" title="From the brands we have grown" />
+        <SectionHeader eyebrow="Client stories" title="In their words, with the numbers" />
         <div className="grid md:grid-cols-2 gap-6">
           {testimonials.map((t, i) => (
             <motion.div
@@ -30,7 +30,7 @@ export default function Testimonials() {
               </p>
               <div className="flex items-center justify-between pt-5" style={{ borderTop: '1px solid var(--border)' }}>
                 <div className="flex items-center gap-3">
-                  <div className="h-9 w-9 rounded-full flex items-center justify-center font-bold text-sm" style={{ background: 'rgba(37,99,235,0.1)', color: 'var(--accent-primary)' }}>
+                  <div className="h-9 w-9 rounded-full flex items-center justify-center font-bold text-sm" style={{ background: 'rgba(0, 88, 190,0.1)', color: 'var(--accent-primary)' }}>
                     {t.name.charAt(0)}
                   </div>
                   <div>

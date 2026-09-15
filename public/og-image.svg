@@ -50,7 +50,7 @@
   <rect x="96" y="210" width="1008" height="1" fill="rgba(255,255,255,0.08)"/>
 
   <!-- Headline -->
-  <text x="96" y="308" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="64" fill="#f4f4f7" letter-spacing="-1">90-Day Growth Guarantee.</text>
+  <text x="96" y="308" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="64" fill="#f4f4f7" letter-spacing="-1">Founder-Led Growth.</text>
   <text x="96" y="386" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="64" fill="url(#accent)" letter-spacing="-1">Or We Work Free.</text>
 
   <!-- Sub text -->
@@ -59,7 +59,7 @@
   <!-- Stats pills -->
   <rect x="96" y="490" width="200" height="56" rx="12" fill="rgba(91,141,255,0.12)" stroke="rgba(91,141,255,0.3)" stroke-width="1"/>
   <text x="196" y="514" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="22" fill="#5b8dff" text-anchor="middle">3.5x ROAS</text>
-  <text x="196" y="534" font-family="Arial, sans-serif" font-size="13" fill="rgba(255,255,255,0.4)" text-anchor="middle">avg in 90 days</text>
+  <text x="196" y="534" font-family="Arial, sans-serif" font-size="13" fill="rgba(255,255,255,0.4)" text-anchor="middle">avg, live accounts</text>
 
   <rect x="316" y="490" width="200" height="56" rx="12" fill="rgba(167,139,250,0.12)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
   <text x="416" y="514" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="22" fill="#a78bfa" text-anchor="middle">48-hr Audit</text>
