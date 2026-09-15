@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Search, PencilRuler, Hammer, Settings, Rocket } from 'lucide-react';
 import { frameworkSteps } from '@/lib/data';
 
@@ -153,7 +154,7 @@ export default function BoosterFramework() {
             Book a discovery call and get a free 48-hour audit of your
             current performance, done by a senior specialist.
           </p>
-          <a
+          <Link
             href="/#contact"
             className="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold rounded-[2px] transition-all hover:-translate-y-1"
             style={{
@@ -162,7 +163,7 @@ export default function BoosterFramework() {
             }}
           >
             Schedule Your Audit
-          </a>
+          </Link>
         </div>
       </div>
     </section>

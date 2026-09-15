@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Licensed reference template, not part of the app (also gitignored).
+    "hamela-package/**",
   ]),
 ]);
 

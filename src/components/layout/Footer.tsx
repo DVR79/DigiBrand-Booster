@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { siteConfig } from '@/lib/data';
 
 const footerCols = {
@@ -33,7 +34,7 @@ export default function Footer() {
 
           {/* Brand column — logo + copyrght */}
           <div className="col-span-1 md:col-span-1">
-            <a
+            <Link
               href="/"
               className="inline-flex items-center gap-2.5 mb-6"
               title="Digi Brand Booster - Home"
@@ -44,7 +45,7 @@ export default function Footer() {
               >
                 Digi Brand Booster
               </span>
-            </a>
+            </Link>
             <p
               className="text-sm leading-relaxed"
               style={{ color: '#7c839b' }}

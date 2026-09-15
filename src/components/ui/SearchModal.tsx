@@ -46,8 +46,12 @@ export default function SearchModal() {
   }, []);
 
   useEffect(() => {
-    if (open) setTimeout(() => inputRef.current?.focus(), 50);
-    else setQuery('');
+    if (open) {
+      const t = setTimeout(() => inputRef.current?.focus(), 50);
+      return () => clearTimeout(t);
+    }
+    const t = setTimeout(() => setQuery(''), 0);
+    return () => clearTimeout(t);
   }, [open]);
 
   const results = query.trim()

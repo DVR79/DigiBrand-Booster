@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import {
@@ -200,8 +201,8 @@ export default function AboutPage() {
                     paddingLeft: '24px',
                   }}
                 >
-                  "The specialist who audits your account is the one who scales it. You talk
-                  with the person doing the work, not a manager relaying it."
+                  “The specialist who audits your account is the one who scales it. You talk
+                  with the person doing the work, not a manager relaying it.”
                 </p>
 
                 {/* Feature items */}
@@ -454,19 +455,19 @@ export default function AboutPage() {
                 competitors. No commitment needed.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-5">
-                <a
+                <Link
                   href="/#contact"
                   className="px-8 py-4 rounded-full text-sm font-semibold transition-all hover:shadow-xl hover:-translate-y-0.5"
                   style={{ background: '#ffffff', color: '#11161e' }}
                 >
                   Get Your Free 48-Hour Audit
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/#pricing"
                   className="btn-outline-dark px-8 py-4 rounded-full text-sm font-semibold"
                 >
                   View Pricing
-                </a>
+                </Link>
               </div>
             </div>
           </div>

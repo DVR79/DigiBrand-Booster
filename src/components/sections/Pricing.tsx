@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { pricingTiers } from '@/lib/data';
 
 export default function Pricing() {
@@ -121,7 +122,7 @@ export default function Pricing() {
                 </ul>
 
                 {/* CTA button */}
-                <a
+                <Link
                   href="/#contact"
                   className="w-full flex items-center justify-center px-6 py-3 text-sm font-bold rounded-[2px] transition-all hover:-translate-y-0.5 duration-300 uppercase tracking-[0.05em]"
                   style={
@@ -139,7 +140,7 @@ export default function Pricing() {
                   }
                 >
                   {tier.cta || 'Get Started'}
-                </a>
+                </Link>
               </div>
             </div>
           ))}

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import ShimmerButton from '@/components/ui/ShimmerButton';
 
 const navLinks = [
@@ -38,7 +39,7 @@ export default function Header() {
             <div className="flex h-20 items-center justify-between">
 
               {/* Logo: icon + text */}
-              <a
+              <Link
                 href="/"
                 className="flex items-center gap-2.5 flex-shrink-0"
                 title="Digi Brand Booster, Home"
@@ -57,7 +58,7 @@ export default function Header() {
                 >
                   Digi Brand Booster
                 </span>
-              </a>
+              </Link>
 
               {/* Desktop nav links */}
               <nav className="hidden md:flex items-center gap-1" aria-label="Main navigation">
