@@ -6,8 +6,9 @@ import Footer from '@/components/layout/Footer';
 import { insightPosts } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Blog: SEO, Paid Ads & AEO Insights | Digi Brand Booster',
+  title: 'Blog: SEO, Paid Ads & AEO Insights',
   description: 'Practical guides on AEO, GEO, Meta Ads, Google Ads and SEO. No fluff. Only what actually moves rankings and reduces cost per lead.',
+  alternates: { canonical: '/blog' },
 };
 
 const categoryColors: Record<string, { bg: string; color: string }> = {

@@ -64,18 +64,29 @@ export default function Footer() {
                 {group}
               </h4>
               <ul className="space-y-3">
-                {links.map(l => (
-                  <li key={l.label}>
-                    <a
-                      href={l.href}
-                      className="text-base font-normal transition-colors hover:text-secondary-fixed duration-200"
-                      style={{ color: '#7c839b' }}
-                      {...('external' in l && l.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                    >
-                      {l.label}
-                    </a>
-                  </li>
-                ))}
+                {links.map(l => {
+                  const isExternal = 'external' in l && l.external;
+                  const cls = 'text-base font-normal transition-colors hover:text-secondary-fixed duration-200';
+                  return (
+                    <li key={l.label}>
+                      {isExternal ? (
+                        <a
+                          href={l.href}
+                          className={cls}
+                          style={{ color: '#7c839b' }}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {l.label}
+                        </a>
+                      ) : (
+                        <Link href={l.href} className={cls} style={{ color: '#7c839b' }}>
+                          {l.label}
+                        </Link>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}

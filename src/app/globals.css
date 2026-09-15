@@ -272,6 +272,36 @@ body {
   }
 }
 
+/* ── Legal / policy pages ────────────────────── */
+.legal-prose {
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.75;
+}
+.legal-prose h2 {
+  font-family: var(--font-heading), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 2.25rem 0 0.75rem;
+}
+.legal-prose p { margin: 0 0 1rem; }
+.legal-prose ul {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.legal-prose li { margin: 0 0 0.5rem; }
+.legal-prose strong { color: var(--text-primary); font-weight: 600; }
+.legal-prose a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal-prose a:hover { color: var(--accent-secondary); }
+
 /* ── Scrollbar ───────────────────────────────── */
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: #f3f3f4; }

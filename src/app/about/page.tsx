@@ -15,9 +15,10 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About | Digi Brand Booster: Senior-Led Performance Marketing',
+  title: 'About: Our Senior-Led Performance Marketing Team',
   description:
-    'Why high-stakes brands pick a senior-led boutique over a factory-line agency. A senior specialist works every account. Senior-only team, month-to-month, no lock-in.',
+    'Why high-stakes brands pick a senior-led boutique over a factory-line agency. A senior specialist works every account, month-to-month, with no lock-in.',
+  alternates: { canonical: '/about' },
 };
 
 const philosophyCards = [
