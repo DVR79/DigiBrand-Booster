@@ -41,7 +41,7 @@ export default function Header() {
               <a
                 href="/"
                 className="flex items-center gap-2.5 flex-shrink-0"
-                title="Digi Brand Booster — Home"
+                title="Digi Brand Booster, Home"
               >
                 <Image
                   src="/logo-icon.webp"
