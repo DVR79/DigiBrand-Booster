@@ -8,13 +8,15 @@ Project-specific guidance for AI coding agents working on Digi Brand Booster.
 
 ## Project context
 
-Digi Brand Booster is a marketing website for an AI-native performance marketing agency. It's a marketing site, not an app. The goal is to convert visitors into leads via the contact form, WhatsApp, or audit booking.
+Digi Brand Booster is the marketing website for a senior-led performance marketing agency in Bangalore, serving D2C, SaaS, and EdTech brands. It is a marketing site, not an app. The goal is to convert visitors into leads via the contact form, WhatsApp, or a free 48-hour audit booking.
+
+Positioning: a senior specialist works every account (no junior handoffs), KPIs are written into the contract, reporting is transparent and weekly, and engagements are month-to-month with no lock-in. Services span SEO, Meta Ads, and Google Ads, plus AEO (getting cited in AI answers) and GEO (getting recommended by AI). There is no results guarantee.
 
 Tech stack:
 - Next.js 16 with App Router and Turbopack
 - React 19
 - TypeScript (strict)
-- Tailwind CSS v4 (uses `@theme` block, not config file)
+- Tailwind CSS v4 (uses the `@theme` block, not a config file)
 - Framer Motion for animations
 - Lucide React for icons
 
@@ -23,117 +25,117 @@ Tech stack:
 ```
 src/
   app/                Next.js App Router pages
-    layout.tsx        Root layout, fonts, metadata, JSON-LD, no-flash theme script
-    page.tsx          Homepage (assembles every section)
+    layout.tsx        Root layout, fonts, metadata, Organization JSON-LD
+    page.tsx          Homepage (assembles every section) + FAQPage JSON-LD
+    about/page.tsx    About page
+    blog/             Blog index + [slug] post pages
     not-found.tsx     Custom 404
-    globals.css       Theme tokens (dark + light), animations, glass utilities
+    robots.ts, sitemap.ts
+    globals.css       Theme tokens, animations, button/utility classes
   components/
     layout/           Header, Footer
-    sections/         Each homepage section (Hero, Services, FAQ, etc.)
-    ui/               Reusable: GlassCard, ShimmerButton, SectionHeader,
-                      ThemeToggle, SearchModal, AnimatedCounter, TypingText
+    sections/         Each homepage section
+    ui/               Reusable: GlassCard, ShimmerButton, SectionHeader, SearchModal
     effects/          CursorFollower
     conversion/       StickyCTA, WhatsAppButton, ExitIntent, BackToTop
   lib/
-    data.ts           ALL site content lives here. Single source of truth.
+    data.ts           Most site content lives here. Single source of truth.
     utils.ts          Tiny helpers (cn, formatCurrency)
 ```
 
+Homepage section order (in `page.tsx`): Hero, Services, CaseStudies, ProblemSection, MarketResults, AgencyComparison, Industries, BoosterFramework, Guarantee (renders the "How We Work" section, id `how-we-work`), Pricing, Testimonials, Insights, FAQ, Contact.
+
 ## Content rules
 
-1. **All copy lives in `src/lib/data.ts`.** Never hardcode marketing strings into components. If you're tempted to inline a service name, testimonial, or stat, add it to `data.ts` first.
+1. **Most copy lives in `src/lib/data.ts`.** Prefer adding strings there over hardcoding into components. Some section-level copy (headings, hero) is inline; keep it consistent with the data.ts tone.
 
-2. **No em dashes.** The user prefers humanized prose without `—`. Use periods, commas, parentheses, or restructure the sentence. Examples:
-   - Bad: `We hit 88% of growth goals — quarter after quarter.`
-   - Good: `We hit 88% of growth goals, quarter after quarter.`
+2. **No em dashes.** Use periods, commas, parentheses, or restructure. Bad: `88% of goals — quarter after quarter.` Good: `88% of goals, quarter after quarter.`
 
-3. **Avoid corporate clichés** in new copy: "360°", "results-driven", "data-driven", "ROI-focused", "full-funnel", "synergy". The site is positioned against these on purpose.
+3. **Avoid corporate clichés:** "data-driven", "results-driven", "360°", "full-funnel", "ROI-focused", "synergy". The site is positioned against these on purpose.
 
-4. **Keep claims specific.** `3.5x ROAS in 90 days` is good. `Massive growth` is bad. Numbers and time windows beat adjectives.
+4. **Keep claims specific and honest.** Numbers and time windows beat adjectives (`4.0x ROAS in 9 weeks`, not `massive growth`). Label best-case results as best-case, not averages. Do not invent client names, metrics, or certifications; use a `[CONFIRM]` placeholder if a real value is unknown.
 
-## Theme & design system
+5. **Say "senior-led / senior strategist / senior specialists", not repeated "founder".** "Founder" appears only as a job title in the About bio and testimonial/author credits.
 
-### Color tokens (CSS variables in `globals.css`)
+6. **British/Indian spelling** (optimisation, optimise, etc.).
 
-| Token | Dark | Light | Usage |
-|-------|------|-------|-------|
-| `--bg-dark` | `#0a0a14` | `#fafbfc` | Page background |
-| `--bg-card` | `#14141f` | `#ffffff` | Card surfaces |
-| `--bg-card-hover` | `#1c1c2b` | `#f1f5f9` | Hover/elevated cards |
-| `--text-primary` | `#f4f4f7` | `#0f172a` | Headings, key text |
-| `--text-secondary` | `#a1a1b3` | `#475569` | Body text, captions |
-| `--accent-primary` | `#5b8dff` | `#3b82f6` | Brand blue |
-| `--accent-secondary` | `#22d3ee` | `#06b6d4` | Cyan accent |
-| `--accent-cta` | `#fbbf24` | `#f59e0b` | Amber, ONLY for primary CTAs |
-| `--accent-purple` | `#a78bfa` | `#8b5cf6` | Gradient third stop |
-| `--accent-success` | `#34d399` | `#10b981` | Success states |
+## Design system
 
-Use Tailwind classes like `bg-bg-dark`, `text-text-primary`, `border-border`. These map to the CSS vars and adapt to theme automatically. **Don't hardcode hex values or `border-white/[0.06]`-style colors.**
+Light theme only. Colours are defined as tokens in `src/app/globals.css` (`@theme` block and `:root`).
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| `--accent-primary` | `#0058be` | Brand blue: buttons, eyebrows, emphasis, icons |
+| `--accent-secondary` | `#2170e4` | Secondary blue (two-tone accents) |
+| `--accent-navy` | `#11161e` | Near-black: headings, dark cards, footer |
+| `--bg-dark` / `--bg-card` | `#ffffff` | Page and card background |
+| `--bg-section-alt` | `#f3f3f4` | Alternating section background |
+| `--text-primary` | `#11161e` | Headings, key text |
+| `--text-secondary` | `#55585f` | Body text |
+| `--text-muted` | `#777777` | Captions, muted text |
+| `--border` | `#e6e6e6` | Borders |
+
+Sections deliberately alternate white and `#f3f3f4` down the page so boundaries stay visible. Prefer the token colours; some components use these hex values inline, which is acceptable.
 
 ### Typography
-- Headings: `font-heading` (Bricolage Grotesque)
-- Body: default (Inter)
-- Tight letter-spacing already applied via CSS
+- Headings: `font-heading` = **Oswald** (uppercase, condensed), loaded via `next/font`
+- Body: **Open Sans**
+- The `.font-heading` utility applies Oswald + uppercase; do not add a `font-weight` to it (utility classes set weight).
 
 ### Component patterns
-- **Glassmorphism cards**: use `<GlassCard>` from `components/ui/GlassCard.tsx`
-- **CTA buttons**: use `<ShimmerButton variant="cta" />` for primary, `variant="primary"` for secondary, `variant="outline"` for ghost
-- **Section headers**: use `<SectionHeader eyebrow="..." title="..." description="..." />`
-- **Scroll-in animations**: use Framer Motion `whileInView` inline. Don't create wrapper components for this.
+- **CTA buttons:** `<ShimmerButton variant="cta" | "primary" | "outline" size="md" | "lg" />`. Solid button, uppercase Oswald label, an arrow that slides on hover, and a shine sweep. No detached accent block.
+- **Section headers:** `<SectionHeader eyebrow="..." title="..." description="..." />`. The eyebrow renders via the `.pill` class (blue, wide-tracked caps).
+- **Cards:** the `.card` class (white, `#e6e6e6` border, subtle shadow, ~3px radius). `<GlassCard>` wraps it.
+- **Scroll-in animations:** Framer Motion `whileInView` inline. Don't build wrapper components for this.
+- **Icons:** Lucide only. If Lucide lacks an icon, use an inline SVG. Do not add `react-icons` or a material-symbols font.
+
+## Images
+
+- Use `next/image` with explicit `width`/`height`. No raw `<img>` tags.
+- Optimise to **WebP under 100KB**, roughly 1000px on the long edge, before adding to `public/images/`.
+- Full-resolution source folders (e.g. `Digi Photos/`, `logos/`) are gitignored; only the optimised WebPs are committed.
+
+## Contact form
+
+The contact form (`Contact.tsx`) posts to EmailJS using these public env vars, with a WhatsApp fallback if they are missing:
+
+```
+NEXT_PUBLIC_EMAILJS_SERVICE_ID
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+```
+
+Set them in `.env.local` and in Vercel. Restrict allowed domains in the EmailJS dashboard so the public key cannot be reused elsewhere.
+
+## SEO & performance
+
+1. The homepage is fully SSG. Do not add `'use client'` to `page.tsx` or `layout.tsx`.
+2. Titles lead with the primary keyword ("performance marketing agency Bangalore") and keep the AEO/GEO (AI search) angle visible. Keep the title near 60 characters and the description near 155.
+3. JSON-LD: Organization in `layout.tsx`, FAQPage in `page.tsx` (reads from the `faqs` array), Article on blog posts. Update these if company info or FAQs change.
+4. One `<h1>` per page (the Hero owns the homepage h1). Section titles are `<h2>`.
+5. Images: `next/image`, explicit `width`/`height`, descriptive `alt`.
 
 ## Coding conventions
 
 1. **Client vs server components.** Default to server. Add `'use client'` only when needed (state, effects, browser APIs, motion).
-2. **Imports.** Use the `@/` alias for `src/` paths. Order: React/Next, third-party, lucide-react, `@/lib`, `@/components`.
-3. **TypeScript.** Type props inline for one-off components. Export shared types from `lib/data.ts`.
-4. **No new dependencies** without checking with the user first. The current set (Next, React, Tailwind, Framer Motion, Lucide) is intentionally minimal.
-5. **No external icon libraries beyond Lucide.** If Lucide doesn't have an icon (e.g. social brand icons removed in newer versions), use an inline SVG. Do not pull in `react-icons` or similar.
-6. **No CSS-in-JS libraries.** Tailwind only. Inline `<style jsx>` is acceptable for component-scoped tricks like custom range slider thumbs.
-
-## Theme system specifics
-
-- The theme is controlled by a `light` class on `<html>`. Default = no class = dark.
-- `src/app/layout.tsx` injects a no-flash script in `<head>` that reads `localStorage.theme` and sets the class before paint. Don't move or remove this script.
-- `<ThemeToggle>` reads/writes localStorage and toggles the class.
-- All theme-aware colors must use CSS variables. Tailwind utilities like `text-text-primary` already do this.
-
-## Adding new content
-
-To add a new service:
-1. Open `src/lib/data.ts`
-2. Find `serviceTabs` array
-3. Add an entry under the right tab with `title`, `description`, `features`, and an `icon` key (string)
-4. If the icon doesn't exist yet, add it to the `iconMap` in `Services.tsx`
-
-To add a new section:
-1. Create `src/components/sections/NewSection.tsx`
-2. Use `<SectionHeader>` for the title block
-3. Put content data in `src/lib/data.ts`
-4. Import and place in `src/app/page.tsx` at the right point in the flow
-
-## SEO & performance rules
-
-1. Page is fully SSG. Don't add `'use client'` to `page.tsx` or `layout.tsx`.
-2. Update metadata in `layout.tsx` if you add a major section or change positioning.
-3. JSON-LD schemas live in `layout.tsx` (Organization) and `page.tsx` (FAQPage). Update if you change company info or FAQs.
-4. Images: use `next/image` and provide explicit `width`/`height`. No raw `<img>` tags.
-5. No client-side data fetching on the homepage. Everything is build-time.
+2. **Imports.** Use the `@/` alias for `src/`. Order: React/Next, third-party, lucide-react, `@/lib`, `@/components`.
+3. **No new dependencies** without checking with the user first. Current set (Next, React, Tailwind, Framer Motion, Lucide) is intentionally minimal.
+4. **Tailwind only.** No CSS-in-JS libraries. Inline `<style jsx>` is fine for small component-scoped tricks.
 
 ## Don'ts
 
-- Don't add em dashes (`—`) to copy.
-- Don't touch the original TechEasify files in the parent `Digital/` directory. They're a reference backup.
-- Don't introduce a state management library (Redux, Zustand, etc.). The site doesn't need one.
-- Don't add a tracking script (GA, Meta Pixel) without explicit user instruction.
-- Don't change the `metadata` title/description format casually. It's tuned for search snippets.
-- Don't add npm packages without user approval.
+- No em dashes in copy.
+- No results-guarantee language (the guarantee was removed on purpose).
+- No state management library (Redux, Zustand); the site does not need one.
+- No tracking scripts beyond the existing GA without explicit user instruction.
+- No npm packages without user approval.
 
-## Useful commands
+## Deploy
+
+Vercel auto-deploys on push to `main`. Verify a production build first:
 
 ```bash
-npm run dev      # Start dev server (Turbopack)
-npm run build    # Production build (verify before deploy)
+npm run dev      # Start dev server (Turbopack), http://localhost:3000
+npm run build    # Production build (run before deploy)
 npm run lint     # ESLint
 ```
-
-Dev server runs on `http://localhost:3000`.
