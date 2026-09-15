@@ -110,7 +110,7 @@ export default function ProblemSection() {
 
           {/* Right: DBB Way - elevated and scaled */}
           <div
-            className="rounded-[6px] p-6 md:p-10 relative z-10 flex flex-col justify-center"
+            className="rounded-[6px] p-6 md:p-10 relative z-10 flex flex-col justify-center overflow-hidden"
             style={{
               background: '#11161e',
               color: '#ffffff',
